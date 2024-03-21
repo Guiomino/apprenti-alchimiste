@@ -5,26 +5,35 @@
   align-items: center;
   justify-content: center;
 
-  .title {
+  .backgroundImage {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+
+  .mainMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    h1 {
-      font-size: 40px;
-      color: rgb(6, 193, 218);
-      text-shadow: 0px 0px 5px white, 1px 1px 20px black;
+
+    .logo {
+      width: 100%;
     }
 
-    p {
-      font-size: 20px;
-      color: red;
-    }
-  }
+    .btnContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-  .mainMenu {
-    width: 500px;
-    height: 800px;
-    background-color: grey;
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
   }
 }
