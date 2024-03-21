@@ -1,0 +1,30 @@
+.homepage {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 40px;
+      color: rgb(6, 193, 218);
+      text-shadow: 0px 0px 5px white, 1px 1px 20px black;
+    }
+
+    p {
+      font-size: 20px;
+      color: red;
+    }
+  }
+
+  .mainMenu {
+    width: 500px;
+    height: 800px;
+    background-color: grey;
+  }
+}
