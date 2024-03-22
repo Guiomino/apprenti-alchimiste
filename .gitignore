@@ -37,3 +37,6 @@ next-env.d.ts
 
 # Config VSCode for Prettier
 .vscode
+
+# Others
+info.txt

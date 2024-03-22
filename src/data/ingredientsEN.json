@@ -1,0 +1,538 @@
+{
+    "ingredients": {
+        "mineral": {
+            "Sulfur": {
+                "price": 8,
+                "description": "Sulfur is a chemical element with the symbol S and atomic number 16. It is abundant, multivalent and nonmetallic.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus001",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "mineralMalus001",
+                    "magnitude": 60
+                }
+            },
+            "Salt": {
+                "price": 1,
+                "description": "Salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "mineralBonus002",
+                    "magnitude": 45
+                },
+                "malus": {
+                    "id": "mineralMalus002",
+                    "magnitude": 55
+                }
+            },
+            "Pyrite": {
+                "price": 15,
+                "description": "Pyrite is a common sulfide mineral found in many geological formations around the world.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus003",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "mineralMalus003",
+                    "magnitude": 65
+                }
+            },
+            "Amethyst": {
+                "price": 25,
+                "description": "Amethyst is a purple type of quartz. Its name is derived from the Greek word 'amethystos,' which means 'not intoxicated.' This refers to the belief that the stone could prevent drunkenness.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "mineralBonus004",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "mineralMalus004",
+                    "magnitude": 70
+                }
+            },
+            "Potassium Sulfate": {
+                "price": 12,
+                "description": "Potassium sulfate (K2SO4) is a non-flammable white crystalline salt which is soluble in water.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "mineralBonus005",
+                    "magnitude": 50
+                },
+                "malus": {
+                    "id": "mineralMalus005",
+                    "magnitude": 50
+                }
+            },
+            "Gold Nugget": {
+                "price": 500,
+                "description": "A gold nugget is a naturally occurring piece of native gold. Watercourses often concentrate nuggets and finer gold in placers. Nuggets are recovered by placer mining, but they are also found in residual deposits where the gold-bearing veins or lodes are weathered.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "mineralBonus006",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "mineralMalus006",
+                    "magnitude": 80
+                }
+            },
+            "Sapphire": {
+                "price": 200,
+                "description": "Sapphire is a precious gemstone, a variety of the mineral corundum, consisting of aluminum oxide with trace amounts of elements such as iron, titanium, chromium, copper, or magnesium.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus007",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "mineraMBalus007",
+                    "magnitude": 75
+                }
+            },
+            "Mercury": {
+                "price": 1000,
+                "description": "Mercury is a chemical element with the symbol Hg and atomic number 80. It is commonly known as quicksilver and was formerly named hydrargyrum.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "mineralBonus008",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "mineralMalus008",
+                    "magnitude": 85
+                }
+            },
+            "Quartz": {
+                "price": 20,
+                "description": "Quartz is a hard, crystalline mineral composed of silicon and oxygen atoms. The atoms are linked in a continuous framework of SiO4 silicon–oxygen tetrahedra, with each oxygen being shared between two tetrahedra, giving an overall chemical formula of SiO2.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "mineralBonus009",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "mineralMalus009",
+                    "magnitude": 70
+                }
+            },
+            "Fluorite": {
+                "price": 30,
+                "description": "Fluorite is the mineral form of calcium fluoride, CaF2. It belongs to the halide minerals. It crystallizes in isometric cubic habit, although octahedral and more complex isometric forms are not uncommon.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "mineralBonus010",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "mineralMalus010",
+                    "magnitude": 60
+                }
+            }
+        },
+        "vegetal": {
+            "Black Tea Leaf": {
+                "price": 5,
+                "description": "Black tea is a type of tea that is more oxidized than oolong, green, and white teas. Black tea is generally stronger in flavor than other teas.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus001",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus001",
+                    "magnitude": 65
+                }
+            },
+            "Ginger Root": {
+                "price": 3,
+                "description": "Ginger is a flowering plant whose rhizome, ginger root, or ginger, is widely used as a spice and a folk medicine.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus002",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "vegetalMalus002",
+                    "magnitude": 60
+                }
+            },
+            "Lemon Balm Leaf": {
+                "price": 4,
+                "description": "Lemon balm is a perennial herbaceous plant in the mint family Lamiaceae and native to south-central Europe, the Mediterranean Basin, Iran, and Central Asia, but now naturalized in the Americas and elsewhere.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "vegetalBonus003",
+                    "magnitude": 45
+                },
+                "malus": {
+                    "id": "vegetalMalus003",
+                    "magnitude": 55
+                }
+            },
+            "Flax Seeds": {
+                "price": 2,
+                "description": "Flax, also known as common flax or linseed, is a flowering plant, Linum usitatissimum, in the family Linaceae. It is cultivated as a food and fiber crop in regions of the world with temperate climate.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus004",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "vegetalMalus004",
+                    "magnitude": 70
+                }
+            },
+            "Rosemary": {
+                "price": 3,
+                "description": "Rosemary is a woody, perennial herb with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean region.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus005",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus005",
+                    "magnitude": 65
+                }
+            },
+            "Birch Bark": {
+                "price": 4,
+                "description": "Birch bark or birchbark is the bark of several Eurasian and North American birch trees of the genus Betula. The strong and water-resistant cardboard-like bark can be easily cut, bent, and sewn, which has made it a valuable building, crafting, and writing material since pre-historic times.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "vegetalBonus006",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "vegetalMalus006",
+                    "magnitude": 60
+                }
+            },
+            "Vanilla Pod": {
+                "price": 10,
+                "description": "Vanilla is a spice derived from orchids of the genus Vanilla, primarily obtained from pods of the Mexican species, flat-leaved vanilla. The word vanilla, derived from vainilla, the diminutive of the Spanish word vaina, is translated simply as 'little pod'.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "vegetalBonus007",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "vegetalMalus007",
+                    "magnitude": 80
+                }
+            },
+            "Acorn": {
+                "price": 1,
+                "description": "The acorn, or oak nut, is the nut of the oaks and their close relatives. It usually contains a single seed, enclosed in a tough, leathery shell, and borne in a cup-shaped cupule.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus008",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "vegetalMalus008",
+                    "magnitude": 75
+                }
+            },
+            "Onion Bulb": {
+                "price": 2,
+                "description": "The onion, also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "vegetalBonus009",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "vegetalMalus009",
+                    "magnitude": 70
+                }
+            },
+            "Rose Petal": {
+                "price": 6,
+                "description": "A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and tens of thousands of cultivars.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "vegetalBonus010",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus010",
+                    "magnitude": 65
+                }
+            }
+        },
+        "animal": {
+            "Oyster Pearl": {
+                "price": 50,
+                "description": "An oyster pearl, also known as a pearl, is a hard, glistening object produced within the soft tissue (specifically the mantle) of a living shelled mollusk or another animal, such as a conulariid.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus001",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus001",
+                    "magnitude": 80
+                }
+            },
+            "Aspic Viper Venom": {
+                "price": 100,
+                "description": "Aspic viper venom is the toxic secretion of the aspic viper (Vipera aspis), a venomous snake found in southern Europe.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "animalBonus002",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "animalMalus002",
+                    "magnitude": 85
+                }
+            },
+            "Cod Liver Oil": {
+                "price": 20,
+                "description": "Cod liver oil is a dietary supplement derived from liver of cod fish (Gadidae). As with most fish oils, it contains the omega-3 fatty acids eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA).",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "animalBonus003",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "animalMalus003",
+                    "magnitude": 70
+                }
+            },
+            "Rat Tail": {
+                "price": 5,
+                "description": "The tail of a rat, a long, flexible appendage extending from the hindquarters of certain mammals.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "animalBonus004",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "animalMalus004",
+                    "magnitude": 75
+                }
+            },
+            "Rainbow Fish Scale": {
+                "price": 15,
+                "description": "Rainbow fish scales are the small, reflective, overlapping plates that cover the skin of the rainbow fish, giving it its characteristic shimmering appearance.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus005",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus005",
+                    "magnitude": 80
+                }
+            },
+            "Badger Blood": {
+                "price": 30,
+                "description": "Badger blood is the circulating fluid (plasma) in the badger's body, responsible for delivering necessary substances such as nutrients and oxygen to the cells and transporting metabolic waste products away from those same cells.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "animalBonus006",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "animalMalus006",
+                    "magnitude": 65
+                }
+            },
+            "Royal Jelly": {
+                "price": 40,
+                "description": "Royal jelly is a honey bee secretion that is used in the nutrition of larvae, as well as adult queens. It is secreted from the glands in the hypopharynx of worker bees, and fed to all larvae in the colony, regardless of sex or caste.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus007",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "animalMalus007",
+                    "magnitude": 75
+                }
+            },
+            "Carp Eye": {
+                "price": 10,
+                "description": "The eye of a carp, a freshwater fish belonging to the family Cyprinidae.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "animalBonus008",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "animalMalus008",
+                    "magnitude": 70
+                }
+            },
+            "Peacock Feather": {
+                "price": 25,
+                "description": "Peacock feathers are the iridescent tail feathers of the male peacock (Pavo cristatus), a large and brightly colored bird species native to South Asia.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus009",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus009",
+                    "magnitude": 80
+                }
+            },
+            "Rabbit Foot": {
+                "price": 8,
+                "description": "A rabbit foot, typically from the hind leg of the rabbit, is considered a symbol of good luck in various cultures around the world.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "animalBonus010",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "animalMalus010",
+                    "magnitude": 65
+                }
+            }
+        },
+        "fongique": {
+            "Shiitake": {
+                "price": 10,
+                "description": "Shiitake is an edible mushroom native to East Asia, which is cultivated and consumed in many Asian countries.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "fongiqueBonus001",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "fongiqueMalus001",
+                    "magnitude": 65
+                }
+            },
+            "Death Cap Mushroom": {
+                "price": 500,
+                "description": "The death cap mushroom, Amanita phalloides, is a deadly poisonous mushroom that is one of the most toxic of all known poisonous mushrooms. It is native to Europe and has been accidentally introduced to various other regions worldwide.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "fongiqueBonus002",
+                    "magnitude": 10
+                },
+                "malus": {
+                    "id": "fongiqueMalus002",
+                    "magnitude": 90
+                }
+            },
+            "Black Truffle": {
+                "price": 1000,
+                "description": "The black truffle, also known as the Périgord truffle, is a species of truffle native to Southern Europe. It is prized as a culinary delicacy and is used in various gourmet dishes.",
+                "rarity": "epic",
+                "bonus": {
+                    "id": "fongiqueBonus003",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "fongiqueMalus003",
+                    "magnitude": 85
+                }
+            },
+            "Porcini Mushroom": {
+                "price": 20,
+                "description": "Porcini mushrooms, also known as cepes or penny buns, are a highly regarded edible mushroom native to Europe and North America.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "fongiqueBonus004",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "fongiqueMalus004",
+                    "magnitude": 75
+                }
+            },
+            "Lichen": {
+                "price": 5,
+                "description": "Lichen is a composite organism that arises from algae or cyanobacteria living among filaments of multiple fungi species in a mutualistic relationship.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "fongiqueBonus005",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "fongiqueMalus005",
+                    "magnitude": 70
+                }
+            },
+            "Oyster Mushroom": {
+                "price": 15,
+                "description": "Oyster mushrooms are a group of edible mushrooms with a distinctive shell-like shape. They are cultivated and consumed in many countries around the world.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "fongiqueBonus006",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "fongiqueMalus006",
+                    "magnitude": 80
+                }
+            },
+            "Hedgehog Mushroom": {
+                "price": 12,
+                "description": "Hedgehog mushrooms, also known as pied de mouton or sweet tooth mushrooms, are edible mushrooms characterized by their spiky underside.",
+                "rarity": "uncommon",
+                "bonus": {
+                    "id": "fongiqueBonus007",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "fongiqueMalus007",
+                    "magnitude": 80
+                }
+            },
+            "Chanterelle": {
+                "price": 8,
+                "description": "Chanterelle is a species of edible mushroom found in many parts of the world, characterized by its bright yellow color and trumpet-like shape.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "fongiqueBonus008",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "fongiqueMalus008",
+                    "magnitude": 70
+                }
+            },
+            "Mold": {
+                "price": 2,
+                "description": "Mold is a type of fungus that grows in the form of multicellular filaments called hyphae.",
+                "rarity": "common",
+                "bonus": {
+                    "id": "fongiqueBonus009",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "fongiqueMalus009",
+                    "magnitude": 65
+                }
+            },
+            "Phosphorescent Spores": {
+                "price": 50,
+                "description": "Phosphorescent spores are microscopic particles produced by certain fungi that emit light in darkness.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "fongiqueBonus010",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "fongiqueMalus010",
+                    "magnitude": 75
+                }
+            }
+        }
+    },
+    "rarity": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic"
+    ]
+}

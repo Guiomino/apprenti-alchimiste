@@ -1,0 +1,538 @@
+{
+    "ingredients": {
+        "mineral": {
+            "Soufre": {
+                "price": 8,
+                "description": "Le soufre est un élément chimique de symbole S et de numéro atomique 16. Il est abondant, multivalent et non métallique.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus001",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "mineralMalus001",
+                    "magnitude": 60
+                }
+            },
+            "Sel": {
+                "price": 1,
+                "description": "Le sel est un minéral composé principalement de chlorure de sodium (NaCl), un composé chimique appartenant à la classe plus large des sels.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "mineralBonus002",
+                    "magnitude": 45
+                },
+                "malus": {
+                    "id": "mineralMalus002",
+                    "magnitude": 55
+                }
+            },
+            "Pyrite": {
+                "price": 15,
+                "description": "La pyrite est un minéral sulfureux commun trouvé dans de nombreuses formations géologiques à travers le monde.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus003",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "mineralMalus003",
+                    "magnitude": 65
+                }
+            },
+            "Améthyste": {
+                "price": 25,
+                "description": "L'améthyste est un type de quartz violet. Son nom est dérivé du mot grec 'amethystos', qui signifie 'non intoxiqué'. Cela fait référence à la croyance selon laquelle la pierre pourrait prévenir l'ivresse.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "mineralBonus004",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "mineralMalus004",
+                    "magnitude": 70
+                }
+            },
+            "Sulfate de Potassium": {
+                "price": 12,
+                "description": "Le sulfate de potassium (K2SO4) est un sel cristallin blanc non inflammable soluble dans l'eau.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "mineralBonus005",
+                    "magnitude": 50
+                },
+                "malus": {
+                    "id": "mineralMalus005",
+                    "magnitude": 50
+                }
+            },
+            "Nugget d'Or": {
+                "price": 500,
+                "description": "Un nugget d'or est un morceau de métal précieux naturel. Les cours d'eau concentrent souvent des pépites et de l'or plus fin dans les placers. Les pépites sont récupérées par l'exploitation minière en placer, mais elles se trouvent également dans des dépôts résiduels où les veines ou filons aurifères sont altérés par les intempéries.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "mineralBonus006",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "mineralMalus006",
+                    "magnitude": 80
+                }
+            },
+            "Saphir": {
+                "price": 200,
+                "description": "Le saphir est une gemme précieuse, une variété de corindon, composée d'oxyde d'aluminium avec des traces d'éléments tels que le fer, le titane, le chrome, le cuivre ou le magnésium.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "mineralBonus007",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "mineraMBalus007",
+                    "magnitude": 75
+                }
+            },
+            "Mercure": {
+                "price": 1000,
+                "description": "Le mercure est un élément chimique de symbole Hg et de numéro atomique 80. Il est communément appelé mercure vif et était anciennement appelé hydrargyrum.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "mineralBonus008",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "mineralMalus008",
+                    "magnitude": 85
+                }
+            },
+            "Quartz": {
+                "price": 20,
+                "description": "Le quartz est un minéral dur et cristallin composé d'atomes de silicium et d'oxygène. Les atomes sont liés dans un cadre continu de tétraèdres de silicium-oxygène SiO4, chaque oxygène étant partagé entre deux tétraèdres, donnant une formule chimique globale de SiO2.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "mineralBonus009",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "mineralMalus009",
+                    "magnitude": 70
+                }
+            },
+            "Fluorite": {
+                "price": 30,
+                "description": "La fluorite est la forme minérale du fluorure de calcium, CaF2. Elle appartient aux minéraux halogénés. Elle cristallise dans un habit cubique isométrique, bien que des formes isométriques octaédriques et plus complexes ne soient pas rares.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "mineralBonus010",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "mineralMalus010",
+                    "magnitude": 60
+                }
+            }
+        },
+        "vegetal": {
+            "Feuille de Thé Noir": {
+                "price": 5,
+                "description": "Le thé noir est un type de thé plus oxydé que le thé oolong, vert et blanc. Le thé noir est généralement plus fort en saveur que les autres thés.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus001",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus001",
+                    "magnitude": 65
+                }
+            },
+            "Racine de Gingembre": {
+                "price": 3,
+                "description": "Le gingembre est une plante à fleurs dont le rhizome, appelé gingembre, est largement utilisé comme épice et remède populaire.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus002",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "vegetalMalus002",
+                    "magnitude": 60
+                }
+            },
+            "Feuille de Mélisse Citronnelle": {
+                "price": 4,
+                "description": "La mélisse citronnelle est une plante herbacée vivace de la famille des Lamiacées, originaire du centre-sud de l'Europe, du bassin méditerranéen, de l'Iran et de l'Asie centrale, mais maintenant naturalisée en Amérique et ailleurs.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "vegetalBonus003",
+                    "magnitude": 45
+                },
+                "malus": {
+                    "id": "vegetalMalus003",
+                    "magnitude": 55
+                }
+            },
+            "Graines de Lin": {
+                "price": 2,
+                "description": "Le lin, aussi connu sous le nom de lin commun ou lin cultivé, est une plante à fleurs, Linum usitatissimum, de la famille des Linaceae. Il est cultivé comme aliment et comme culture de fibres dans les régions du monde au climat tempéré.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus004",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "vegetalMalus004",
+                    "magnitude": 70
+                }
+            },
+            "Romarin": {
+                "price": 3,
+                "description": "Le romarin est une plante herbacée vivace avec des feuilles aromatiques, persistantes, en forme d'aiguilles et des fleurs blanches, roses, violettes ou bleues, originaire de la région méditerranéenne.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus005",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus005",
+                    "magnitude": 65
+                }
+            },
+            "Écorce de Bouleau": {
+                "price": 4,
+                "description": "L'écorce de bouleau, ou bouleau, est l'écorce de plusieurs bouleaux eurasiens et nord-américains du genre Betula. L'écorce résistante à l'eau et solide peut être facilement coupée, pliée et cousue, ce qui en fait un matériau de construction, d'artisanat et d'écriture précieux depuis la préhistoire.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "vegetalBonus006",
+                    "magnitude": 40
+                },
+                "malus": {
+                    "id": "vegetalMalus006",
+                    "magnitude": 60
+                }
+            },
+            "Gousse de Vanille": {
+                "price": 10,
+                "description": "La vanille est une épice dérivée des orchidées du genre Vanilla, principalement obtenue à partir des gousses de l'espèce mexicaine, la vanille à feuilles plates. Le mot vanille, dérivé de vainilla, le diminutif du mot espagnol vaina, se traduit simplement par 'petite gousse'.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "vegetalBonus007",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "vegetalMalus007",
+                    "magnitude": 80
+                }
+            },
+            "Gland": {
+                "price": 1,
+                "description": "Le gland, ou noix de chêne, est le fruit des chênes et de leurs proches parents. Il contient généralement une seule graine, enfermée dans une coque dure et coriace, et portée dans une cupule en forme de coupe.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus008",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "vegetalMalus008",
+                    "magnitude": 75
+                }
+            },
+            "Bulbe d'Oignon": {
+                "price": 2,
+                "description": "L'oignon, également connu sous le nom d'oignon bulbeux ou oignon commun, est un légume qui est l'espèce la plus largement cultivée du genre Allium.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "vegetalBonus009",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "vegetalMalus009",
+                    "magnitude": 70
+                }
+            },
+            "Pétale de Rose": {
+                "price": 6,
+                "description": "Une rose est une plante à fleurs vivace ligneuse du genre Rosa, de la famille des Rosaceae, ou la fleur qu'elle porte. Il existe plus de trois cents espèces et des dizaines de milliers de cultivars.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "vegetalBonus010",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "vegetalMalus010",
+                    "magnitude": 65
+                }
+            }
+        },
+        "animal": {
+            "Perle d'Huître": {
+                "price": 50,
+                "description": "Une perle d'huître, également connue sous le nom de perle, est un objet dur et brillant produit à l'intérieur du tissu mou (spécifiquement le manteau) d'un mollusque à coquille vivant ou d'un autre animal, comme un conulariid.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus001",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus001",
+                    "magnitude": 80
+                }
+            },
+            "Venin de Vipère Aspic": {
+                "price": 100,
+                "description": "Le venin de vipère aspic est la sécrétion toxique de la vipère aspic (Vipera aspis), un serpent venimeux trouvé dans le sud de l'Europe.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "animalBonus002",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "animalMalus002",
+                    "magnitude": 85
+                }
+            },
+            "Huile de Foie de Morue": {
+                "price": 20,
+                "description": "L'huile de foie de morue est un complément alimentaire dérivé du foie de la morue (Gadidae). Comme la plupart des huiles de poisson, elle contient les acides gras oméga-3 acide eicosapentaénoïque (EPA) et acide docosahexaénoïque (DHA).",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "animalBonus003",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "animalMalus003",
+                    "magnitude": 70
+                }
+            },
+            "Queue de Rat": {
+                "price": 5,
+                "description": "La queue d'un rat, un appendice long et flexible s'étendant depuis l'arrière-train de certains mammifères.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "animalBonus004",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "animalMalus004",
+                    "magnitude": 75
+                }
+            },
+            "Écaille de Poisson Arc-en-ciel": {
+                "price": 15,
+                "description": "Les écailles de poisson arc-en-ciel sont de petites plaques réfléchissantes et superposées qui recouvrent la peau du poisson arc-en-ciel, lui donnant son aspect brillant caractéristique.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus005",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus005",
+                    "magnitude": 80
+                }
+            },
+            "Sang de Blaireau": {
+                "price": 30,
+                "description": "Le sang de blaireau est le liquide circulant (plasma) dans le corps du blaireau, responsable de la livraison des substances nécessaires telles que les nutriments et l'oxygène aux cellules et du transport des déchets métaboliques loin de ces mêmes cellules.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "animalBonus006",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "animalMalus006",
+                    "magnitude": 65
+                }
+            },
+            "Gelée Royale": {
+                "price": 40,
+                "description": "La gelée royale est une sécrétion des abeilles ouvrières utilisée dans la nutrition des larves, ainsi que des reines adultes. Elle est sécrétée par les glandes de l'hypopharynx des abeilles ouvrières et nourrit toutes les larves de la colonie, quel que soit leur sexe ou leur caste.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus007",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "animalMalus007",
+                    "magnitude": 75
+                }
+            },
+            "Œil de Carpe": {
+                "price": 10,
+                "description": "L'œil d'une carpe, un poisson d'eau douce appartenant à la famille des Cyprinidae.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "animalBonus008",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "animalMalus008",
+                    "magnitude": 70
+                }
+            },
+            "Plume de Paon": {
+                "price": 25,
+                "description": "Les plumes de paon sont les plumes de queue irisées du paon mâle (Pavo cristatus), une grande espèce d'oiseau aux couleurs vives originaire d'Asie du Sud.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "animalBonus009",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "animalMalus009",
+                    "magnitude": 80
+                }
+            },
+            "Patte de Lapin": {
+                "price": 8,
+                "description": "Une patte de lapin, généralement de la patte arrière du lapin, est considérée comme un symbole de chance dans diverses cultures à travers le monde.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "animalBonus010",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "animalMalus010",
+                    "magnitude": 65
+                }
+            }
+        },
+        "fongique": {
+            "Shiitake": {
+                "price": 10,
+                "description": "Le shiitake est un champignon comestible originaire d'Asie de l'Est, cultivé et consommé dans de nombreux pays asiatiques.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "fongiqueBonus001",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "fongiqueMalus001",
+                    "magnitude": 65
+                }
+            },
+            "Champignon Amanite Phalloïde": {
+                "price": 500,
+                "description": "Le champignon amanite phalloïde, Amanita phalloides, est un champignon mortellement toxique qui est l'un des champignons vénéneux les plus toxiques de tous les champignons vénéneux connus. Il est originaire d'Europe et a été accidentellement introduit dans diverses autres régions du monde.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "fongiqueBonus002",
+                    "magnitude": 10
+                },
+                "malus": {
+                    "id": "fongiqueMalus002",
+                    "magnitude": 90
+                }
+            },
+            "Truffe Noire": {
+                "price": 1000,
+                "description": "La truffe noire, également connue sous le nom de truffe du Périgord, est une espèce de truffe originaire du sud de l'Europe. Elle est prisée comme délice culinaire et est utilisée dans divers plats gastronomiques.",
+                "rarity": "épique",
+                "bonus": {
+                    "id": "fongiqueBonus003",
+                    "magnitude": 15
+                },
+                "malus": {
+                    "id": "fongiqueMalus003",
+                    "magnitude": 85
+                }
+            },
+            "Champignon Porcini": {
+                "price": 20,
+                "description": "Les champignons porcini, également connus sous le nom de cèpes ou de bolets, sont des champignons comestibles très appréciés originaires d'Europe et d'Amérique du Nord.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "fongiqueBonus004",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "fongiqueMalus004",
+                    "magnitude": 75
+                }
+            },
+            "Lichen": {
+                "price": 5,
+                "description": "Le lichen est un organisme composite qui résulte de la présence d'algues ou de cyanobactéries vivant parmi les filaments de plusieurs espèces de champignons dans une relation mutualiste.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "fongiqueBonus005",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "fongiqueMalus005",
+                    "magnitude": 70
+                }
+            },
+            "Champignon Pleurote": {
+                "price": 15,
+                "description": "Les pleurotes sont un groupe de champignons comestibles ayant une forme distinctive en coquille. Ils sont cultivés et consommés dans de nombreux pays à travers le monde.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "fongiqueBonus006",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "fongiqueMalus006",
+                    "magnitude": 80
+                }
+            },
+            "Champignon Pied-de-Mouton": {
+                "price": 12,
+                "description": "Les champignons pied-de-mouton, également connus sous le nom de pieds-de-mouton ou de champignons sucrés, sont des champignons comestibles caractérisés par leur face inférieure épineuse.",
+                "rarity": "non commun",
+                "bonus": {
+                    "id": "fongiqueBonus007",
+                    "magnitude": 20
+                },
+                "malus": {
+                    "id": "fongiqueMalus007",
+                    "magnitude": 80
+                }
+            },
+            "Girolle": {
+                "price": 8,
+                "description": "La girolle est une espèce de champignon comestible que l'on trouve dans de nombreuses régions du monde, caractérisée par sa couleur jaune vif et sa forme de trompette.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "fongiqueBonus008",
+                    "magnitude": 30
+                },
+                "malus": {
+                    "id": "fongiqueMalus008",
+                    "magnitude": 70
+                }
+            },
+            "Moisissure": {
+                "price": 2,
+                "description": "La moisissure est un type de champignon qui pousse sous forme de filaments multicellulaires appelés hyphes.",
+                "rarity": "commun",
+                "bonus": {
+                    "id": "fongiqueBonus009",
+                    "magnitude": 35
+                },
+                "malus": {
+                    "id": "fongiqueMalus009",
+                    "magnitude": 65
+                }
+            },
+            "Spores Phosphorescentes": {
+                "price": 50,
+                "description": "Les spores phosphorescentes sont des particules microscopiques produites par certains champignons qui émettent de la lumière dans l'obscurité.",
+                "rarity": "rare",
+                "bonus": {
+                    "id": "fongiqueBonus010",
+                    "magnitude": 25
+                },
+                "malus": {
+                    "id": "fongiqueMalus010",
+                    "magnitude": 75
+                }
+            }
+        }
+    },
+    "rarity": [
+        "commun",
+        "non commun",
+        "rare",
+        "épique"
+    ]
+}
