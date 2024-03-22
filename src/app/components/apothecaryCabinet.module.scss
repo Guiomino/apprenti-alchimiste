@@ -1,0 +1,26 @@
+.apothecaryCabinet {
+  position: absolute;
+  width: 33%;
+  height: 600px;
+  background: linear-gradient(to top, #463b30, #635545);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px 10px 0px 0px;
+
+  div {
+    background-color: #574b40;
+    border: 1px solid black;
+    width: 90%;
+    height: 20%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #685a4c;
+    }
+  }
+}

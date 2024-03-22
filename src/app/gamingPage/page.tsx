@@ -1,6 +1,7 @@
 import styles from "./page.module.scss"
+import ApothecaryCabinetComponent from "../components/apothecaryCabinet"
 
-const mainPage = () => {
+const MainPage = () => {
     return (
         <>
             <div className={styles.gamingPage}>
@@ -9,8 +10,9 @@ const mainPage = () => {
 
                 <span>➡️ N&apos;hésite pas à me prodiguer tes conseils Karlito</span>
             </div>
+            <ApothecaryCabinetComponent />
         </>
     );
 };
 
-export default mainPage;
+export default MainPage;
