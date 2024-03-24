@@ -9,15 +9,15 @@ const ModalIngredients = () => {
                     <div className={styles.modalTop}>
                         <div className={styles.filterAndGoldAndClose}>
                             <button className={styles.filter}>Filtre</button>
-                            <span className={styles.gold}>- 3226 or -</span>
+                            <span className={styles.gold}>-- 🪙 3226 --</span>
                             <button className={styles.close}>X</button>
                         </div>
-                        <h2 className={styles.title}></h2>
+                        <h2 className={styles.title}>💎 MINERAL</h2>
                         <div className={styles.category}>
-                            <div className={styles.mineral}></div>
-                            <div className={styles.vegetal}></div>
-                            <div className={styles.animal}></div>
-                            <div className={styles.mushroom}></div>
+                            <button className={styles.mineral}>💎</button>
+                            <button className={styles.vegetal}>🪻</button>
+                            <button className={styles.animal}>🦝</button>
+                            <button className={styles.mushroom}>🍄</button>
                         </div>
                     </div>
 
