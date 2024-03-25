@@ -99,7 +99,38 @@
     // MIDDLE MODAL WINDOW
     .modalMiddle {
       height: 500px;
-      background-color: #ccc;
+      overflow: auto;
+
+      .ingredientCard {
+        padding: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        color: #665c54;
+        transition: 0.3s;
+        border-bottom: 1px solid black;
+
+        span {
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #49413b;
+        }
+        &:nth-child(even) {
+          background-color: #ccc;
+        }
+
+        &:nth-child(odd) {
+          background-color: #ddd;
+        }
+
+        &:last-child {
+          border-bottom: none; // NON MAIS POURQUOI CA FONCTIONNE PAS ????
+        }
+
+        &:hover {
+          background-color: #aabbc0;
+          cursor: pointer;
+        }
+      }
     }
 
     // BOTTOM MODAL WINDOWS

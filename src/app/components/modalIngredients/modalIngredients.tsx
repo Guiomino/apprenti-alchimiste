@@ -1,4 +1,6 @@
 // ModalIngredients.tsx
+import React from "react";
+import dataIngredients from "../../../data/ingredientsFR.json"
 import styles from "./modalIngredients.module.scss";
 
 interface ModalIngredientsProps {
@@ -24,7 +26,18 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     </div>
                 </div>
                 <div className={styles.modalMiddle}>
-                    <div className={styles.ingredientCard}></div>
+
+
+                    {Object.keys(dataIngredients.ingredients.mineral).map((mineralName, index) => (
+                        <div key={index} className={styles.ingredientCard}>
+                            <h3>{mineralName}</h3>
+                            <p><span>Price:</span> {dataIngredients.ingredients.mineral[mineralName].price}</p>
+                            <p><span>Description:</span> {dataIngredients.ingredients.mineral[mineralName].description}</p>
+                            <p><span>Rareté:</span> {dataIngredients.ingredients.mineral[mineralName].rarity}</p>
+                        </div>
+                    ))}
+
+
                     <div className={styles.scrollList}></div>
                 </div>
                 <div className={styles.modalBottom}>
