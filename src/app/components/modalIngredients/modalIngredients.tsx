@@ -12,6 +12,7 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
         <div className={styles.modalOverlay}>
             <div className={styles.modalWindow}>
                 <div className={styles.modalTop}>
+                    
                     <div className={styles.filterAndGoldAndClose}>
                         <button className={styles.filter}>Filtre</button>
                         <span className={styles.gold}>-- 🪙 3226 --</span>

@@ -1,22 +1,18 @@
 .modalOverlay {
-  // display: none;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   top: 0;
   background-color: #222222ee;
   z-index: 1;
 
-  .modalOverlay.active {
-    display: block;
-  }
-
   .modalWindow {
+    position: absolute;
     width: 500px;
     height: 800px;
     background-color: #f1f1f1;
-    margin-left: 50%;
-    margin-top: 50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 
     // TOP MODAL WINDOW
