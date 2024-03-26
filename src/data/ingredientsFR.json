@@ -66,9 +66,9 @@
                     "magnitude": 50
                 }
             },
-            "Nugget d'Or": {
+            "Pépite d'Or": {
                 "price": 500,
-                "description": "Un nugget d'or est un morceau de métal précieux naturel. Les cours d'eau concentrent souvent des pépites et de l'or plus fin dans les placers. Les pépites sont récupérées par l'exploitation minière en placer, mais elles se trouvent également dans des dépôts résiduels où les veines ou filons aurifères sont altérés par les intempéries.",
+                "description": "Une pépite d'or est un morceau de métal précieux naturel. Les cours d'eau concentrent souvent des pépites et de l'or plus fin dans les placers. Les pépites sont récupérées par l'exploitation minière en placer, mais elles se trouvent également dans des dépôts résiduels où les veines ou filons aurifères sont altérés par les intempéries.",
                 "rarity": "épique",
                 "bonus": {
                     "id": "mineralBonus006",

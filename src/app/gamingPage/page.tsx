@@ -1,5 +1,5 @@
-'use client'
-// page.tsx
+"use client"
+// gamingPage/page.tsx
 import { useState } from "react";
 import styles from "./page.module.scss";
 import ApothecaryCabinetComponent from "../components/apothecaryCabinet/apothecaryCabinet";
@@ -9,16 +9,21 @@ const GamingPage = () => {
 
     // HANDLE MODAL INGREDIENTS
     const [isModalIngredientsOpen, setIsModalIngredientsOpen] = useState(false);
-    const openIngredientsModal = () => {
+    const [ingredientType, setIngredientType] = useState('');
+
+    const openIngredientsModal = (type: string) => {
         setIsModalIngredientsOpen(true);
+        setIngredientType(type);
     };
+
     const closeIngredientsModal = () => {
         setIsModalIngredientsOpen(false);
+        setIngredientType('');
     };
 
     return (
         <>
-            {isModalIngredientsOpen && <ModalIngredients closeIngredientsModal={closeIngredientsModal} />}
+            {isModalIngredientsOpen && <ModalIngredients closeIngredientsModal={closeIngredientsModal} ingredientType={ingredientType} />}
             <div className={styles.gamingPage}>
                 <h1>Page du jeu en cours</h1>
                 <p>Ceci est un composant typescript.</p>
