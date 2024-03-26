@@ -38,7 +38,7 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                         <span className={styles.gold}>-- 🪙 3226 --</span>
                         <button className={styles.close} onClick={closeIngredientsModal}>X</button>
                     </div>
-                    <h2 className={styles.title}>💎 {ingredientType.toUpperCase()}</h2>
+                    <h2 className={styles.title}>💎 {ingredientType}</h2>
                     <div className={styles.category}>
                         <button className={styles.mineral}>💎</button>
                         <button className={styles.vegetal}>🪻</button>
@@ -50,19 +50,20 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     {Object.keys(ingredients[ingredientType]).map((ingredientName, index) => (
                         <div key={index} className={styles.ingredientCard}>
                             <h3>{ingredientName}</h3>
-                            <p><span>Price:</span> {ingredients[ingredientType][ingredientName].price}</p>
-                            <p><span>Description:</span> {ingredients[ingredientType][ingredientName].description}</p>
-                            <p><span>Rareté:</span> {ingredients[ingredientType][ingredientName].rarity}</p>
+                            <p><span>Prix :</span> {ingredients[ingredientType][ingredientName].price}</p>
+                            <p><span>Description :</span> {ingredients[ingredientType][ingredientName].description}</p>
+                            <p><span>Rareté :</span> {ingredients[ingredientType][ingredientName].rarity}</p>
                         </div>
                     ))}
                     <div className={styles.scrollList}></div>
                 </div>
                 <div className={styles.modalBottom}>
-                    <div className={styles.costAndNumberOfIngreients}>
-                        <div className={styles.cost}></div>
-                        <div className={styles.numberOfIngredients}></div>
+                    <div className={styles.settingsAndCostAndNumberOfIngreients}>
+                        <button className={styles.settings}>⚙️</button>
+                        <div className={styles.cost}>💰 Coût : 🪙 236 </div>
+                        <div className={styles.numberOfIngredients}>3</div>
                     </div>
-                    <div className={styles.addButton}></div>
+                    <button className={styles.addButton}>Mélanger</button>
                 </div>
             </div>
         </div>

@@ -9,8 +9,7 @@
   .modalWindow {
     position: absolute;
     width: 500px;
-    height: 800px;
-    background-color: #f1f1f1;
+    border: 2px solid #00aeff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -26,8 +25,8 @@
     }
     .modalTop {
       gap: 20px;
-      background-color: #eee;
-      border-bottom: 1px solid black;
+      background-color: #333;
+      border-bottom: 2px solid #00aeff;
 
       .filterAndGoldAndClose {
         width: 100%;
@@ -74,6 +73,7 @@
         align-items: center;
         justify-content: center;
         color: #00aeff;
+        text-transform: uppercase;
       }
 
       .category {
@@ -96,14 +96,17 @@
     .modalMiddle {
       height: 500px;
       overflow: auto;
+      background: radial-gradient(#00aeff, #001c29);
 
       .ingredientCard {
-        padding: 20px;
+        padding: 10px;
+        margin: 5px 10px;
         font-size: 15px;
         font-weight: 400;
         color: #665c54;
         transition: 0.3s;
-        border-bottom: 1px solid black;
+        border: 2px solid #00aeff;
+        border-radius: 5px;
 
         span {
           font-weight: 600;
@@ -118,10 +121,6 @@
           background-color: #ddd;
         }
 
-        &:last-child {
-          border-bottom: none; // NON MAIS POURQUOI CA FONCTIONNE PAS ????
-        }
-
         &:hover {
           background-color: #aabbc0;
           cursor: pointer;
@@ -132,8 +131,57 @@
     // BOTTOM MODAL WINDOWS
     .modalBottom {
       height: 100px;
-      background-color: #eee;
-      border-top: 1px solid black;
+      border-top: 2px solid #00aeff;
+
+      .settingsAndCostAndNumberOfIngreients {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #00aeff;
+
+        .cost {
+          color: #fff;
+        }
+        .settings,
+        .numberOfIngredients {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          color: white;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: #00aeff;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            background-color: #65c6f3;
+          }
+        }
+      }
+      .addButton {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #7a4e3a;
+        border: none;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3a7a3d;
+        }
+      }
     }
   }
 }

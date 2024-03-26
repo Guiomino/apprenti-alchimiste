@@ -8,10 +8,10 @@ interface ApothecaryCabinetProps {
 const ApothecaryCabinetComponent: React.FC<ApothecaryCabinetProps> = ({ openIngredientsModal }) => {
     return (
         <div className={styles.apothecaryCabinet}>
-            <button className={styles.mineral} onClick={() => openIngredientsModal('mineral')}>Mineral</button>
-            <button className={styles.vegetal} onClick={() => openIngredientsModal('vegetal')}>Vegetal</button>
+            <button className={styles.mineral} onClick={() => openIngredientsModal('mineral')}>Minéral</button>
+            <button className={styles.vegetal} onClick={() => openIngredientsModal('vegetal')}>Végétal</button>
             <button className={styles.animal} onClick={() => openIngredientsModal('animal')}>Animal</button>
-            <button className={styles.mushroom} onClick={() => openIngredientsModal('mushroom')}>Mushroom</button>
+            <button className={styles.mushroom} onClick={() => openIngredientsModal('mushroom')}>Champignon</button>
         </div>
     );
 };
