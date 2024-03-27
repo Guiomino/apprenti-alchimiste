@@ -23,7 +23,7 @@ const GamingPage = () => {
 
     return (
         <>
-            {isModalIngredientsOpen && <ModalIngredients closeIngredientsModal={closeIngredientsModal} ingredientType={ingredientType} />}
+            {isModalIngredientsOpen &&  <ModalIngredients ingredientType={ingredientType} closeIngredientsModal={closeIngredientsModal} setIngredientType={setIngredientType} />}
             <div className={styles.gamingPage}>
                 <h1>Page du jeu en cours</h1>
                 <p>Ceci est un composant typescript.</p>
