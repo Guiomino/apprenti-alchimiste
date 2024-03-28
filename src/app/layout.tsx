@@ -1,29 +1,28 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
+import { IngredientProvider } from "@/Provider/IngredientContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Crée tes potions",
-  description: "Choisis des ingrédients et crée tes potions",
-  keywords: [
-    "Jeu",
-    "Merge",
-    "Reflexion"
-  ],
+    title: "Crée tes potions",
+    description: "Choisis des ingrédients et crée tes potions",
+    keywords: ["Jeu", "Merge", "Reflexion"],
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="fr">
-      <body className={inter.className}>
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="fr">
+            <body className={inter.className}>
+                <IngredientProvider>
+                    <main>{children}</main>
+                </IngredientProvider>
+            </body>
+        </html>
+    );
 }

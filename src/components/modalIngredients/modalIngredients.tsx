@@ -1,8 +1,12 @@
+"use client"
+
 import React from "react";
 import dataIngredients from "@/data/ingredientsFR.json"
 import styles from "./modalIngredients.module.scss";
+import { useIngredient } from "@/Provider/IngredientContext";
+import Ingredient from "@/OOP/IngredientClass";
 
-interface Ingredient {
+interface IIngredient {
     price: number;
     description: string;
     rarity: string;
@@ -11,7 +15,7 @@ interface Ingredient {
 }
 
 interface IngredientsData {
-    [key: string]: { [key: string]: Ingredient };
+    [key: string]: { [key: string]: IIngredient };
 }
 
 interface ModalIngredientsProps {
@@ -27,7 +31,8 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
         return null; // Retourner null ou tout autre élément indiquant une erreur
     }
 
-    const ingredients: IngredientsData = dataIngredients.ingredients;
+    const ingredientsData: IngredientsData = dataIngredients.ingredients;
+    const { ingredients, addIngredient } = useIngredient();
 
     return (
         <div className={styles.modalOverlay}>
@@ -47,12 +52,12 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     </div>
                 </div>
                 <div className={styles.modalMiddle}>
-                    {Object.keys(ingredients[ingredientType]).map((ingredientName, index) => (
-                        <div key={index} className={styles.ingredientCard}>
+                    {Object.keys(ingredientsData[ingredientType]).map((ingredientName, index) => (
+                        <div key={index} className={styles.ingredientCard} onClick={() => addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1))}>
                             <h3>{ingredientName}</h3>
-                            <p><span>Prix :</span> {ingredients[ingredientType][ingredientName].price}</p>
-                            <p><span>Description :</span> {ingredients[ingredientType][ingredientName].description}</p>
-                            <p><span>Rareté :</span> {ingredients[ingredientType][ingredientName].rarity}</p>
+                            <p><span>Prix :</span> {ingredientsData[ingredientType][ingredientName].price}</p>
+                            <p><span>Description :</span> {ingredientsData[ingredientType][ingredientName].description}</p>
+                            <p><span>Rareté :</span> {ingredientsData[ingredientType][ingredientName].rarity}</p>
                         </div>
                     ))}
                     <div className={styles.scrollList}></div>

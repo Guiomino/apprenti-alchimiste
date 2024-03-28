@@ -1,15 +1,14 @@
-"use client"
+"use client";
 // gamingPage/page.tsx
 import { useState } from "react";
 import styles from "./page.module.scss";
-import ApothecaryCabinetComponent from "../components/apothecaryCabinet/apothecaryCabinet";
-import ModalIngredients from "../components/modalIngredients/modalIngredients";
+import ApothecaryCabinetComponent from "@/components/apothecaryCabinet/apothecaryCabinet";
+import ModalIngredients from "@/components/modalIngredients/modalIngredients";
 
 const GamingPage = () => {
-
     // HANDLE MODAL INGREDIENTS
     const [isModalIngredientsOpen, setIsModalIngredientsOpen] = useState(false);
-    const [ingredientType, setIngredientType] = useState('');
+    const [ingredientType, setIngredientType] = useState("");
 
     const openIngredientsModal = (type: string) => {
         setIsModalIngredientsOpen(true);
@@ -18,18 +17,30 @@ const GamingPage = () => {
 
     const closeIngredientsModal = () => {
         setIsModalIngredientsOpen(false);
-        setIngredientType('');
+        setIngredientType("");
     };
+
+    // setIngredient(new Ingredient("Champignon", 10, 1));
 
     return (
         <>
-            {isModalIngredientsOpen &&  <ModalIngredients ingredientType={ingredientType} closeIngredientsModal={closeIngredientsModal} setIngredientType={setIngredientType} />}
+            {isModalIngredientsOpen && (
+                <ModalIngredients
+                    ingredientType={ingredientType}
+                    closeIngredientsModal={closeIngredientsModal}
+                    setIngredientType={setIngredientType}
+                />
+            )}
             <div className={styles.gamingPage}>
                 <h1>Page du jeu en cours</h1>
                 <p>Ceci est un composant typescript.</p>
-                <span>➡️ N&apos;hésite pas à me prodiguer tes conseils Karlito</span>
+                <span>
+                    {"➡️ N'hésite pas à me prodiguer tes conseils Karlito"}
+                </span>
             </div>
-            <ApothecaryCabinetComponent openIngredientsModal={openIngredientsModal} />
+            <ApothecaryCabinetComponent
+                openIngredientsModal={openIngredientsModal}
+            />
         </>
     );
 };
