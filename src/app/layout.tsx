@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import { IngredientProvider } from "@/Provider/IngredientContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,7 @@ export default function RootLayout({
                 <IngredientProvider>
                     <main>{children}</main>
                 </IngredientProvider>
+                <ToastContainer />
             </body>
         </html>
     );

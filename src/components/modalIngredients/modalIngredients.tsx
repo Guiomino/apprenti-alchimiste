@@ -1,10 +1,11 @@
 "use client"
 
 import React from "react";
-import dataIngredients from "@/data/ingredientsFR.json"
+import dataIngredients from "@/data/ingredientsEN.json"
 import styles from "./modalIngredients.module.scss";
 import { useIngredient } from "@/Provider/IngredientContext";
-import Ingredient from "@/OOP/IngredientClass";
+import Ingredient, { IngredientType, parseIngredientRarity } from "@/OOP/IngredientClass";
+import { toast } from "react-toastify";
 
 interface IIngredient {
     price: number;
@@ -20,16 +21,16 @@ interface IngredientsData {
 
 interface ModalIngredientsProps {
     closeIngredientsModal: () => void;
-    ingredientType: string;
-    setIngredientType: (type: string) => void; // Ajout de la fonction pour définir la catégorie
+    ingredientType: IngredientType;
+    setIngredientType: (type: IngredientType) => void; // Ajout de la fonction pour définir la catégorie
 }
 
 const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsModal, ingredientType, setIngredientType }) => {
     // Vérifier si ingredientType est une clé valide
-    if (!(ingredientType in dataIngredients.ingredients)) {
-        console.error(`Type d'ingrédient invalide: ${ingredientType}`);
-        return null; // Retourner null ou tout autre élément indiquant une erreur
-    }
+    // if (!(ingredientType in dataIngredients.ingredients)) {
+    //     console.error(`Type d'ingrédient invalide: ${ingredientType}`);
+    //     return null; // Retourner null ou tout autre élément indiquant une erreur
+    // }
 
     const { ingredients, addIngredient } = useIngredient();
     const ingredientsData: IngredientsData = dataIngredients.ingredients;
@@ -45,10 +46,10 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     </div>
                     <h2 className={styles.title}>💎 {ingredientType}</h2>
                     <div className={styles.category}>
-                        <button className={styles.mineral} onClick={() => setIngredientType('mineral')}>💎</button>
-                        <button className={styles.vegetal} onClick={() => setIngredientType('vegetal')}>🪻</button>
-                        <button className={styles.animal} onClick={() => setIngredientType('animal')}>🦝</button>
-                        <button className={styles.mushroom} onClick={() => setIngredientType('mushroom')}>🍄</button>
+                        <button className={styles.mineral} onClick={() => setIngredientType(IngredientType.MINERAL)}>💎</button>
+                        <button className={styles.vegetal} onClick={() => setIngredientType(IngredientType.VEGETAL)}>🪻</button>
+                        <button className={styles.animal} onClick={() => setIngredientType(IngredientType.ANIMAL)}>🦝</button>
+                        <button className={styles.mushroom} onClick={() => setIngredientType(IngredientType.MUSHROOM)}>🍄</button>
                     </div>
                 </div>
 
@@ -56,7 +57,13 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
 
                 <div className={styles.modalMiddle}>
                     {Object.keys(ingredientsData[ingredientType]).map((ingredientName, index) => (
-                        <div key={index} className={styles.ingredientCard} onClick={() => addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1))}>
+                        <div key={index} className={styles.ingredientCard} onClick={() => {
+                            if (ingredients.length < 3) {
+                                addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1, ingredientType, parseIngredientRarity(ingredientsData[ingredientType][ingredientName].rarity)));
+                            }else {
+                                toast.error("Vous ne pouvez pas ajouter plus de 3 ingrédients");
+                            }
+                        }}>
                             <h3><span>🍁</span>{ingredientName}</h3>
                             <p><span>Prix :</span> {ingredientsData[ingredientType][ingredientName].price}</p>
                             <p><span>Description :</span> {ingredientsData[ingredientType][ingredientName].description}</p>
@@ -72,7 +79,9 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     <div className={styles.selectionCardsContainer}>
                         <h3>{"Selection d'ingrédients"}</h3>
 
-                        <div className={`${styles.selectionCard} ${styles.selectionCard1}`}>
+
+                        
+                        {/* <div className={`${styles.selectionCard} ${styles.selectionCard1}`}>
                             <div className={styles.selectionCardCategory}>💎</div>
                             <div className={styles.selectionCardDetails}>
                                 <h4>🪨 Pyrite</h4>
@@ -103,7 +112,7 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                                     <div className={styles.rerety}></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className={styles.cost}>💰 Coût total : 🪙 18 </div>
                     </div>
                     <button className={styles.addButton}>✨ Mélanger ✨</button>

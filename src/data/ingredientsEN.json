@@ -17,7 +17,7 @@
             "Salt": {
                 "price": 1,
                 "description": "Salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts.",
-                "rarity": "commun",
+                "rarity": "common",
                 "bonus": {
                     "id": "mineralBonus002",
                     "magnitude": 45
