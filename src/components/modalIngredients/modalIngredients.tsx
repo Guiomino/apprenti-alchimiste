@@ -31,8 +31,8 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
         return null; // Retourner null ou tout autre élément indiquant une erreur
     }
 
-    const ingredientsData: IngredientsData = dataIngredients.ingredients;
     const { ingredients, addIngredient } = useIngredient();
+    const ingredientsData: IngredientsData = dataIngredients.ingredients;
 
     return (
         <div className={styles.modalOverlay}>
@@ -51,10 +51,13 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                         <button className={styles.mushroom} onClick={() => setIngredientType('mushroom')}>🍄</button>
                     </div>
                 </div>
+
+
+
                 <div className={styles.modalMiddle}>
                     {Object.keys(ingredientsData[ingredientType]).map((ingredientName, index) => (
                         <div key={index} className={styles.ingredientCard} onClick={() => addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1))}>
-                            <h3>{ingredientName}</h3>
+                            <h3><span>🍁</span>{ingredientName}</h3>
                             <p><span>Prix :</span> {ingredientsData[ingredientType][ingredientName].price}</p>
                             <p><span>Description :</span> {ingredientsData[ingredientType][ingredientName].description}</p>
                             <p><span>Rareté :</span> {ingredientsData[ingredientType][ingredientName].rarity}</p>
@@ -62,11 +65,46 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     ))}
                     <div className={styles.scrollList}></div>
                 </div>
+
+
+
                 <div className={styles.modalBottom}>
-                    <div className={styles.settingsAndCostAndNumberOfIngreients}>
-                        <button className={styles.settings}>⚙️</button>
-                        <div className={styles.cost}>💰 Coût : 🪙 236 </div>
-                        <div className={styles.numberOfIngredients}>🌿 3</div>
+                    <div className={styles.selectionCardsContainer}>
+                        <h3>{"Selection d'ingrédients"}</h3>
+
+                        <div className={`${styles.selectionCard} ${styles.selectionCard1}`}>
+                            <div className={styles.selectionCardCategory}>💎</div>
+                            <div className={styles.selectionCardDetails}>
+                                <h4>🪨 Pyrite</h4>
+                                <div className={styles.selectionCardDetailsPriceAndRarety}>
+                                    <div className={styles.price}>Prix : 🪙 15 </div>
+                                    <div className={styles.rerety}>Rareté : rare</div>
+                                </div>
+                                <button className={styles.closeSelectionButton}>X</button>
+                            </div>
+                        </div>
+                        <div className={`${styles.selectionCard} ${styles.selectionCard2}`}>
+                            <div className={styles.selectionCardCategory}>🪻</div>
+                            <div className={styles.selectionCardDetails}>
+                                <h4>🌿 Romarin</h4>
+                                <div className={styles.selectionCardDetailsPriceAndRarety}>
+                                    <div className={styles.price}>Prix : 🪙 3 </div>
+                                    <div className={styles.rerety}>Rareté : commun</div>
+                                </div>
+                                <button className={styles.closeSelectionButton}>X</button>
+                            </div>
+                        </div>
+                        <div className={`${styles.selectionCard} ${styles.selectionCard3}`}>
+                            <div className={styles.selectionCardCategory}>3</div>
+                            <div className={styles.selectionCardDetails}>
+                                <h4>Vide</h4>
+                                <div className={styles.selectionCardDetailsPriceAndRarety}>
+                                    <div className={styles.price}></div>
+                                    <div className={styles.rerety}></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.cost}>💰 Coût total : 🪙 18 </div>
                     </div>
                     <button className={styles.addButton}>✨ Mélanger ✨</button>
                 </div>
