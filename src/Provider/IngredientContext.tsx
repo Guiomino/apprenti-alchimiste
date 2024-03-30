@@ -6,7 +6,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 interface IngredientContextType {
     ingredients: Ingredient[];
     addIngredient: (ingredient: Ingredient) => void;
-    removeIngredient: (name: string) => void;
+    removeIngredient: (ingredient: Ingredient) => void;
 };
 
 const IngredientContext = createContext<IngredientContextType>({} as IngredientContextType);
@@ -27,9 +27,9 @@ export const IngredientProvider = ({ children }: IngredientProviderProps) => {
         setIngredients([...ingredients, ingredient]);
     };
 
-    const removeIngredient = (name: string) => {
-        setIngredients(ingredients.filter((ingredient) => ingredient.name !== name));
-    };
+    const removeIngredient = (ingredient: Ingredient) => {
+        setIngredients(ingredients.filter((i) => i.name !== ingredient.name));
+    }
 
     return (
         <IngredientContext.Provider value={{ ingredients, addIngredient, removeIngredient }}>
