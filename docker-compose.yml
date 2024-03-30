@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: apprenti_alchimiste
+      MYSQL_USER: apprenti_alchimiste
+      MYSQL_PASSWORD: apprenti_alchimiste
+    ports:
+      - "3306:3306"
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  db:

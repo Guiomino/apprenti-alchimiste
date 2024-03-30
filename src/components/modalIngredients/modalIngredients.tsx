@@ -30,9 +30,9 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
     // if (!(ingredientType in dataIngredients.ingredients)) {
     //     console.error(`Type d'ingrédient invalide: ${ingredientType}`);
     //     return null; // Retourner null ou tout autre élément indiquant une erreur
-    // }
+    // } Pas besoin de vérifier normalement
 
-    const { ingredients, addIngredient } = useIngredient();
+    const { ingredients, addIngredient, removeIngredient } = useIngredient();
     const ingredientsData: IngredientsData = dataIngredients.ingredients;
 
     return (
@@ -79,41 +79,29 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     <div className={styles.selectionCardsContainer}>
                         <h3>{"Selection d'ingrédients"}</h3>
 
-
-                        
-                        {/* <div className={`${styles.selectionCard} ${styles.selectionCard1}`}>
-                            <div className={styles.selectionCardCategory}>💎</div>
-                            <div className={styles.selectionCardDetails}>
-                                <h4>🪨 Pyrite</h4>
-                                <div className={styles.selectionCardDetailsPriceAndRarety}>
-                                    <div className={styles.price}>Prix : 🪙 15 </div>
-                                    <div className={styles.rerety}>Rareté : rare</div>
+                        {
+                            ingredients.map((ingredient, index) => (
+                                <div key={index} className={styles.selectionCard}>
+                                    <div className={styles.selectionCardCategory}>
+                                        {
+                                            ingredient.getIngredientType() === IngredientType.MINERAL ? "💎" :
+                                            ingredient.getIngredientType() === IngredientType.VEGETAL ? "🪻" :
+                                            ingredient.getIngredientType() === IngredientType.ANIMAL ? "🦝" :
+                                            ingredient.getIngredientType() === IngredientType.MUSHROOM ? "🍄" : null
+                                        }
+                                    </div>
+                                    <div className={styles.selectionCardDetails}>
+                                        <h4>{ingredient.getIngredientName()}</h4>
+                                        <div className={styles.selectionCardDetailsPriceAndRarety}>
+                                            <div className={styles.price}>Prix : 🪙 {ingredient.getIngredientPrice()}</div>
+                                            <div className={styles.rerety}>Rareté : {ingredient.getIngredientRarity()}</div>
+                                        </div>
+                                        <button className={styles.closeSelectionButton} onClick={() => removeIngredient(ingredient)}>X</button>
+                                    </div>
                                 </div>
-                                <button className={styles.closeSelectionButton}>X</button>
-                            </div>
-                        </div>
-                        <div className={`${styles.selectionCard} ${styles.selectionCard2}`}>
-                            <div className={styles.selectionCardCategory}>🪻</div>
-                            <div className={styles.selectionCardDetails}>
-                                <h4>🌿 Romarin</h4>
-                                <div className={styles.selectionCardDetailsPriceAndRarety}>
-                                    <div className={styles.price}>Prix : 🪙 3 </div>
-                                    <div className={styles.rerety}>Rareté : commun</div>
-                                </div>
-                                <button className={styles.closeSelectionButton}>X</button>
-                            </div>
-                        </div>
-                        <div className={`${styles.selectionCard} ${styles.selectionCard3}`}>
-                            <div className={styles.selectionCardCategory}>3</div>
-                            <div className={styles.selectionCardDetails}>
-                                <h4>Vide</h4>
-                                <div className={styles.selectionCardDetailsPriceAndRarety}>
-                                    <div className={styles.price}></div>
-                                    <div className={styles.rerety}></div>
-                                </div>
-                            </div>
-                        </div> */}
-                        <div className={styles.cost}>💰 Coût total : 🪙 18 </div>
+                            ))
+                        }
+                        <div className={styles.cost}>💰 Coût total : 🪙 { ingredients.reduce((total, ingredient) => total + ingredient.getIngredientPrice(), 0)} </div>
                     </div>
                     <button className={styles.addButton}>✨ Mélanger ✨</button>
                 </div>
