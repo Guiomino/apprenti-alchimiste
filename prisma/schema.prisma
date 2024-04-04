@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RARITY {
+  COMMON
+  UNCOMMON
+  RARE
+  EPIC
+  LEGENDARY
+}
+
+model User {
+  id         String   @id @unique @default(cuid())
+  username   String   @unique @db.VarChar(30)
+  password   String   @db.VarChar(72)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Ingredient {
+  id                 Int              @id @unique @default(autoincrement())
+  name               String           @unique @db.VarChar(50)
+  description        String           @db.VarChar(150)
+  rarity             RARITY
+  MarketIngredient   MarketIngredient?
+  marketIngredientId Int              @unique
+  created_at         DateTime         @default(now())
+}
+
+model MarketIngredient {
+  id         Int         @id @unique @default(autoincrement())
+  Ingredient Ingredient  @relation(fields: [ingredientId], references: [id])
+  ingredientId Int       @unique
+  price      Int
+  quantity   Int
+  created_at DateTime    @default(now())
+  updated_at DateTime    @updatedAt
+}
