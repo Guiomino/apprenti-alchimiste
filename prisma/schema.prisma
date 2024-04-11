@@ -9,7 +9,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -21,30 +21,105 @@ enum RARITY {
   LEGENDARY
 }
 
+enum VALUE_TYPE {
+  PERCENTAGE
+  POINT
+}
+
+enum LEVEL_TYPE {
+  Character
+  Table
+  Stock
+}
+
 model User {
   id         String   @id @unique @default(cuid())
   username   String   @unique @db.VarChar(30)
   password   String   @db.VarChar(72)
+  inventory  Potion[]
+  level      Level?
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
 
+model Level {
+  id                      Int      @id @unique @default(autoincrement())
+  level_name_user         String
+  level_name_table        String
+  level_name_cabinet      String
+  level_user              Int      @unique
+  level_table             Int      @unique
+  level_cabinet           Int      @unique
+  next_level_cost_user    Int
+  next_level_cost_table   Int
+  next_level_cost_cabinet Int
+  User                    User     @relation(fields: [userId], references: [id])
+  userId                  String   @unique
+  created_at              DateTime @default(now())
+  updated_at              DateTime @updatedAt
+}
+
+model Bonus {
+  id          Int          @id @unique @default(autoincrement())
+  name        String       @db.VarChar(50)
+  value       Int
+  value_type  VALUE_TYPE
+  ingredients Ingredient[]
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+}
+
+model Malus {
+  id          Int          @id @unique @default(autoincrement())
+  name        String       @db.VarChar(50)
+  value       Int
+  value_type  VALUE_TYPE
+  ingredients Ingredient[]
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+}
+
 model Ingredient {
-  id                 Int              @id @unique @default(autoincrement())
-  name               String           @unique @db.VarChar(50)
-  description        String           @db.VarChar(150)
+  id                 Int               @id @unique @default(autoincrement())
+  name               String            @unique @db.VarChar(50)
+  description        String            @db.VarChar(150)
   rarity             RARITY
+  Bonus              Bonus             @relation(fields: [bonusId], references: [id], onDelete: Cascade)
+  bonusId            Int
+  Malus              Malus             @relation(fields: [malusId], references: [id], onDelete: Cascade)
+  malusId            Int
   MarketIngredient   MarketIngredient?
-  marketIngredientId Int              @unique
-  created_at         DateTime         @default(now())
+  marketIngredientId Int               @unique
+  Potion             Potion?           @relation(fields: [potionId], references: [id])
+  potionId           Int?
+  created_at         DateTime          @default(now())
+  updated_at         DateTime          @updatedAt
 }
 
 model MarketIngredient {
-  id         Int         @id @unique @default(autoincrement())
-  Ingredient Ingredient  @relation(fields: [ingredientId], references: [id])
-  ingredientId Int       @unique
-  price      Int
-  quantity   Int
-  created_at DateTime    @default(now())
-  updated_at DateTime    @updatedAt
+  id           Int        @id @unique @default(autoincrement())
+  Ingredient   Ingredient @relation(fields: [ingredientId], references: [id])
+  ingredientId Int        @unique
+  price        Int
+  quantity     Int
+  created_at   DateTime   @default(now())
+  updated_at   DateTime   @updatedAt
+}
+
+model Potion {
+  id          Int          @id @unique @default(autoincrement())
+  name        String       @unique @db.VarChar(50)
+  description String       @db.VarChar(150)
+  ingredients Ingredient[]
+  User        User[]
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+}
+
+model Update {
+  id          Int      @id @unique @default(autoincrement())
+  title       String   @unique @db.VarChar(50)
+  description String   @db.MediumText
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
 }
