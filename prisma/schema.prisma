@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum RARITY {
+enum RARITY_TYPE {
   COMMON
   UNCOMMON
   RARE
@@ -27,9 +27,16 @@ enum VALUE_TYPE {
 }
 
 enum LEVEL_TYPE {
-  Character
-  Table
-  Stock
+  CHARACTER
+  TABLE
+  STOCK
+}
+
+enum POTION_STATUS {
+  CREATED
+  IN_PROGRESS
+  COMPLETE
+  VERIFIED
 }
 
 model User {
@@ -83,7 +90,7 @@ model Ingredient {
   id                 Int               @id @unique @default(autoincrement())
   name               String            @unique @db.VarChar(50)
   description        String            @db.VarChar(150)
-  rarity             RARITY
+  rarity             RARITY_TYPE
   Bonus              Bonus             @relation(fields: [bonusId], references: [id], onDelete: Cascade)
   bonusId            Int
   Malus              Malus             @relation(fields: [malusId], references: [id], onDelete: Cascade)
@@ -107,13 +114,27 @@ model MarketIngredient {
 }
 
 model Potion {
-  id          Int          @id @unique @default(autoincrement())
-  name        String       @unique @db.VarChar(50)
-  description String       @db.VarChar(150)
+  id          Int           @id @unique @default(autoincrement())
+  name        String        @unique @db.VarChar(50)
+  description String        @db.VarChar(150)
   ingredients Ingredient[]
+  alterations Alteration[]
   User        User[]
-  created_at  DateTime     @default(now())
-  updated_at  DateTime     @updatedAt
+  created_at  DateTime      @default(now())
+  updated_at  DateTime      @updatedAt
+  status      POTION_STATUS @default(CREATED)
+}
+
+model Alteration {
+  id              Int      @id @unique @default(autoincrement())
+  name            String   @unique
+  description     String?  @db.VarChar(150)
+  cost            Int
+  upperPercentage Int
+  lowerPercentage Int
+  potions         Potion[]
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
 }
 
 model Update {
