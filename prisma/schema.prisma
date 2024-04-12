@@ -137,6 +137,18 @@ model Alteration {
   updated_at      DateTime @updatedAt
 }
 
+model Client {
+  id           Int      @id @unique @default(autoincrement())
+  gender       Int // 0 = women; 1 = men
+  avatar       String //img url according gender
+  name         String // Name according to gender
+  request      String // List max 3 potions type x number of each potion
+  satisfaction Int // 3 levels of satisfaction: dissatisfied, neutral, happy
+  countdown    Int // Waiting time to obtain the potion(s)
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+}
+
 model Update {
   id          Int      @id @unique @default(autoincrement())
   title       String   @unique @db.VarChar(50)
