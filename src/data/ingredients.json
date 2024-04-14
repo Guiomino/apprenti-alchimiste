@@ -1,0 +1,705 @@
+{
+    "ingredients": {
+      "Quartz": {
+        "price": 100,
+        "description": "A transparent crystal with multiple facets. It emits a soft and soothing glow, known for its healing and purifying properties.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Quartz.svg",
+        "bonus": {
+          "name": "Mild Healing",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Skin Irritation",
+          "magnitude": 40
+        }
+      },
+      "Feldspar": {
+        "price": 80,
+        "description": "A crystalline rock with various hues. Known for its ability to amplify magical powers, but can cause dizziness when handled for too long.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Feldspar.svg",
+        "bonus": {
+          "name": "Increased Magical Power",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Dizziness",
+          "magnitude": 50
+        }
+      },
+      "Calcite": {
+        "price": 150,
+        "description": "A shiny stone with multiple colors, often used to stabilize emotions. However, prolonged exposure can cause headaches.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Calcite.svg",
+        "bonus": {
+          "name": "Emotional Stabilization",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Headaches",
+          "magnitude": 30
+        }
+      },
+      "Gypsum": {
+        "price": 200,
+        "description": "A soft stone, used for centuries to promote relaxation and mental clarity. However, excessive use can lead to dehydration.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Gypsum.svg",
+        "bonus": {
+          "name": "Deep Relaxation",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Dehydration",
+          "magnitude": 40
+        }
+      },
+      "Mica": {
+        "price": 120,
+        "description": "A shiny mineral often found in thin sheets. Known for its reflective properties, but prolonged exposure can cause skin irritation.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Mica.svg",
+        "bonus": {
+          "name": "Reflection",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Skin Irritation",
+          "magnitude": 50
+        }
+      },
+      "Pyrite": {
+        "price": 180,
+        "description": "A metallic mineral with a brassy yellow color. It's often mistaken for gold due to its appearance, but it can cause respiratory issues when powdered.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Pyrite.svg",
+        "bonus": {
+          "name": "Glowing Aura",
+          "magnitude": 40
+        },
+        "malus": {
+          "name": "Respiratory Problems",
+          "magnitude": 60
+        }
+      },
+      "Amphibole": {
+        "price": 160,
+        "description": "A group of dark-colored minerals with long, thin crystals. Known for their ability to enhance intuition, but they can also induce nausea in sensitive individuals.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Amphibole.svg",
+        "bonus": {
+          "name": "Intuition Enhancement",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Nausea",
+          "magnitude": 50
+        }
+      },
+      "Chalcedony": {
+        "price": 140,
+        "description": "A cryptocrystalline form of silica, composed of fine intergrowths of both quartz and moganite. It's believed to enhance communication skills but may cause insomnia if used excessively.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Chalcedony.svg",
+        "bonus": {
+          "name": "Communication Enhancement",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Insomnia",
+          "magnitude": 30
+        }
+      },
+      "Dolomite": {
+        "price": 170,
+        "description": "A mineral consisting of calcium magnesium carbonate, often found in sedimentary rocks. It's known for its calming effects, but overuse may lead to digestive issues.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Dolomite.svg",
+        "bonus": {
+          "name": "Calming Effect",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Digestive Issues",
+          "magnitude": 40
+        }
+      },
+      "Halite": {
+        "price": 220,
+        "description": "Also known as rock salt, halite is a mineral composed primarily of sodium chloride. It's used for purification rituals, but excessive exposure may lead to dehydration.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Halite.svg",
+        "bonus": {
+          "name": "Purification",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Dehydration",
+          "magnitude": 50
+        }
+      },
+      "Olivine": {
+        "price": 130,
+        "description": "A green mineral found in igneous rocks. It's believed to bring luck and prosperity, but prolonged contact with the skin may cause irritation.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Olivine.svg",
+        "bonus": {
+          "name": "Luck and Prosperity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Skin Irritation",
+          "magnitude": 40
+        }
+      },
+      "Geode": {
+        "price": 250,
+        "description": "A hollow rock filled with crystals or other minerals. Geodes are often used for meditation and spiritual healing, but their energy can be overwhelming for some.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Geode.svg",
+        "bonus": {
+          "name": "Spiritual Healing",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Overwhelming Energy",
+          "magnitude": 30
+        }
+      },
+      "Serpentine": {
+        "price": 90,
+        "description": "A group of green minerals often used for carving. It's believed to have protective properties, but it may cause dizziness if handled for too long.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Serpentine.svg",
+        "bonus": {
+          "name": "Protection",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Dizziness",
+          "magnitude": 50
+        }
+      },
+      "Hematite": {
+        "price": 110,
+        "description": "A metallic gray mineral with a reddish tint. It's often used for grounding and protection, but it may cause constipation if ingested.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Hematite.svg",
+        "bonus": {
+          "name": "Grounding",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Constipation",
+          "magnitude": 40
+        }
+      },
+      "Barite": {
+        "price": 300,
+        "description": "A heavy mineral composed of barium sulfate. It's used in various industries, but prolonged exposure can lead to respiratory problems.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Barite.svg",
+        "bonus": {
+          "name": "Industrial Use",
+          "magnitude": 40
+        },
+        "malus": {
+          "name": "Respiratory Problems",
+          "magnitude": 60
+        }
+      },
+      "Fluorite": {
+        "price": 180,
+        "description": "A colorful mineral known for its fluorescence under ultraviolet light. It's believed to enhance focus and concentration, but excessive use may cause confusion.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Fluorite.svg",
+        "bonus": {
+          "name": "Focus Enhancement",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Confusion",
+          "magnitude": 30
+        }
+      },
+      "Aragonite": {
+        "price": 160,
+        "description": "A mineral form of calcium carbonate, often found in sea shells and pearls. It's believed to promote patience and acceptance, but it may cause lethargy if overused.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Aragonite.svg",
+        "bonus": {
+          "name": "Patience and Acceptance",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Lethargy",
+          "magnitude": 40
+        }
+      },
+      "Malachite": {
+        "price": 140,
+        "description": "A green copper carbonate mineral. It's often associated with protection and transformation, but prolonged exposure may cause digestive issues.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Malachite.svg",
+        "bonus": {
+          "name": "Protection",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Digestive Issues",
+          "magnitude": 50
+        }
+      },
+      "Tourmaline": {
+        "price": 200,
+        "description": "A crystal with various colors, often used for energy purification and protection. However, it may cause insomnia if placed near the bed.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Tourmaline.svg",
+        "bonus": {
+          "name": "Energy Purification",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Insomnia",
+          "magnitude": 40
+        }
+      },
+      "Zinc Sulfide": {
+        "price": 260,
+        "description": "A compound mineral consisting of zinc and sulfur. It's used in various applications, but inhalation of its dust may cause respiratory issues.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/ZincSulfide.svg",
+        "bonus": {
+          "name": "Versatile Use",
+          "magnitude": 40
+        },
+        "malus": {
+          "name": "Respiratory Problems",
+          "magnitude": 60
+        }
+      },
+      "Amazonite": {
+        "price": 170,
+        "description": "A blue-green variety of microcline feldspar. It's believed to promote courage and communication, but it may cause mood swings if overused.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Amazonite.svg",
+        "bonus": {
+          "name": "Courage and Communication",
+          "magnitude": 50
+        },
+        "malus": {
+          "name": "Mood Swings",
+          "magnitude": 50
+        }
+      },
+      "Apatite": {
+        "price": 230,
+        "description": "A group of phosphate minerals, often used in the manufacture of fertilizers. It's believed to enhance creativity and intellect, but it may cause overstimulation if used excessively.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Apatite.svg",
+        "bonus": {
+          "name": "Creativity and Intellect",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Overstimulation",
+          "magnitude": 40
+        }
+      },
+      "Garnet": {
+        "price": 250,
+        "description": "A group of silicate minerals with a deep red color. Garnets are often associated with passion and vitality, but they may cause irritability if worn for too long.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Garnet.svg",
+        "bonus": {
+          "name": "Passion and Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Irritability",
+          "magnitude": 30
+        }
+      },
+      "Pyroxene": {
+        "price": 120,
+        "description": "A group of dark-colored minerals found in igneous and metamorphic rocks. Pyroxenes are believed to provide strength and protection, but they may cause restlessness if used excessively.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/Pyroxene.svg",
+        "bonus": {
+          "name": "Strength and Protection",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Restlessness",
+          "magnitude": 40
+        }
+      },
+      "Bauxite": {
+        "price": 280,
+        "description": "An aluminum-rich rock used for the production of aluminum. It's believed to promote perseverance and resilience, but it may cause irritability if ingested.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Bauxite.svg",
+        "bonus": {
+          "name": "Perseverance and Resilience",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Irritability",
+          "magnitude": 40
+        }
+      },
+      "Beryl": {
+        "price": 300,
+        "description": "A mineral family including aquamarine, emerald, and others. Beryls are believed to bring harmony and balance, but they may cause lethargy if worn for too long.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Beryl.svg",
+        "bonus": {
+          "name": "Harmony and Balance",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Lethargy",
+          "magnitude": 30
+        }
+      },
+      "Lapis Lazuli": {
+        "price": 220,
+        "description": "A deep blue metamorphic rock used as a gemstone for centuries. Lapis lazuli is believed to enhance wisdom and insight, but it may cause melancholy if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/LapisLazuli.svg",
+        "bonus": {
+          "name": "Wisdom and Insight",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Melancholy",
+          "magnitude": 40
+        }
+      },
+      "Corundum": {
+        "price": 350,
+        "description": "A crystalline form of aluminum oxide, including rubies and sapphires. Corundum is believed to bring protection and good fortune, but it may cause arrogance if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Corundum.svg",
+        "bonus": {
+          "name": "Protection and Fortune",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Arrogance",
+          "magnitude": 30
+        }
+      },
+      "Nacre": {
+        "price": 200,
+        "description": "Also known as mother of pearl, nacre is an iridescent material produced by mollusks. It's believed to bring calmness and tranquility, but it may cause forgetfulness if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Nacre.svg",
+        "bonus": {
+          "name": "Calmness and Tranquility",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Forgetfulness",
+          "magnitude": 40
+        }
+      },
+      "Jade": {
+        "price": 320,
+        "description": "A green ornamental stone, often used in jewelry and carvings. Jade is believed to promote harmony and balance, but it may cause stubbornness if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Jade.svg",
+        "bonus": {
+          "name": "Harmony and Balance",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stubbornness",
+          "magnitude": 30
+        }
+      },
+      "Sphalerite": {
+        "price": 180,
+        "description": "A zinc sulfide mineral with variable amounts of iron. Sphalerite is believed to enhance vitality and confidence, but it may cause impulsiveness if overused.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Sphalerite.svg",
+        "bonus": {
+          "name": "Vitality and Confidence",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Impulsiveness",
+          "magnitude": 40
+        }
+      },
+      "Obsidian": {
+        "price": 260,
+        "description": "A naturally occurring volcanic glass formed as an extrusive igneous rock. Obsidian is believed to provide protection and grounding, but it may cause negativity if used excessively.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Obsidian.svg",
+        "bonus": {
+          "name": "Protection and Grounding",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Negativity",
+          "magnitude": 30
+        }
+      },
+      "Peridot": {
+        "price": 190,
+        "description": "A green gemstone formed deep within the Earth's mantle. Peridot is believed to bring warmth and openness, but it may cause jealousy if overused.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/Peridot.svg",
+        "bonus": {
+          "name": "Warmth and Openness",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Jealousy",
+          "magnitude": 40
+        }
+      },
+      "Aquamarine": {
+        "price": 240,
+        "description": "A blue-green variety of the mineral beryl. Aquamarine is believed to bring courage and clarity, but it may cause indecision if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Aquamarine.svg",
+        "bonus": {
+          "name": "Courage and Clarity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Indecision",
+          "magnitude": 30
+        }
+      },
+      "Spinel": {
+        "price": 210,
+        "description": "A gemstone often mistaken for rubies or sapphires. Spinel is believed to bring energy and vitality, but it may cause recklessness if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Spinel.svg",
+        "bonus": {
+          "name": "Energy and Vitality",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Recklessness",
+          "magnitude": 40
+        }
+      },
+      "Lead Sulfide": {
+        "price": 170,
+        "description": "A compound mineral consisting of lead and sulfur. It's used in various applications, but inhalation of its dust may cause respiratory issues.",
+        "rarity": "common",
+        "imagePath": "/path/to/database/mineral-images/LeadSulfide.svg",
+        "bonus": {
+          "name": "Versatile Use",
+          "magnitude": 40
+        },
+        "malus": {
+          "name": "Respiratory Problems",
+          "magnitude": 60
+        }
+      },
+      "Opal": {
+        "price": 280,
+        "description": "A gemstone known for its iridescence and play-of-color. Opal is believed to enhance creativity and spontaneity, but it may cause mood swings if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Opal.svg",
+        "bonus": {
+          "name": "Creativity and Spontaneity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Mood Swings",
+          "magnitude": 30
+        }
+      },
+      "Titanite": {
+        "price": 300,
+        "description": "A calcium titanium silicate mineral, often found as translucent crystals. Titanite is believed to bring harmony and balance, but it may cause stubbornness if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Titanite.svg",
+        "bonus": {
+          "name": "Harmony and Balance",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stubbornness",
+          "magnitude": 30
+        }
+      },
+      "Topaz": {
+        "price": 260,
+        "description": "A yellow, orange, or brown gemstone often used in jewelry. Topaz is believed to bring joy and abundance, but it may cause overindulgence if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Topaz.svg",
+        "bonus": {
+          "name": "Joy and Abundance",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Overindulgence",
+          "magnitude": 40
+        }
+      },
+      "Turquoise": {
+        "price": 200,
+        "description": "A blue to green mineral, often used in jewelry and decorative items. Turquoise is believed to bring protection and good fortune, but it may cause mood swings if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Turquoise.svg",
+        "bonus": {
+          "name": "Protection and Fortune",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Mood Swings",
+          "magnitude": 30
+        }
+      },
+      "Ruby": {
+        "price": 350,
+        "description": "A red variety of the mineral corundum. Rubies are believed to bring passion and vitality, but they may cause impulsiveness if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Ruby.svg",
+        "bonus": {
+          "name": "Passion and Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Impulsiveness",
+          "magnitude": 30
+        }
+      },
+      "Emerald": {
+        "price": 380,
+        "description": "A green gemstone, one of the four precious stones along with diamond, ruby, and sapphire. Emeralds are believed to bring hope and renewal, but they may cause jealousy if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Emerald.svg",
+        "bonus": {
+          "name": "Hope and Renewal",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Jealousy",
+          "magnitude": 30
+        }
+      },
+      "Kunzite": {
+        "price": 300,
+        "description": "A pink to light violet gemstone, often used in jewelry. Kunzite is believed to bring love and emotional healing, but it may cause mood swings if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Kunzite.svg",
+        "bonus": {
+          "name": "Love and Emotional Healing",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Mood Swings",
+          "magnitude": 30
+        }
+      },
+      "Zircon": {
+        "price": 240,
+        "description": "A mineral belonging to the group of nesosilicates, often used as a gemstone. Zircon is believed to bring clarity and protection, but it may cause stubbornness if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Zircon.svg",
+        "bonus": {
+          "name": "Clarity and Protection",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stubbornness",
+          "magnitude": 30
+        }
+      },
+      "Rhodochrosite": {
+        "price": 220,
+        "description": "A manganese carbonate mineral with a pink coloration. Rhodochrosite is believed to bring love and compassion, but it may cause mood swings if overused.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mineral-images/Rhodochrosite.svg",
+        "bonus": {
+          "name": "Love and Compassion",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Mood Swings",
+          "magnitude": 30
+        }
+      },
+      "Amethyst": {
+        "price": 320,
+        "description": "A purple variety of quartz, often used in jewelry. Amethyst is believed to bring clarity and spiritual protection, but it may cause lethargy if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Amethyst.svg",
+        "bonus": {
+          "name": "Clarity and Spiritual Protection",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Lethargy",
+          "magnitude": 30
+        }
+      },
+      "Quartz Crystal": {
+        "price": 180,
+        "description": "A clear or milky white crystal, often used for its healing properties. Quartz crystals are believed to amplify energy and intuition, but they may cause headaches if overused.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mineral-images/QuartzCrystal.svg",
+        "bonus": {
+          "name": "Energy Amplification and Intuition",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Headaches",
+          "magnitude": 30
+        }
+      },
+      "Peridotite": {
+        "price": 280,
+        "description": "A coarse-grained igneous rock consisting mostly of olivine. Peridotite is believed to bring transformation and renewal, but it may cause stubbornness if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Peridotite.svg",
+        "bonus": {
+          "name": "Transformation and Renewal",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stubbornness",
+          "magnitude": 30
+        }
+      },
+      "Platinum": {
+        "price": 400,
+        "description": "A dense, malleable, and ductile precious metal. Platinum is believed to bring wealth and prosperity, but it may cause greed if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Platinum.svg",
+        "bonus": {
+          "name": "Wealth and Prosperity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Greed",
+          "magnitude": 30
+        }
+      },
+      "Diamond": {
+        "price": 500,
+        "description": "A precious gemstone composed of pure carbon. Diamonds are believed to bring clarity and enlightenment, but they may cause arrogance if overused.",
+        "rarity": "epic",
+        "imagePath": "/path/to/database/mineral-images/Diamond.svg",
+        "bonus": {
+          "name": "Clarity and Enlightenment",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Arrogance",
+          "magnitude": 30
+        }
+      }
+    }
+  }
+  

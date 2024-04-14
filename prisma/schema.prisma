@@ -91,6 +91,7 @@ model Ingredient {
   name               String            @unique @db.VarChar(50)
   description        String            @db.VarChar(150)
   rarity             RARITY_TYPE
+  imagePath          String
   Bonus              Bonus             @relation(fields: [bonusId], references: [id], onDelete: Cascade)
   bonusId            Int
   Malus              Malus             @relation(fields: [malusId], references: [id], onDelete: Cascade)

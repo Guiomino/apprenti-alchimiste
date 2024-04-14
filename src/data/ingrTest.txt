@@ -1,0 +1,271 @@
+Crée moi la data JSON de "mineral" pour un jeu de création de potion d'apothicaire.
+Je veux 40 ingrédients de catégorie "minéral".
+
+1 - Le champ "prix" peut aller de 1 à 1000 en fonction de la rareté.
+
+2 - Il faut un champ "description" avec une description propre à chaque minéral (max 200 caractères).
+Important : l'utilisateur doit "deviner" les bonus et malus du minéral en lisant la description "SANS EVOQUER OUVERTEMENT LES TERMES LIES AU BONUS ET MALUS".
+
+3 - Le niveau du champ "rareté" a 4 choix possibles : 
+- commun
+- peu commun
+- rare
+- épique
+
+4 - Il faut 1 bonus et 1 malus par minéral. Certains ingrédients peuvent possiblement avoir le même bonus ou le même malus. Essaye de donner un bonus et un malus qui pourrait être logique en fonction de l'ingrédient.
+
+Il faut aussi une magnitude pour les bonus et malus dont le total des 2 doit être égal à 100.
+
+
+Exemple d'un minéral :
+
+{
+  "ingredients": {
+    "Fer": {
+      "price": 8,
+      "description": "Salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts.",
+      "rarity": "common",
+      "imagePath": "/chemin/vers/bdd/mineral-images/Quartz.svg",
+        "bonus": {
+        "id": 123546,
+        "name": "Régénération cellulaire"
+        "magnitude": 48
+        },
+        "malus": {
+        "id": 123457,
+        "name": "Problème respiratoire"
+        "magnitude": 52
+        }
+    },
+    // Autres minéraux...
+  }
+}
+
+
+
+
+Liste des minéraux :
+    Fer
+    Aluminium
+    Cuivre
+    Plomb
+    Zinc
+    Nickel
+    Etain
+    Titane
+    Cobalt
+    Chrome
+    Argent
+    Or
+    Platine
+    Quartz
+    Feldspath
+    Calcite
+    Pyrite
+    Serpentine
+    Hématite
+    Fluorite
+    Malachite
+    Tourmaline
+    Grenat
+    Béryl
+    Lapis-lazuli
+    Corindon
+    Nacre
+    Nacre
+    Obsidienne
+    Péridot
+    Aigue-marine
+    Opale
+    Topaze
+    Turquoise
+    Rubis
+    Emeraude
+    Zircon
+    Améthyste
+    Cristal
+    Diamant
+
+
+Liste des végétaux :
+    Lavande
+    Rose
+    Tulipe
+    Fraise
+    Tournesol
+    Myrtille
+    Pivoine
+    Aloe vera
+    Framboise
+    Gingembre
+    Thym
+    Romarin
+    Basilic
+    Ciboulette
+    Persil
+    Menthe
+    Sauge
+    Jonquille
+    Lys
+    Fougère
+    Iris
+    Amaryllis
+    Narcisse
+    Muguet
+    Chrysanthème
+    Bleuet
+    Coquelicot
+    Lilas
+    Sève d'Érable
+    Sève de Bouleau
+    Sève de Pin
+    Sève de Hêtre
+    Sève de Frêne
+    Sève de Noisetier
+    Sève de Tilleul
+    Sève de Bambou
+    Sève de Palmier
+    Sève de Chêne
+    Sève de Sapin
+    Sève de Cyprès
+
+Liste des animaux :
+    Ailes de chauve-souris
+    Pattes de lapin
+    Oeufs d'esturgeon
+    Plumes d'autruche
+    Peau de serpent
+    Carapace de tortue
+    Corne de rhinocéros
+    Crinière de lion
+    Os de baleine
+    Queue de rat
+    Langue de vautour
+    Coquille d'œuf d'autruche
+    Laine de chèvre cachemire
+    Graisse de phoque
+    Poils de chameau
+    Plumes de paon
+    Peau de crocodile
+    Dents de requin
+    Nacre d'ormeau
+    Mucus de limace
+    Sperme de baleine
+    Urine de chat
+    Graisse de chameau
+    Toile d'araignée
+    Peau de requin
+    Venin de serpent
+    Salive de loutre
+    Griffe de griffon
+    Queue de scorpion
+    Aiguillon d'abeille
+    Cheveux de yak
+    Peau de phoque
+    Lait de serpent
+    Excréments de chauve-souris
+    Larmes de crocodile
+    Peau de pangolin
+    Griffes de loup
+    Lait de hippopotame
+    Peau d'écrevisse
+    Excréments d'éléphant
+
+Liste des champignons :
+    Champignon de Paris
+    Shiitake
+    Pleurote en forme d'huître
+    Morille
+    Chanterelle
+    Cèpe
+    Truffe noire
+    Truffe blanche
+    Maitake
+    Reishi
+    Chaga
+    Cordyceps
+    Hericium
+    Agaric jaunissant
+    Coprin chevelu
+    Hypholome en touffe
+    Pied-de-mouton
+    Lactaire délicieux
+    Clitocybe nébuleux
+    Boletus satanas
+    Truffe de Bourgogne
+    Pied bleu
+    Truffe de Meuse
+    Truffe d'été
+    Truffe de Bourgogne
+    Morille conique
+    Tricholome de la Saint-Georges
+    Polypore soufré
+    Bolet des bouviers
+    Psilocybe cubensis
+    Truffe de Chine
+    Truffe du Périgord
+    Truffe de la Saint-Jean
+    Pied de veau
+    Coprin chevelu
+    Pleurote du panicaut
+    Truffe de Melbourne
+    Pholiote du peuplier
+    Truffe de la Mésentérique
+    Truffe de Bourgogne
+
+EFFECTS :
+Bonus :
+    Santé
+    Bien-être
+    Confiance
+    Reconnaissance
+    Erudition
+    Impassibilité
+    Prudence
+    Énergie
+    Richesse
+    Amour
+    Sagacité
+    Succès
+    Gentillesse
+    Motivation
+    Amitié
+    Beauté
+    Chance
+    Paix
+    Générosité
+    Concentration
+    Bonheur
+    Courage
+    Honnêteté
+    Motivation
+    Humour
+
+Malus :
+    Maladie
+    Stress
+    Doute
+    Ingratitude
+    Ignorance
+    Colère
+    Négligence
+    Asthénie
+    Pauvreté
+    Haine
+    Simplet
+    Échec
+    Méchanceté
+    Paresse
+    Antipathie
+    Laideur
+    Malédiction
+    Conflit
+    Avarice
+    Dissipation
+    Jalousie
+    Peur
+    Mensonge
+    Déprime
+    Tristesse
+
+  
