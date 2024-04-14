@@ -1,705 +1,1197 @@
 {
-    "ingredients": {
-      "Quartz": {
-        "price": 100,
-        "description": "A transparent crystal with multiple facets. It emits a soft and soothing glow, known for its healing and purifying properties.",
+  "ingredients": {
+    "mineral": [
+      {
+        "name": "Lumerite",
+        "price": 12,
+        "description": "Lumerite is a mineral found on open-air veins in high mountains. It is known to reduce natural enthusiasm and calm ardor.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Quartz.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Lumerite.svg",
         "bonus": {
-          "name": "Mild Healing",
-          "magnitude": 60
+          "name": "Serenity",
+          "magnitude": 46
         },
         "malus": {
-          "name": "Skin Irritation",
-          "magnitude": 40
+          "name": "Depression",
+          "magnitude": 54
         }
       },
-      "Feldspar": {
-        "price": 80,
-        "description": "A crystalline rock with various hues. Known for its ability to amplify magical powers, but can cause dizziness when handled for too long.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Feldspar.svg",
-        "bonus": {
-          "name": "Increased Magical Power",
-          "magnitude": 50
-        },
-        "malus": {
-          "name": "Dizziness",
-          "magnitude": 50
-        }
-      },
-      "Calcite": {
-        "price": 150,
-        "description": "A shiny stone with multiple colors, often used to stabilize emotions. However, prolonged exposure can cause headaches.",
+      {
+        "name": "Crystamide",
+        "price": 65,
+        "description": "Crystamide crystals form deep within underground caverns. They provide mental clarity while inducing stress.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Calcite.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Crystamide.svg",
         "bonus": {
-          "name": "Emotional Stabilization",
-          "magnitude": 70
+          "name": "Mental Clarity",
+          "magnitude": 62
         },
         "malus": {
-          "name": "Headaches",
-          "magnitude": 30
+          "name": "Stress",
+          "magnitude": 38
         }
       },
-      "Gypsum": {
-        "price": 200,
-        "description": "A soft stone, used for centuries to promote relaxation and mental clarity. However, excessive use can lead to dehydration.",
+      {
+        "name": "Pyrodine",
+        "price": 185,
+        "description": "Pyrodine is a rare mineral found near volcanic regions. It enhances vitality but may lead to anger issues.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Pyrodine.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 55
+        },
+        "malus": {
+          "name": "Anger",
+          "magnitude": 45
+        }
+      },
+      {
+        "name": "Azurith",
+        "price": 248,
+        "description": "Azurith is a precious gemstone often associated with tranquility. It promotes empathy but may induce disappointment.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Gypsum.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Azurith.svg",
         "bonus": {
-          "name": "Deep Relaxation",
-          "magnitude": 60
+          "name": "Empathy",
+          "magnitude": 58
         },
         "malus": {
-          "name": "Dehydration",
-          "magnitude": 40
+          "name": "Disappointment",
+          "magnitude": 42
         }
       },
-      "Mica": {
-        "price": 120,
-        "description": "A shiny mineral often found in thin sheets. Known for its reflective properties, but prolonged exposure can cause skin irritation.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Mica.svg",
+      {
+        "name": "Flamarine",
+        "price": 531,
+        "description": "Flamarine is a fiery crystal that imbues its user with passion. It enhances vitality but may cause stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Flamarine.svg",
         "bonus": {
-          "name": "Reflection",
-          "magnitude": 50
+          "name": "Vitality",
+          "magnitude": 70
         },
         "malus": {
-          "name": "Skin Irritation",
-          "magnitude": 50
+          "name": "Stress",
+          "magnitude": 30
         }
       },
-      "Pyrite": {
-        "price": 180,
-        "description": "A metallic mineral with a brassy yellow color. It's often mistaken for gold due to its appearance, but it can cause respiratory issues when powdered.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Pyrite.svg",
-        "bonus": {
-          "name": "Glowing Aura",
-          "magnitude": 40
-        },
-        "malus": {
-          "name": "Respiratory Problems",
-          "magnitude": 60
-        }
-      },
-      "Amphibole": {
-        "price": 160,
-        "description": "A group of dark-colored minerals with long, thin crystals. Known for their ability to enhance intuition, but they can also induce nausea in sensitive individuals.",
+      {
+        "name": "Verdanite",
+        "price": 152,
+        "description": "Verdanite is a green-hued mineral found deep within ancient forests. It promotes harmony but may induce isolation.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Amphibole.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Verdanite.svg",
         "bonus": {
-          "name": "Intuition Enhancement",
-          "magnitude": 50
+          "name": "Harmony",
+          "magnitude": 55
         },
         "malus": {
-          "name": "Nausea",
-          "magnitude": 50
+          "name": "Isolation",
+          "magnitude": 45
         }
       },
-      "Chalcedony": {
-        "price": 140,
-        "description": "A cryptocrystalline form of silica, composed of fine intergrowths of both quartz and moganite. It's believed to enhance communication skills but may cause insomnia if used excessively.",
+      {
+        "name": "Perline",
+        "price": 47,
+        "description": "Perline is a shimmering mineral with a calming effect. It brings serenity but may lead to disappointment.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Chalcedony.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Perline.svg",
         "bonus": {
-          "name": "Communication Enhancement",
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Saverstride",
+        "price": 378,
+        "description": "Saverstride is a rare mineral often found in ancient ruins. It enhances vitality but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Saverstride.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Aurorium",
+        "price": 126,
+        "description": "Aurorium is a radiant mineral that glows softly in darkness. It enhances trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Aurorium.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 55
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 45
+        }
+      },
+      {
+        "name": "Etherine",
+        "price": 438,
+        "description": "Etherine is a rare mineral that resonates with magical energy. It promotes mental clarity but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Etherine.svg",
+        "bonus": {
+          "name": "Mental Clarity",
           "magnitude": 70
         },
         "malus": {
-          "name": "Insomnia",
+          "name": "Isolation",
           "magnitude": 30
         }
       },
-      "Dolomite": {
-        "price": 170,
-        "description": "A mineral consisting of calcium magnesium carbonate, often found in sedimentary rocks. It's known for its calming effects, but overuse may lead to digestive issues.",
+      {
+        "name": "Serenite",
+        "price": 94,
+        "description": "Serenite is a calming mineral often used in meditation. It brings serenity but may lead to disappointment.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Dolomite.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Serenite.svg",
         "bonus": {
-          "name": "Calming Effect",
-          "magnitude": 60
+          "name": "Serenity",
+          "magnitude": 55
         },
         "malus": {
-          "name": "Digestive Issues",
-          "magnitude": 40
+          "name": "Disappointment",
+          "magnitude": 45
         }
       },
-      "Halite": {
-        "price": 220,
-        "description": "Also known as rock salt, halite is a mineral composed primarily of sodium chloride. It's used for purification rituals, but excessive exposure may lead to dehydration.",
+      {
+        "name": "Umbrestone",
+        "price": 372,
+        "description": "Umbrestone is a mysterious mineral that seems to absorb light. It enhances empathy but may induce isolation.",
         "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Halite.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Umbrestone.svg",
         "bonus": {
-          "name": "Purification",
-          "magnitude": 50
+          "name": "Empathy",
+          "magnitude": 65
         },
         "malus": {
-          "name": "Dehydration",
-          "magnitude": 50
+          "name": "Isolation",
+          "magnitude": 35
         }
       },
-      "Olivine": {
-        "price": 130,
-        "description": "A green mineral found in igneous rocks. It's believed to bring luck and prosperity, but prolonged contact with the skin may cause irritation.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Olivine.svg",
-        "bonus": {
-          "name": "Luck and Prosperity",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Skin Irritation",
-          "magnitude": 40
-        }
-      },
-      "Geode": {
-        "price": 250,
-        "description": "A hollow rock filled with crystals or other minerals. Geodes are often used for meditation and spiritual healing, but their energy can be overwhelming for some.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Geode.svg",
-        "bonus": {
-          "name": "Spiritual Healing",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Overwhelming Energy",
-          "magnitude": 30
-        }
-      },
-      "Serpentine": {
-        "price": 90,
-        "description": "A group of green minerals often used for carving. It's believed to have protective properties, but it may cause dizziness if handled for too long.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Serpentine.svg",
-        "bonus": {
-          "name": "Protection",
-          "magnitude": 50
-        },
-        "malus": {
-          "name": "Dizziness",
-          "magnitude": 50
-        }
-      },
-      "Hematite": {
-        "price": 110,
-        "description": "A metallic gray mineral with a reddish tint. It's often used for grounding and protection, but it may cause constipation if ingested.",
-        "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Hematite.svg",
-        "bonus": {
-          "name": "Grounding",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Constipation",
-          "magnitude": 40
-        }
-      },
-      "Barite": {
-        "price": 300,
-        "description": "A heavy mineral composed of barium sulfate. It's used in various industries, but prolonged exposure can lead to respiratory problems.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Barite.svg",
-        "bonus": {
-          "name": "Industrial Use",
-          "magnitude": 40
-        },
-        "malus": {
-          "name": "Respiratory Problems",
-          "magnitude": 60
-        }
-      },
-      "Fluorite": {
-        "price": 180,
-        "description": "A colorful mineral known for its fluorescence under ultraviolet light. It's believed to enhance focus and concentration, but excessive use may cause confusion.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Fluorite.svg",
-        "bonus": {
-          "name": "Focus Enhancement",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Confusion",
-          "magnitude": 30
-        }
-      },
-      "Aragonite": {
-        "price": 160,
-        "description": "A mineral form of calcium carbonate, often found in sea shells and pearls. It's believed to promote patience and acceptance, but it may cause lethargy if overused.",
+      {
+        "name": "Prismalite",
+        "price": 183,
+        "description": "Prismalite is a rare crystal that refracts light into a spectrum of colors. It promotes harmony but may induce disappointment.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Aragonite.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Prismalite.svg",
         "bonus": {
-          "name": "Patience and Acceptance",
-          "magnitude": 60
+          "name": "Harmony",
+          "magnitude": 58
         },
         "malus": {
-          "name": "Lethargy",
-          "magnitude": 40
+          "name": "Disappointment",
+          "magnitude": 42
         }
       },
-      "Malachite": {
-        "price": 140,
-        "description": "A green copper carbonate mineral. It's often associated with protection and transformation, but prolonged exposure may cause digestive issues.",
+      {
+        "name": "Nebulorite",
+        "price": 295,
+        "description": "Nebulorite is a cloudy mineral often found in mist-covered valleys. It brings mental clarity but may induce stress.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Nebulorite.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Asteride",
+        "price": 721,
+        "description": "Asteride is a rare mineral with star-like patterns. It enhances trust but may lead to disappointment.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Asteride.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 72
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 28
+        }
+      },
+      {
+        "name": "Nebularium",
+        "price": 398,
+        "description": "Nebularium is a mineral with a mesmerizing swirling pattern. It promotes harmony but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Nebularium.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 68
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 32
+        }
+      },
+      {
+        "name": "Aquarine",
+        "price": 523,
+        "description": "Aquarine is a gemstone with a calming blue hue. It brings serenity but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Aquarine.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Prismarque",
+        "price": 114,
+        "description": "Prismarque is a rare crystal with intricate geometric patterns. It promotes mental clarity but may induce isolation.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Prismarque.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 63
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 37
+        }
+      },
+      {
+        "name": "Abyssium",
+        "price": 857,
+        "description": "Abyssium is a dark mineral found deep beneath the earth's surface. It enhances vitality but may lead to anger issues.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Abyssium.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Anger",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Arcanite",
+        "price": 693,
+        "description": "Arcanite is a legendary mineral said to contain magical properties. It enhances trust but may lead to disappointment.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Arcanite.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 68
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 32
+        }
+      }
+    ],
+    "vegetal": [
+      {
+        "name": "Vertine",
+        "price": 247,
+        "description": "Vertine is a vibrant green herb found in lush forests. It promotes harmony and empathy.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Vertine.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Feuillane",
+        "price": 410,
+        "description": "Feuillane leaves are known for their soothing properties. They bring mental peace but can also cause disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Feuillane.svg",
+        "bonus": {
+          "name": "Peace",
+          "magnitude": 80
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 20
+        }
+      },
+      {
+        "name": "Roseliane",
+        "price": 97,
+        "description": "Roseliane petals are prized for their sweet fragrance. They bring serenity but may lead to disappointment.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Malachite.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Roseliane.svg",
         "bonus": {
-          "name": "Protection",
-          "magnitude": 50
+          "name": "Serenity",
+          "magnitude": 60
         },
         "malus": {
-          "name": "Digestive Issues",
-          "magnitude": 50
+          "name": "Disappointment",
+          "magnitude": 40
         }
       },
-      "Tourmaline": {
-        "price": 200,
-        "description": "A crystal with various colors, often used for energy purification and protection. However, it may cause insomnia if placed near the bed.",
+      {
+        "name": "Brumea",
+        "price": 572,
+        "description": "Brumea is a rare herb found only in misty valleys. It enhances mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Brumea.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Linette",
+        "price": 246,
+        "description": "Linette seeds are known for their calming properties. They bring serenity but may lead to disappointment.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Tourmaline.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Linette.svg",
         "bonus": {
-          "name": "Energy Purification",
-          "magnitude": 60
+          "name": "Serenity",
+          "magnitude": 65
         },
         "malus": {
-          "name": "Insomnia",
-          "magnitude": 40
+          "name": "Disappointment",
+          "magnitude": 35
         }
       },
-      "Zinc Sulfide": {
-        "price": 260,
-        "description": "A compound mineral consisting of zinc and sulfur. It's used in various applications, but inhalation of its dust may cause respiratory issues.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/ZincSulfide.svg",
-        "bonus": {
-          "name": "Versatile Use",
-          "magnitude": 40
-        },
-        "malus": {
-          "name": "Respiratory Problems",
-          "magnitude": 60
-        }
-      },
-      "Amazonite": {
-        "price": 170,
-        "description": "A blue-green variety of microcline feldspar. It's believed to promote courage and communication, but it may cause mood swings if overused.",
-        "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Amazonite.svg",
-        "bonus": {
-          "name": "Courage and Communication",
-          "magnitude": 50
-        },
-        "malus": {
-          "name": "Mood Swings",
-          "magnitude": 50
-        }
-      },
-      "Apatite": {
-        "price": 230,
-        "description": "A group of phosphate minerals, often used in the manufacture of fertilizers. It's believed to enhance creativity and intellect, but it may cause overstimulation if used excessively.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Apatite.svg",
-        "bonus": {
-          "name": "Creativity and Intellect",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Overstimulation",
-          "magnitude": 40
-        }
-      },
-      "Garnet": {
-        "price": 250,
-        "description": "A group of silicate minerals with a deep red color. Garnets are often associated with passion and vitality, but they may cause irritability if worn for too long.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Garnet.svg",
-        "bonus": {
-          "name": "Passion and Vitality",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Irritability",
-          "magnitude": 30
-        }
-      },
-      "Pyroxene": {
-        "price": 120,
-        "description": "A group of dark-colored minerals found in igneous and metamorphic rocks. Pyroxenes are believed to provide strength and protection, but they may cause restlessness if used excessively.",
+      {
+        "name": "Herbine",
+        "price": 165,
+        "description": "Herbine is a versatile herb used in various potions. It enhances trust but may induce isolation.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/Pyroxene.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Herbine.svg",
         "bonus": {
-          "name": "Strength and Protection",
-          "magnitude": 60
+          "name": "Trust",
+          "magnitude": 55
         },
         "malus": {
-          "name": "Restlessness",
-          "magnitude": 40
+          "name": "Isolation",
+          "magnitude": 45
         }
       },
-      "Bauxite": {
-        "price": 280,
-        "description": "An aluminum-rich rock used for the production of aluminum. It's believed to promote perseverance and resilience, but it may cause irritability if ingested.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Bauxite.svg",
-        "bonus": {
-          "name": "Perseverance and Resilience",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Irritability",
-          "magnitude": 40
-        }
-      },
-      "Beryl": {
-        "price": 300,
-        "description": "A mineral family including aquamarine, emerald, and others. Beryls are believed to bring harmony and balance, but they may cause lethargy if worn for too long.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Beryl.svg",
-        "bonus": {
-          "name": "Harmony and Balance",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Lethargy",
-          "magnitude": 30
-        }
-      },
-      "Lapis Lazuli": {
-        "price": 220,
-        "description": "A deep blue metamorphic rock used as a gemstone for centuries. Lapis lazuli is believed to enhance wisdom and insight, but it may cause melancholy if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/LapisLazuli.svg",
-        "bonus": {
-          "name": "Wisdom and Insight",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Melancholy",
-          "magnitude": 40
-        }
-      },
-      "Corundum": {
-        "price": 350,
-        "description": "A crystalline form of aluminum oxide, including rubies and sapphires. Corundum is believed to bring protection and good fortune, but it may cause arrogance if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Corundum.svg",
-        "bonus": {
-          "name": "Protection and Fortune",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Arrogance",
-          "magnitude": 30
-        }
-      },
-      "Nacre": {
-        "price": 200,
-        "description": "Also known as mother of pearl, nacre is an iridescent material produced by mollusks. It's believed to bring calmness and tranquility, but it may cause forgetfulness if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Nacre.svg",
-        "bonus": {
-          "name": "Calmness and Tranquility",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Forgetfulness",
-          "magnitude": 40
-        }
-      },
-      "Jade": {
-        "price": 320,
-        "description": "A green ornamental stone, often used in jewelry and carvings. Jade is believed to promote harmony and balance, but it may cause stubbornness if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Jade.svg",
-        "bonus": {
-          "name": "Harmony and Balance",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Stubbornness",
-          "magnitude": 30
-        }
-      },
-      "Sphalerite": {
-        "price": 180,
-        "description": "A zinc sulfide mineral with variable amounts of iron. Sphalerite is believed to enhance vitality and confidence, but it may cause impulsiveness if overused.",
-        "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Sphalerite.svg",
-        "bonus": {
-          "name": "Vitality and Confidence",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Impulsiveness",
-          "magnitude": 40
-        }
-      },
-      "Obsidian": {
-        "price": 260,
-        "description": "A naturally occurring volcanic glass formed as an extrusive igneous rock. Obsidian is believed to provide protection and grounding, but it may cause negativity if used excessively.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Obsidian.svg",
-        "bonus": {
-          "name": "Protection and Grounding",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Negativity",
-          "magnitude": 30
-        }
-      },
-      "Peridot": {
-        "price": 190,
-        "description": "A green gemstone formed deep within the Earth's mantle. Peridot is believed to bring warmth and openness, but it may cause jealousy if overused.",
-        "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/Peridot.svg",
-        "bonus": {
-          "name": "Warmth and Openness",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Jealousy",
-          "magnitude": 40
-        }
-      },
-      "Aquamarine": {
-        "price": 240,
-        "description": "A blue-green variety of the mineral beryl. Aquamarine is believed to bring courage and clarity, but it may cause indecision if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Aquamarine.svg",
-        "bonus": {
-          "name": "Courage and Clarity",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Indecision",
-          "magnitude": 30
-        }
-      },
-      "Spinel": {
-        "price": 210,
-        "description": "A gemstone often mistaken for rubies or sapphires. Spinel is believed to bring energy and vitality, but it may cause recklessness if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Spinel.svg",
-        "bonus": {
-          "name": "Energy and Vitality",
-          "magnitude": 60
-        },
-        "malus": {
-          "name": "Recklessness",
-          "magnitude": 40
-        }
-      },
-      "Lead Sulfide": {
-        "price": 170,
-        "description": "A compound mineral consisting of lead and sulfur. It's used in various applications, but inhalation of its dust may cause respiratory issues.",
+      {
+        "name": "Verdane",
+        "price": 93,
+        "description": "Verdane leaves are known for their vibrant green color. They bring vitality but may induce stress.",
         "rarity": "common",
-        "imagePath": "/path/to/database/mineral-images/LeadSulfide.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Verdane.svg",
         "bonus": {
-          "name": "Versatile Use",
-          "magnitude": 40
-        },
-        "malus": {
-          "name": "Respiratory Problems",
-          "magnitude": 60
-        }
-      },
-      "Opal": {
-        "price": 280,
-        "description": "A gemstone known for its iridescence and play-of-color. Opal is believed to enhance creativity and spontaneity, but it may cause mood swings if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Opal.svg",
-        "bonus": {
-          "name": "Creativity and Spontaneity",
+          "name": "Vitality",
           "magnitude": 70
         },
         "malus": {
-          "name": "Mood Swings",
+          "name": "Stress",
           "magnitude": 30
         }
       },
-      "Titanite": {
-        "price": 300,
-        "description": "A calcium titanium silicate mineral, often found as translucent crystals. Titanite is believed to bring harmony and balance, but it may cause stubbornness if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Titanite.svg",
-        "bonus": {
-          "name": "Harmony and Balance",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Stubbornness",
-          "magnitude": 30
-        }
-      },
-      "Topaz": {
-        "price": 260,
-        "description": "A yellow, orange, or brown gemstone often used in jewelry. Topaz is believed to bring joy and abundance, but it may cause overindulgence if overused.",
+      {
+        "name": "Tournisle",
+        "price": 532,
+        "description": "Tournisle is a rare herb known for its healing properties. It enhances empathy but may induce isolation.",
         "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Topaz.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Tournisle.svg",
         "bonus": {
-          "name": "Joy and Abundance",
-          "magnitude": 60
+          "name": "Empathy",
+          "magnitude": 68
         },
         "malus": {
-          "name": "Overindulgence",
-          "magnitude": 40
+          "name": "Isolation",
+          "magnitude": 32
         }
       },
-      "Turquoise": {
-        "price": 200,
-        "description": "A blue to green mineral, often used in jewelry and decorative items. Turquoise is believed to bring protection and good fortune, but it may cause mood swings if overused.",
+      {
+        "name": "Selaine",
+        "price": 87,
+        "description": "Selaine is a delicate herb often used in love potions. It enhances trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Selaine.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 58
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 42
+        }
+      },
+      {
+        "name": "Orfeu",
+        "price": 321,
+        "description": "Orfeu petals are known for their mesmerizing fragrance. They bring serenity but may lead to disappointment.",
         "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Turquoise.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Orfeu.svg",
         "bonus": {
-          "name": "Protection and Fortune",
-          "magnitude": 70
+          "name": "Serenity",
+          "magnitude": 72
         },
         "malus": {
-          "name": "Mood Swings",
-          "magnitude": 30
+          "name": "Disappointment",
+          "magnitude": 28
         }
       },
-      "Ruby": {
-        "price": 350,
-        "description": "A red variety of the mineral corundum. Rubies are believed to bring passion and vitality, but they may cause impulsiveness if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Ruby.svg",
-        "bonus": {
-          "name": "Passion and Vitality",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Impulsiveness",
-          "magnitude": 30
-        }
-      },
-      "Emerald": {
-        "price": 380,
-        "description": "A green gemstone, one of the four precious stones along with diamond, ruby, and sapphire. Emeralds are believed to bring hope and renewal, but they may cause jealousy if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Emerald.svg",
-        "bonus": {
-          "name": "Hope and Renewal",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Jealousy",
-          "magnitude": 30
-        }
-      },
-      "Kunzite": {
-        "price": 300,
-        "description": "A pink to light violet gemstone, often used in jewelry. Kunzite is believed to bring love and emotional healing, but it may cause mood swings if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Kunzite.svg",
-        "bonus": {
-          "name": "Love and Emotional Healing",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Mood Swings",
-          "magnitude": 30
-        }
-      },
-      "Zircon": {
-        "price": 240,
-        "description": "A mineral belonging to the group of nesosilicates, often used as a gemstone. Zircon is believed to bring clarity and protection, but it may cause stubbornness if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Zircon.svg",
-        "bonus": {
-          "name": "Clarity and Protection",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Stubbornness",
-          "magnitude": 30
-        }
-      },
-      "Rhodochrosite": {
-        "price": 220,
-        "description": "A manganese carbonate mineral with a pink coloration. Rhodochrosite is believed to bring love and compassion, but it may cause mood swings if overused.",
-        "rarity": "rare",
-        "imagePath": "/path/to/database/mineral-images/Rhodochrosite.svg",
-        "bonus": {
-          "name": "Love and Compassion",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Mood Swings",
-          "magnitude": 30
-        }
-      },
-      "Amethyst": {
-        "price": 320,
-        "description": "A purple variety of quartz, often used in jewelry. Amethyst is believed to bring clarity and spiritual protection, but it may cause lethargy if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Amethyst.svg",
-        "bonus": {
-          "name": "Clarity and Spiritual Protection",
-          "magnitude": 70
-        },
-        "malus": {
-          "name": "Lethargy",
-          "magnitude": 30
-        }
-      },
-      "Quartz Crystal": {
-        "price": 180,
-        "description": "A clear or milky white crystal, often used for its healing properties. Quartz crystals are believed to amplify energy and intuition, but they may cause headaches if overused.",
+      {
+        "name": "Sylvea",
+        "price": 194,
+        "description": "Sylvea leaves are said to contain the essence of the forest. They promote harmony but may induce isolation.",
         "rarity": "uncommon",
-        "imagePath": "/path/to/database/mineral-images/QuartzCrystal.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Sylvea.svg",
         "bonus": {
-          "name": "Energy Amplification and Intuition",
+          "name": "Harmony",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Florée",
+        "price": 572,
+        "description": "Florée petals are prized for their delicate fragrance. They bring mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Florée.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Lichenia",
+        "price": 123,
+        "description": "Lichenia is a hardy plant that thrives in harsh environments. It enhances vitality but may induce isolation.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Lichenia.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Aromine",
+        "price": 398,
+        "description": "Aromine is a rare herb prized for its calming aroma. It brings serenity but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Aromine.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 68
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 32
+        }
+      },
+      {
+        "name": "Vertane",
+        "price": 652,
+        "description": "Vertane is a vibrant green herb known for its healing properties. It enhances empathy but may induce isolation.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Vertane.svg",
+        "bonus": {
+          "name": "Empathy",
           "magnitude": 70
         },
         "malus": {
-          "name": "Headaches",
+          "name": "Isolation",
           "magnitude": 30
         }
       },
-      "Peridotite": {
-        "price": 280,
-        "description": "A coarse-grained igneous rock consisting mostly of olivine. Peridotite is believed to bring transformation and renewal, but it may cause stubbornness if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Peridotite.svg",
+      {
+        "name": "Verdargent",
+        "price": 215,
+        "description": "Verdargent leaves shimmer like silver in moonlight. They bring vitality but may induce stress.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Verdargent.svg",
         "bonus": {
-          "name": "Transformation and Renewal",
+          "name": "Vitality",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Lineriane",
+        "price": 437,
+        "description": "Lineriane is a delicate vine known for its healing properties. It promotes harmony but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Lineriane.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 62
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 38
+        }
+      },
+      {
+        "name": "Sylvestrine",
+        "price": 518,
+        "description": "Sylvestrine leaves rustle softly in the wind. They bring mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Sylvestrine.svg",
+        "bonus": {
+          "name": "Mental Clarity",
           "magnitude": 70
         },
         "malus": {
-          "name": "Stubbornness",
+          "name": "Stress",
           "magnitude": 30
         }
       },
-      "Platinum": {
-        "price": 400,
-        "description": "A dense, malleable, and ductile precious metal. Platinum is believed to bring wealth and prosperity, but it may cause greed if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Platinum.svg",
+      {
+        "name": "Treflune",
+        "price": 94,
+        "description": "Treflune is a small herb often found in shaded areas. It enhances trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Treflune.svg",
         "bonus": {
-          "name": "Wealth and Prosperity",
+          "name": "Trust",
+          "magnitude": 58
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 42
+        }
+      },
+      {
+        "name": "Orepine",
+        "price": 123,
+        "description": "Orepine leaves are known for their golden hue. They bring serenity but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Orepine.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      }
+    ],
+    "animal": [
+      {
+        "name": "Grinfir Oil",
+        "price": 247,
+        "description": "Grinfir Oil is extracted from the glands of the Grinfir beast. It enhances vitality but may induce anger.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/animal-images/Grinfir_Oil.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Anger",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Sylvur Scale",
+        "price": 410,
+        "description": "Sylvur Scales are known for their resilience. They enhance trust but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Sylvur_Scale.svg",
+        "bonus": {
+          "name": "Trust",
           "magnitude": 70
         },
         "malus": {
-          "name": "Greed",
+          "name": "Disappointment",
           "magnitude": 30
         }
       },
-      "Diamond": {
-        "price": 500,
-        "description": "A precious gemstone composed of pure carbon. Diamonds are believed to bring clarity and enlightenment, but they may cause arrogance if overused.",
-        "rarity": "epic",
-        "imagePath": "/path/to/database/mineral-images/Diamond.svg",
+      {
+        "name": "Aurinax Wing",
+        "price": 572,
+        "description": "The majestic Aurinax Wing is revered for its rarity. It brings prosperity but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Aurinax_Wing.svg",
         "bonus": {
-          "name": "Clarity and Enlightenment",
+          "name": "Prosperity",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Cheledon hair",
+        "price": 123,
+        "description": "Cheledon hair is known for its vibrant color. It brings trust but may also induce isolation.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Cheledon_hair.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Grinfir Oil",
+        "price": 247,
+        "description": "Grinfir Oil is extracted from the glands of the Grinfir beast. It enhances vitality but may induce anger.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/animal-images/Grinfir_Oil.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Anger",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Sylvur Scale",
+        "price": 410,
+        "description": "Sylvur Scales are known for their resilience. They enhance trust but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Sylvur_Scale.svg",
+        "bonus": {
+          "name": "Trust",
           "magnitude": 70
         },
         "malus": {
-          "name": "Arrogance",
+          "name": "Disappointment",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Aurinax Wing",
+        "price": 572,
+        "description": "The majestic Aurinax Wing is revered for its rarity. It brings prosperity but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Aurinax_Wing.svg",
+        "bonus": {
+          "name": "Prosperity",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Cheledon hair",
+        "price": 123,
+        "description": "Cheledon hair is known for its vibrant color. It brings trust but may also induce isolation.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Cheledon_hair.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Lunaris Antenna",
+        "price": 752,
+        "description": "Lunaris Antenna is a delicate appendage from the mystical Lunaris creature. It enhances trust but may lead to disappointment.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/animal-images/Lunaris_Antenna.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Beak of Vydorius",
+        "price": 429,
+        "description": "Beak of Vydorius is a sharp beak from the legendary Vydorius bird. It enhances vitality but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Beak_of_Vydorius.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Noctiferous Mane",
+        "price": 98,
+        "description": "Noctiferous Mane is a mane from the elusive Noctiferous creature. It brings serenity but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Noctiferous_Mane.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Zephyrid Fin",
+        "price": 321,
+        "description": "Zephyrid Fin is a fin from the swift Zephyrid creature. It enhances mental clarity but may induce stress.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/animal-images/Zephyrid_Fin.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Brumalis Tail",
+        "price": 548,
+        "description": "Brumalis Tail is a fluffy tail from the Brumalis creature. It enhances empathy but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Brumalis_Tail.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Ardorix Carapace",
+        "price": 123,
+        "description": "Ardorix Carapace is a tough shell from the fiery Ardorix creature. It enhances trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Ardorix_Carapace.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Ameris Eggs",
+        "price": 319,
+        "description": "Ameris Eggs are prized for their vibrant color. They enhance trust but may lead to disappointment.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/animal-images/Ameris_Eggs.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Panavius Greenhouse",
+        "price": 872,
+        "description": "Panavius Greenhouse is a rare artifact from the Panavius creature. It brings prosperity but may lead to disappointment.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/animal-images/Panavius_Greenhouse.svg",
+        "bonus": {
+          "name": "Prosperity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Cerulice's Horn",
+        "price": 521,
+        "description": "Cerulice's Horn is a legendary horn with mystical properties. It enhances mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Cerulice_Horn.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Paondoia Feather",
+        "price": 196,
+        "description": "Paondoia Feather is a feather from the majestic Paondoia bird. It brings serenity but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Paondoia_Feather.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Luminor Language",
+        "price": 369,
+        "description": "Luminor Language is a unique communication method of the Luminor creature. It enhances empathy but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Luminor_Language.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Everis Tentacle",
+        "price": 537,
+        "description": "Everis Tentacle is a resilient tentacle from the Everis creature. It enhances vitality but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Everis_Tentacle.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Astralis Thorn",
+        "price": 112,
+        "description": "Astralis Thorn is a sharp thorn from the Astralis plant. It enhances mental clarity but may induce stress.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/animal-images/Astralis_Thorn.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Opalir Tail",
+        "price": 498,
+        "description": "Opalir Tail is a shimmering tail from the Opalir creature. It enhances empathy but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/animal-images/Opalir_Tail.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Heart of Mystix",
+        "price": 654,
+        "description": "Heart of Mystix is a legendary artifact from the Mystix creature. It brings serenity but may lead to disappointment.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/animal-images/Heart_of_Mystix.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Disappointment",
           "magnitude": 30
         }
       }
-    }
+    ],
+    "mushroom": [
+      {
+        "name": "Frost Trumpet",
+        "price": 123,
+        "description": "Frost Trumpet is a rare mushroom that thrives in cold climates. It enhances vitality but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Frost_Trumpet.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Moonlight",
+        "price": 410,
+        "description": "Moonlight mushrooms glow softly in the dark. They bring serenity but may lead to disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Moonlight.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Emerald Chanterelle",
+        "price": 97,
+        "description": "Emerald Chanterelle is a rare mushroom with a vibrant green hue. It promotes harmony but may induce isolation.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Emerald_Chanterelle.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 58
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 42
+        }
+      },
+      {
+        "name": "Dew Hood",
+        "price": 572,
+        "description": "Dew Hood is a mushroom often found in damp forests. It enhances empathy but may induce isolation.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Dew_Hood.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 68
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 32
+        }
+      },
+      {
+        "name": "Star Hood",
+        "price": 354,
+        "description": "Star Hood is a mushroom that emits a gentle glow resembling starlight. It brings serenity but may induce disappointment.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Star_Hood.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 72
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 28
+        }
+      },
+      {
+        "name": "Sylve Truffle",
+        "price": 218,
+        "description": "Sylve Truffle is a rare mushroom with a delicate flavor. It promotes harmony but may induce isolation.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Sylve_Truffle.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Mist Trumpet",
+        "price": 123,
+        "description": "Mist Trumpet is a mushroom that emits a faint mist. It enhances trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Mist_Trumpet.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 55
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 45
+        }
+      },
+      {
+        "name": "Radiance of Dew",
+        "price": 649,
+        "description": "Radiance of Dew is a mushroom that glows softly in the moonlight. It enhances mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Radiance_of_Dew.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Night Chanterelle",
+        "price": 115,
+        "description": "Night Chanterelle is a mushroom that only blooms under the cover of darkness. It brings serenity but may induce disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Night_Chanterelle.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Dawn Hood",
+        "price": 312,
+        "description": "Dawn Hood is a mushroom that emits a soft glow at dawn. It enhances empathy but may induce isolation.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Dawn_Hood.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 62
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 38
+        }
+      },
+      {
+        "name": "Sky Truffle",
+        "price": 521,
+        "description": "Sky Truffle is a mushroom that resembles a fluffy cloud. It enhances vitality but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Sky_Truffle.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Silver Trumpet",
+        "price": 145,
+        "description": "Silver Trumpet is a mushroom with a metallic sheen. It brings trust but may lead to disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Silver_Trumpet.svg",
+        "bonus": {
+          "name": "Trust",
+          "magnitude": 58
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 42
+        }
+      },
+      {
+        "name": "Emerald Shard",
+        "price": 236,
+        "description": "Emerald Shard is a fragment of a larger mushroom crystal. It promotes harmony but may induce isolation.",
+        "rarity": "uncommon",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Emerald_Shard.svg",
+        "bonus": {
+          "name": "Harmony",
+          "magnitude": 65
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 35
+        }
+      },
+      {
+        "name": "Chanterelle de Sylve",
+        "price": 654,
+        "description": "Chanterelle de Sylve is a mushroom with healing properties. It enhances empathy but may induce isolation.",
+        "rarity": "epic",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Chanterelle_de_Sylve.svg",
+        "bonus": {
+          "name": "Empathy",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Isolation",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Sky Hood",
+        "price": 158,
+        "description": "Sky Hood is a mushroom that resembles the sky at dawn. It brings serenity but may induce disappointment.",
+        "rarity": "common",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Sky_Hood.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 60
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 40
+        }
+      },
+      {
+        "name": "Astre Truffle",
+        "price": 398,
+        "description": "Astre Truffle is a mushroom with a celestial pattern. It enhances mental clarity but may induce stress.",
+        "rarity": "rare",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Astre_Truffle.svg",
+        "bonus": {
+          "name": "Mental Clarity",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Stress",
+          "magnitude": 30
+        }
+      }
+    ]
   }
-  
+}
