@@ -227,11 +227,11 @@
         }
       },
       {
-        "name": "Nebularium",
+        "name": "Chorumine",
         "price": 398,
-        "description": "Nebularium is a mineral with a mesmerizing swirling pattern. It promotes harmony but may induce isolation.",
+        "description": "Chorumine is a mineral with a mesmerizing swirling pattern. It promotes harmony but may induce isolation.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mineral-images/Nebularium.svg",
+        "imagePath": "/chemin/vers/bdd/mineral-images/Chorumine.svg",
         "bonus": {
           "name": "Harmony",
           "magnitude": 68
