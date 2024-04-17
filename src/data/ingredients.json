@@ -304,11 +304,11 @@
     ],
     "vegetal": [
       {
-        "name": "Vertine",
+        "name": "Chantefeuille",
         "price": 247,
-        "description": "Vertine is a vibrant green herb found in lush forests. It promotes harmony and empathy.",
+        "description": "Chantefeuille is a vibrant green herb found in lush forests. It promotes harmony and empathy.",
         "rarity": "uncommon",
-        "imagePath": "/chemin/vers/bdd/vegetal-images/Vertine.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Chantefeuille.svg",
         "bonus": {
           "name": "Harmony",
           "magnitude": 70
@@ -319,11 +319,11 @@
         }
       },
       {
-        "name": "Feuillane",
+        "name": "Charmevelour",
         "price": 410,
-        "description": "Feuillane leaves are known for their soothing properties. They bring mental peace but can also cause disappointment.",
+        "description": "Charmevelour leaves are known for their soothing properties. They bring mental peace but can also cause disappointment.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/vegetal-images/Feuillane.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Charmevelour.svg",
         "bonus": {
           "name": "Peace",
           "magnitude": 80
@@ -409,11 +409,11 @@
         }
       },
       {
-        "name": "Tournisle",
+        "name": "Tourneline",
         "price": 532,
-        "description": "Tournisle is a rare herb known for its healing properties. It enhances empathy but may induce isolation.",
+        "description": "Tourneline is a rare herb known for its healing properties. It enhances empathy but may induce isolation.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/vegetal-images/Tournisle.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Tourneline.svg",
         "bonus": {
           "name": "Empathy",
           "magnitude": 68
@@ -514,11 +514,11 @@
         }
       },
       {
-        "name": "Vertane",
+        "name": "Brisetoile",
         "price": 652,
-        "description": "Vertane is a vibrant green herb known for its healing properties. It enhances empathy but may induce isolation.",
+        "description": "Brisetoile is a vibrant green herb known for its healing properties. It enhances empathy but may induce isolation.",
         "rarity": "epic",
-        "imagePath": "/chemin/vers/bdd/vegetal-images/Vertane.svg",
+        "imagePath": "/chemin/vers/bdd/vegetal-images/Brisetoile.svg",
         "bonus": {
           "name": "Empathy",
           "magnitude": 70
