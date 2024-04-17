@@ -983,11 +983,11 @@
         }
       },
       {
-        "name": "Emerald Chanterelle",
+        "name": "Aether Glow",
         "price": 97,
-        "description": "Emerald Chanterelle is a rare mushroom with a vibrant green hue. It promotes harmony but may induce isolation.",
+        "description": "Aether Glow is a rare mushroom with a vibrant green hue. It promotes harmony but may induce isolation.",
         "rarity": "common",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Emerald_Chanterelle.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Aether_Glow.svg",
         "bonus": {
           "name": "Harmony",
           "magnitude": 58
@@ -998,11 +998,11 @@
         }
       },
       {
-        "name": "Dew Hood",
+        "name": "Dew Hat",
         "price": 572,
-        "description": "Dew Hood is a mushroom often found in damp forests. It enhances empathy but may induce isolation.",
+        "description": "Dew Hat is a mushroom often found in damp forests. It enhances empathy but may induce isolation.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Dew_Hood.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Dew_Hat.svg",
         "bonus": {
           "name": "Empathy",
           "magnitude": 68
@@ -1013,11 +1013,11 @@
         }
       },
       {
-        "name": "Star Hood",
+        "name": "Milky Fur",
         "price": 354,
-        "description": "Star Hood is a mushroom that emits a gentle glow resembling starlight. It brings serenity but may induce disappointment.",
+        "description": "Milky Fur is a mushroom that emits a gentle glow resembling starlight. It brings serenity but may induce disappointment.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Star_Hood.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Milky_Fur.svg",
         "bonus": {
           "name": "Serenity",
           "magnitude": 72
@@ -1028,11 +1028,11 @@
         }
       },
       {
-        "name": "Sylve Truffle",
+        "name": "Sylver Truffle",
         "price": 218,
-        "description": "Sylve Truffle is a rare mushroom with a delicate flavor. It promotes harmony but may induce isolation.",
+        "description": "Sylver Truffle is a rare mushroom with a delicate flavor. It promotes harmony but may induce isolation.",
         "rarity": "uncommon",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Sylve_Truffle.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Sylver_Truffle.svg",
         "bonus": {
           "name": "Harmony",
           "magnitude": 60
@@ -1043,11 +1043,11 @@
         }
       },
       {
-        "name": "Mist Trumpet",
+        "name": "Mist Cymbal",
         "price": 123,
-        "description": "Mist Trumpet is a mushroom that emits a faint mist. It enhances trust but may lead to disappointment.",
+        "description": "Mist Cymbal is a mushroom that emits a faint mist. It enhances trust but may lead to disappointment.",
         "rarity": "common",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Mist_Trumpet.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Mist_Cymbal.svg",
         "bonus": {
           "name": "Trust",
           "magnitude": 55
@@ -1058,11 +1058,11 @@
         }
       },
       {
-        "name": "Radiance of Dew",
+        "name": "Golden Sporea",
         "price": 649,
-        "description": "Radiance of Dew is a mushroom that glows softly in the moonlight. It enhances mental clarity but may induce stress.",
+        "description": "Golden Sporea is a mushroom that glows softly in the moonlight. It enhances mental clarity but may induce stress.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Radiance_of_Dew.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Golden_Sporea.svg",
         "bonus": {
           "name": "Mental Clarity",
           "magnitude": 70
@@ -1088,11 +1088,11 @@
         }
       },
       {
-        "name": "Dawn Hood",
+        "name": "Opal Dawn",
         "price": 312,
-        "description": "Dawn Hood is a mushroom that emits a soft glow at dawn. It enhances empathy but may induce isolation.",
+        "description": "Opal Dawn is a mushroom that emits a soft glow at dawn. It enhances empathy but may induce isolation.",
         "rarity": "uncommon",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Dawn_Hood.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Opal_Dawn.svg",
         "bonus": {
           "name": "Empathy",
           "magnitude": 62
@@ -1103,11 +1103,11 @@
         }
       },
       {
-        "name": "Sky Truffle",
+        "name": "Ivory Truffle",
         "price": 521,
-        "description": "Sky Truffle is a mushroom that resembles a fluffy cloud. It enhances vitality but may induce stress.",
+        "description": "Ivory Truffle is a mushroom that resembles a fluffy cloud. It enhances vitality but may induce stress.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Sky_Truffle.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Ivory_Truffle.svg",
         "bonus": {
           "name": "Vitality",
           "magnitude": 70
@@ -1118,11 +1118,11 @@
         }
       },
       {
-        "name": "Silver Trumpet",
+        "name": "Silver horns",
         "price": 145,
-        "description": "Silver Trumpet is a mushroom with a metallic sheen. It brings trust but may lead to disappointment.",
+        "description": "Silver horns is a mushroom with a metallic sheen. It brings trust but may lead to disappointment.",
         "rarity": "common",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Silver_Trumpet.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Silver_horns.svg",
         "bonus": {
           "name": "Trust",
           "magnitude": 58
@@ -1133,11 +1133,11 @@
         }
       },
       {
-        "name": "Emerald Shard",
+        "name": "Twilight Mount",
         "price": 236,
-        "description": "Emerald Shard is a fragment of a larger mushroom crystal. It promotes harmony but may induce isolation.",
+        "description": "Twilight Mount is a fragment of a larger mushroom crystal. It promotes harmony but may induce isolation.",
         "rarity": "uncommon",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Emerald_Shard.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Twilight_Mount.svg",
         "bonus": {
           "name": "Harmony",
           "magnitude": 65
@@ -1148,11 +1148,11 @@
         }
       },
       {
-        "name": "Chanterelle de Sylve",
+        "name": "Sylvechant",
         "price": 654,
-        "description": "Chanterelle de Sylve is a mushroom with healing properties. It enhances empathy but may induce isolation.",
+        "description": "Sylvechant is a mushroom with healing properties. It enhances empathy but may induce isolation.",
         "rarity": "epic",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Chanterelle_de_Sylve.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Sylvechant.svg",
         "bonus": {
           "name": "Empathy",
           "magnitude": 70
@@ -1163,11 +1163,11 @@
         }
       },
       {
-        "name": "Sky Hood",
+        "name": "Misty Helmet",
         "price": 158,
-        "description": "Sky Hood is a mushroom that resembles the sky at dawn. It brings serenity but may induce disappointment.",
+        "description": "Misty Helmet is a mushroom that resembles the sky at dawn. It brings serenity but may induce disappointment.",
         "rarity": "common",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Sky_Hood.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Misty_Helmet.svg",
         "bonus": {
           "name": "Serenity",
           "magnitude": 60
@@ -1178,11 +1178,11 @@
         }
       },
       {
-        "name": "Astre Truffle",
+        "name": "Pearly Dome",
         "price": 398,
-        "description": "Astre Truffle is a mushroom with a celestial pattern. It enhances mental clarity but may induce stress.",
+        "description": "Pearly Dome is a mushroom with a celestial pattern. It enhances mental clarity but may induce stress.",
         "rarity": "rare",
-        "imagePath": "/chemin/vers/bdd/mushroom-images/Astre_Truffle.svg",
+        "imagePath": "/chemin/vers/bdd/mushroom-images/Pearly_Dome.svg",
         "bonus": {
           "name": "Mental Clarity",
           "magnitude": 70
@@ -1190,6 +1190,66 @@
         "malus": {
           "name": "Stress",
           "magnitude": 30
+        }
+      },
+      {
+        "name": "Silent Ember",
+        "price": 275,
+        "description": "Silent Ember is a mushroom that emits a soft and silent glow. It brings tranquility but may induce disappointment.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mushroom-images/Silent_Ember.svg",
+        "bonus": {
+          "name": "Serenity",
+          "magnitude": 75
+        },
+        "malus": {
+          "name": "Disappointment",
+          "magnitude": 25
+        }
+      },
+      {
+        "name": "Crimson Veil",
+        "price": 390,
+        "description": "Crimson Veil is a mushroom of intense red that grows in dark forests. It brings vitality but may induce anger.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mushroom-images/Crimson_Veil.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 80
+        },
+        "malus": {
+          "name": "Anger",
+          "magnitude": 20
+        }
+      },
+      {
+        "name": "Ember Glow",
+        "price": 180,
+        "description": "Ember Glow is a luminous mushroom resembling a burning ember. It brings vitality but may induce fatigue.",
+        "rarity": "uncommon",
+        "imagePath": "/path/to/database/mushroom-images/Ember_Glow.svg",
+        "bonus": {
+          "name": "Vitality",
+          "magnitude": 70
+        },
+        "malus": {
+          "name": "Fatigue",
+          "magnitude": 30
+        }
+      },
+      {
+        "name": "Emberheart Toadstool",
+        "price": 540,
+        "description": "Emberheart Toadstool is a mushroom with a burning heart at its center. It brings love but may induce depression.",
+        "rarity": "rare",
+        "imagePath": "/path/to/database/mushroom-images/Emberheart_Toadstool.svg",
+        "bonus": {
+          "name": "Love",
+          "magnitude": 85
+        },
+        "malus": {
+          "name": "Depression",
+          "magnitude": 15
         }
       }
     ]
