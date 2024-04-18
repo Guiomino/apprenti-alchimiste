@@ -1,0 +1,15 @@
+.marketBtn {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #333;
+  border: 4px double #00ccff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px transparent;
+}
+
+.marketBtn:hover {
+  box-shadow: 0px 0px 20px #00ccff;
+}

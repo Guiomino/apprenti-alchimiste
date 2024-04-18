@@ -30,3 +30,12 @@
     color: #ec8a08;
   }
 }
+
+// CONTAINER FOR BUTTONS / OPTIONS, INVENTORY, CLIENTS, MARKET
+.btnContainer {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+}

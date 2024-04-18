@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "./page.module.scss";
 import ApothecaryCabinetComponent from "@/components/apothecaryCabinet/apothecaryCabinet";
+import MarketBtn from "@/components/market/marketBtn";
 import ModalIngredients from "@/components/modalIngredients/modalIngredients";
 import { IngredientType } from "@/OOP/IngredientClass";
 
@@ -33,14 +34,17 @@ const GamingPage = () => {
                 />
             )}
             <div className={styles.gamingPage}>
-                <div className={styles.content}>
+                {/* <div className={styles.content}>
                     <button>Market</button>
-                </div>
+                </div> */}
                 <ApothecaryCabinetComponent
-                openIngredientsModal={openIngredientsModal}
-            />
+                    openIngredientsModal={openIngredientsModal}
+                />
             </div>
-            
+
+            <div className={styles.btnContainer}>
+                <MarketBtn />
+            </div>
         </>
     );
 };
