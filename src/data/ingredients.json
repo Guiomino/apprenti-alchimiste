@@ -5,7 +5,7 @@
                 "name": "Lumerite",
                 "description": "Lumerite is a mineral found on open-air veins in high mountains. It is known to reduce natural enthusiasm and calm ardor.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Lumerite.svg",
+                "imagePath": "public/images/Minerals/Lumerite.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 46
@@ -21,7 +21,7 @@
                 "name": "Crystamide",
                 "description": "Crystamide crystals form deep within underground caverns. They provide mental clarity while inducing stress.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Crystamide.svg",
+                "imagePath": "public/images/Minerals/Crystamide.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 62
@@ -37,7 +37,7 @@
                 "name": "Pyrodine",
                 "description": "Pyrodine is a rare mineral found near volcanic regions. It enhances vitality but may lead to anger issues.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Pyrodine.svg",
+                "imagePath": "public/images/Minerals/Pyrodine.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 55
@@ -53,7 +53,7 @@
                 "name": "Azurith",
                 "description": "Azurith is a precious gemstone often associated with tranquility. It promotes empathy but may induce disappointment.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Azurith.svg",
+                "imagePath": "public/images/Minerals/Azurith.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 58
@@ -69,7 +69,7 @@
                 "name": "Flamarine",
                 "description": "Flamarine is a fiery crystal that imbues its user with passion. It enhances vitality but may cause stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Flamarine.svg",
+                "imagePath": "public/images/Minerals/Flamarine.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 70
@@ -85,7 +85,7 @@
                 "name": "Verdanite",
                 "description": "Verdanite is a green-hued mineral found deep within ancient forests. It promotes harmony but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Verdanite.svg",
+                "imagePath": "public/images/Minerals/Verdanite.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 55
@@ -101,7 +101,7 @@
                 "name": "Perline",
                 "description": "Perline is a shimmering mineral with a calming effect. It brings serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Perline.svg",
+                "imagePath": "public/images/Minerals/Perline.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -117,7 +117,7 @@
                 "name": "Saverstride",
                 "description": "Saverstride is a rare mineral often found in ancient ruins. It enhances vitality but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Saverstride.svg",
+                "imagePath": "public/images/Minerals/Saverstride.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 75
@@ -133,7 +133,7 @@
                 "name": "Aurorium",
                 "description": "Aurorium is a radiant mineral that glows softly in darkness. It enhances trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Aurorium.svg",
+                "imagePath": "public/images/Minerals/Aurorium.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 55
@@ -149,7 +149,7 @@
                 "name": "Etherine",
                 "description": "Etherine is a rare mineral that resonates with magical energy. It promotes mental clarity but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Etherine.svg",
+                "imagePath": "public/images/Minerals/Etherine.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 70
@@ -165,7 +165,7 @@
                 "name": "Serenite",
                 "description": "Serenite is a calming mineral often used in meditation. It brings serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Serenite.svg",
+                "imagePath": "public/images/Minerals/Serenite.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 55
@@ -181,7 +181,7 @@
                 "name": "Umbrestone",
                 "description": "Umbrestone is a mysterious mineral that seems to absorb light. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Umbrestone.svg",
+                "imagePath": "public/images/Minerals/Umbrestone.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 65
@@ -197,7 +197,7 @@
                 "name": "Prismalite",
                 "description": "Prismalite is a rare crystal that refracts light into a spectrum of colors. It promotes harmony but may induce disappointment.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Prismalite.svg",
+                "imagePath": "public/images/Minerals/Prismalite.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 58
@@ -213,7 +213,7 @@
                 "name": "Nebulorite",
                 "description": "Nebulorite is a cloudy mineral often found in mist-covered valleys. It brings mental clarity but may induce stress.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Nebulorite.svg",
+                "imagePath": "public/images/Minerals/Nebulorite.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 65
@@ -229,7 +229,7 @@
                 "name": "Asteride",
                 "description": "Asteride is a rare mineral with star-like patterns. It enhances trust but may lead to disappointment.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Asteride.svg",
+                "imagePath": "public/images/Minerals/Asteride.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 72
@@ -245,7 +245,7 @@
                 "name": "Chorumine",
                 "description": "Chorumine is a mineral with a mesmerizing swirling pattern. It promotes harmony but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Chorumine.svg",
+                "imagePath": "public/images/Minerals/Chorumine.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 68
@@ -261,7 +261,7 @@
                 "name": "Aquarine",
                 "description": "Aquarine is a gemstone with a calming blue hue. It brings serenity but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Aquarine.svg",
+                "imagePath": "public/images/Minerals/Aquarine.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 70
@@ -277,7 +277,7 @@
                 "name": "Prismarque",
                 "description": "Prismarque is a rare crystal with intricate geometric patterns. It promotes mental clarity but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Prismarque.svg",
+                "imagePath": "public/images/Minerals/Prismarque.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 63
@@ -293,7 +293,7 @@
                 "name": "Abyssium",
                 "description": "Abyssium is a dark mineral found deep beneath the earth's surface. It enhances vitality but may lead to anger issues.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Abyssium.svg",
+                "imagePath": "public/images/Minerals/Abyssium.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 75
@@ -309,7 +309,7 @@
                 "name": "Arcanite",
                 "description": "Arcanite is a legendary mineral said to contain magical properties. It enhances trust but may lead to disappointment.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/mineral-images/Arcanite.svg",
+                "imagePath": "public/images/Minerals/Arcanite.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 68
@@ -327,7 +327,7 @@
                 "name": "Chantefeuille",
                 "description": "Chantefeuille is a vibrant green herb found in lush forests. It promotes harmony and empathy.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Chantefeuille.svg",
+                "imagePath": "public/images/Vegetals/Chantefeuille.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 70
@@ -343,7 +343,7 @@
                 "name": "Charmevelour",
                 "description": "Charmevelour leaves are known for their soothing properties. They bring mental peace but can also cause disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Charmevelour.svg",
+                "imagePath": "public/images/Vegetals/Charmevelour.svg",
                 "bonus": {
                     "name": "Peace",
                     "magnitude": 80
@@ -359,7 +359,7 @@
                 "name": "Roseliane",
                 "description": "Roseliane petals are prized for their sweet fragrance. They bring serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Roseliane.svg",
+                "imagePath": "public/images/Vegetals/Roseliane.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -375,7 +375,7 @@
                 "name": "Brumea",
                 "description": "Brumea is a rare herb found only in misty valleys. It enhances mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Brumea.svg",
+                "imagePath": "public/images/Vegetals/Brumea.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 75
@@ -391,7 +391,7 @@
                 "name": "Linette",
                 "description": "Linette seeds are known for their calming properties. They bring serenity but may lead to disappointment.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Linette.svg",
+                "imagePath": "public/images/Vegetals/Linette.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 65
@@ -407,7 +407,7 @@
                 "name": "Herbine",
                 "description": "Herbine is a versatile herb used in various potions. It enhances trust but may induce isolation.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Herbine.svg",
+                "imagePath": "public/images/Vegetals/Herbine.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 55
@@ -423,7 +423,7 @@
                 "name": "Verdane",
                 "description": "Verdane leaves are known for their vibrant green color. They bring vitality but may induce stress.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Verdane.svg",
+                "imagePath": "public/images/Vegetals/Verdane.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 70
@@ -439,7 +439,7 @@
                 "name": "Tourneline",
                 "description": "Tourneline is a rare herb known for its healing properties. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Tourneline.svg",
+                "imagePath": "public/images/Vegetals/Tourneline.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 68
@@ -455,7 +455,7 @@
                 "name": "Selaine",
                 "description": "Selaine is a delicate herb often used in love potions. It enhances trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Selaine.svg",
+                "imagePath": "public/images/Vegetals/Selaine.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 58
@@ -471,7 +471,7 @@
                 "name": "Orfeu",
                 "description": "Orfeu petals are known for their mesmerizing fragrance. They bring serenity but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Orfeu.svg",
+                "imagePath": "public/images/Vegetals/Orfeu.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 72
@@ -487,7 +487,7 @@
                 "name": "Sylvea",
                 "description": "Sylvea leaves are said to contain the essence of the forest. They promote harmony but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Sylvea.svg",
+                "imagePath": "public/images/Vegetals/Sylvea.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 65
@@ -503,7 +503,7 @@
                 "name": "Florée",
                 "description": "Florée petals are prized for their delicate fragrance. They bring mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Florée.svg",
+                "imagePath": "public/images/Vegetals/Florée.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 75
@@ -519,7 +519,7 @@
                 "name": "Lichenia",
                 "description": "Lichenia is a hardy plant that thrives in harsh environments. It enhances vitality but may induce isolation.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Lichenia.svg",
+                "imagePath": "public/images/Vegetals/Lichenia.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 60
@@ -535,7 +535,7 @@
                 "name": "Aromine",
                 "description": "Aromine is a rare herb prized for its calming aroma. It brings serenity but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Aromine.svg",
+                "imagePath": "public/images/Vegetals/Aromine.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 68
@@ -551,7 +551,7 @@
                 "name": "Brisetoile",
                 "description": "Brisetoile is a vibrant green herb known for its healing properties. It enhances empathy but may induce isolation.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Brisetoile.svg",
+                "imagePath": "public/images/Vegetals/Brisetoile.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 70
@@ -567,7 +567,7 @@
                 "name": "Verdargent",
                 "description": "Verdargent leaves shimmer like silver in moonlight. They bring vitality but may induce stress.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Verdargent.svg",
+                "imagePath": "public/images/Vegetals/Verdargent.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 65
@@ -583,7 +583,7 @@
                 "name": "Lineriane",
                 "description": "Lineriane is a delicate vine known for its healing properties. It promotes harmony but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Lineriane.svg",
+                "imagePath": "public/images/Vegetals/Lineriane.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 62
@@ -599,7 +599,7 @@
                 "name": "Sylvestrine",
                 "description": "Sylvestrine leaves rustle softly in the wind. They bring mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Sylvestrine.svg",
+                "imagePath": "public/images/Vegetals/Sylvestrine.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 70
@@ -615,7 +615,7 @@
                 "name": "Treflune",
                 "description": "Treflune is a small herb often found in shaded areas. It enhances trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Treflune.svg",
+                "imagePath": "public/images/Vegetals/Treflune.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 58
@@ -631,7 +631,7 @@
                 "name": "Orepine",
                 "description": "Orepine leaves are known for their golden hue. They bring serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/vegetal-images/Orepine.svg",
+                "imagePath": "public/images/Vegetals/Orepine.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -649,7 +649,7 @@
                 "name": "Grinfir Oil",
                 "description": "Grinfir Oil is extracted from the glands of the Grinfir beast. It enhances vitality but may induce anger.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/animal-images/Grinfir_Oil.svg",
+                "imagePath": "public/images/Animals/Grinfir_Oil.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 65
@@ -665,7 +665,7 @@
                 "name": "Sylvur Scale",
                 "description": "Sylvur Scales are known for their resilience. They enhance trust but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Sylvur_Scale.svg",
+                "imagePath": "public/images/Animals/Sylvur_Scale.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 70
@@ -681,7 +681,7 @@
                 "name": "Aurinax Wing",
                 "description": "The majestic Aurinax Wing is revered for its rarity. It brings prosperity but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Aurinax_Wing.svg",
+                "imagePath": "public/images/Animals/Aurinax_Wing.svg",
                 "bonus": {
                     "name": "Prosperity",
                     "magnitude": 65
@@ -697,71 +697,7 @@
                 "name": "Cheledon hair",
                 "description": "Cheledon hair is known for its vibrant color. It brings trust but may also induce isolation.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Cheledon_hair.svg",
-                "bonus": {
-                    "name": "Trust",
-                    "magnitude": 60
-                },
-                "malus": {
-                    "name": "Isolation",
-                    "magnitude": 40
-                },
-                "min_price": 1,
-                "max_price": 20
-            },
-            {
-                "name": "Grinfir Oil",
-                "description": "Grinfir Oil is extracted from the glands of the Grinfir beast. It enhances vitality but may induce anger.",
-                "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/animal-images/Grinfir_Oil.svg",
-                "bonus": {
-                    "name": "Vitality",
-                    "magnitude": 65
-                },
-                "malus": {
-                    "name": "Anger",
-                    "magnitude": 35
-                },
-                "min_price": 21,
-                "max_price": 60
-            },
-            {
-                "name": "Sylvur Scale",
-                "description": "Sylvur Scales are known for their resilience. They enhance trust but may lead to disappointment.",
-                "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Sylvur_Scale.svg",
-                "bonus": {
-                    "name": "Trust",
-                    "magnitude": 70
-                },
-                "malus": {
-                    "name": "Disappointment",
-                    "magnitude": 30
-                },
-                "min_price": 61,
-                "max_price": 180
-            },
-            {
-                "name": "Aurinax Wing",
-                "description": "The majestic Aurinax Wing is revered for its rarity. It brings prosperity but may lead to disappointment.",
-                "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Aurinax_Wing.svg",
-                "bonus": {
-                    "name": "Prosperity",
-                    "magnitude": 65
-                },
-                "malus": {
-                    "name": "Disappointment",
-                    "magnitude": 35
-                },
-                "min_price": 61,
-                "max_price": 180
-            },
-            {
-                "name": "Cheledon hair",
-                "description": "Cheledon hair is known for its vibrant color. It brings trust but may also induce isolation.",
-                "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Cheledon_hair.svg",
+                "imagePath": "public/images/Animals/Cheledon_Hair.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 60
@@ -777,7 +713,7 @@
                 "name": "Lunaris Antenna",
                 "description": "Lunaris Antenna is a delicate appendage from the mystical Lunaris creature. It enhances trust but may lead to disappointment.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/animal-images/Lunaris_Antenna.svg",
+                "imagePath": "public/images/Animals/Lunaris_Antenna.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 75
@@ -793,7 +729,7 @@
                 "name": "Beak of Vydorius",
                 "description": "Beak of Vydorius is a sharp beak from the legendary Vydorius bird. It enhances vitality but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Beak_of_Vydorius.svg",
+                "imagePath": "public/images/Animals/Beak_of_Vydorius.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 70
@@ -809,7 +745,7 @@
                 "name": "Noctiferous Mane",
                 "description": "Noctiferous Mane is a mane from the elusive Noctiferous creature. It brings serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Noctiferous_Mane.svg",
+                "imagePath": "public/images/Animals/Noctiferous_Mane.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -825,7 +761,7 @@
                 "name": "Zephyrid Fin",
                 "description": "Zephyrid Fin is a fin from the swift Zephyrid creature. It enhances mental clarity but may induce stress.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/animal-images/Zephyrid_Fin.svg",
+                "imagePath": "public/images/Animals/Zephyrid_Fin.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 65
@@ -841,7 +777,7 @@
                 "name": "Brumalis Tail",
                 "description": "Brumalis Tail is a fluffy tail from the Brumalis creature. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Brumalis_Tail.svg",
+                "imagePath": "public/images/Animals/Brumalis_Tail.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 70
@@ -857,7 +793,7 @@
                 "name": "Ardorix Carapace",
                 "description": "Ardorix Carapace is a tough shell from the fiery Ardorix creature. It enhances trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Ardorix_Carapace.svg",
+                "imagePath": "public/images/Animals/Ardorix_Carapace.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 60
@@ -873,7 +809,7 @@
                 "name": "Ameris Eggs",
                 "description": "Ameris Eggs are prized for their vibrant color. They enhance trust but may lead to disappointment.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/animal-images/Ameris_Eggs.svg",
+                "imagePath": "public/images/Animals/Ameris_Eggs.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 65
@@ -886,10 +822,10 @@
                 "max_price": 60
             },
             {
-                "name": "Panavius Greenhouse",
-                "description": "Panavius Greenhouse is a rare artifact from the Panavius creature. It brings prosperity but may lead to disappointment.",
+                "name": "Panavius Claw",
+                "description": "Panavius Claw is a rare artifact from the Panavius creature. It brings prosperity but may lead to disappointment.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/animal-images/Panavius_Greenhouse.svg",
+                "imagePath": "public/images/Animals/Panavius_Claw.svg",
                 "bonus": {
                     "name": "Prosperity",
                     "magnitude": 70
@@ -905,7 +841,7 @@
                 "name": "Cerulice's Horn",
                 "description": "Cerulice's Horn is a legendary horn with mystical properties. It enhances mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Cerulice_Horn.svg",
+                "imagePath": "public/images/Animals/Cerulice_Horn.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 70
@@ -921,7 +857,7 @@
                 "name": "Paondoia Feather",
                 "description": "Paondoia Feather is a feather from the majestic Paondoia bird. It brings serenity but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Paondoia_Feather.svg",
+                "imagePath": "public/images/Animals/Paondoia_Feather.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -934,10 +870,10 @@
                 "max_price": 20
             },
             {
-                "name": "Luminor Language",
-                "description": "Luminor Language is a unique communication method of the Luminor creature. It enhances empathy but may induce isolation.",
+                "name": "Luminor Tongue",
+                "description": "Luminor Tongue is a unique communication method of the Luminor creature. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Luminor_Language.svg",
+                "imagePath": "public/images/Animals/Luminor_Tongue.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 70
@@ -953,7 +889,7 @@
                 "name": "Everis Tentacle",
                 "description": "Everis Tentacle is a resilient tentacle from the Everis creature. It enhances vitality but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Everis_Tentacle.svg",
+                "imagePath": "public/images/Animals/Everis_Tentacle.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 70
@@ -969,7 +905,7 @@
                 "name": "Astralis Thorn",
                 "description": "Astralis Thorn is a sharp thorn from the Astralis plant. It enhances mental clarity but may induce stress.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/animal-images/Astralis_Thorn.svg",
+                "imagePath": "public/images/Animals/Astralis_Thorn.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 60
@@ -985,7 +921,7 @@
                 "name": "Opalir Tail",
                 "description": "Opalir Tail is a shimmering tail from the Opalir creature. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/animal-images/Opalir_Tail.svg",
+                "imagePath": "public/images/Animals/Opalir_Tail.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 65
@@ -1001,7 +937,7 @@
                 "name": "Heart of Mystix",
                 "description": "Heart of Mystix is a legendary artifact from the Mystix creature. It brings serenity but may lead to disappointment.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/animal-images/Heart_of_Mystix.svg",
+                "imagePath": "public/images/Animals/Heart_Of_Mystix.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 70
@@ -1012,6 +948,22 @@
                 },
                 "min_price": 181,
                 "max_price": 350
+            },
+            {
+                "name": "Claw_Of_Ensolvurax",
+                "description": "The Claw of Ensolvurax is a formidable weapon from the ancient Ensolvurax creature. It bestows power but may incite fear.",
+                "rarity": "rare",
+                "imagePath": "public/images/Animals/Claw_Of_Ensolvurax.svg",
+                "bonus": {
+                    "name": "Power",
+                    "magnitude": 80
+                },
+                "malus": {
+                    "name": "Fear",
+                    "magnitude": 20
+                },
+                "min_price": 61,
+                "max_price": 180
             }
         ],
         "mushroom": [
@@ -1019,7 +971,7 @@
                 "name": "Frost Trumpet",
                 "description": "Frost Trumpet is a rare mushroom that thrives in cold climates. It enhances vitality but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Frost_Trumpet.svg",
+                "imagePath": "public/images/Mushrooms/Frost_Trumpet.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 65
@@ -1035,7 +987,7 @@
                 "name": "Moonlight",
                 "description": "Moonlight mushrooms glow softly in the dark. They bring serenity but may lead to disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Moonlight.svg",
+                "imagePath": "public/images/Mushrooms/Moonlight.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 70
@@ -1051,7 +1003,7 @@
                 "name": "Aether Glow",
                 "description": "Aether Glow is a rare mushroom with a vibrant green hue. It promotes harmony but may induce isolation.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Aether_Glow.svg",
+                "imagePath": "public/images/Mushrooms/Aether_Glow.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 58
@@ -1067,7 +1019,7 @@
                 "name": "Dew Hat",
                 "description": "Dew Hat is a mushroom often found in damp forests. It enhances empathy but may induce isolation.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Dew_Hat.svg",
+                "imagePath": "public/images/Mushrooms/Dew_Hat.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 68
@@ -1083,7 +1035,7 @@
                 "name": "Milky Fur",
                 "description": "Milky Fur is a mushroom that emits a gentle glow resembling starlight. It brings serenity but may induce disappointment.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Milky_Fur.svg",
+                "imagePath": "public/images/Mushrooms/Milky_Fur.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 72
@@ -1099,7 +1051,7 @@
                 "name": "Sylver Truffle",
                 "description": "Sylver Truffle is a rare mushroom with a delicate flavor. It promotes harmony but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Sylver_Truffle.svg",
+                "imagePath": "public/images/Mushrooms/Sylver_Truffle.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 60
@@ -1115,7 +1067,7 @@
                 "name": "Mist Cymbal",
                 "description": "Mist Cymbal is a mushroom that emits a faint mist. It enhances trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Mist_Cymbal.svg",
+                "imagePath": "public/images/Mushrooms/Mist_Cymbal.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 55
@@ -1131,7 +1083,7 @@
                 "name": "Golden Sporea",
                 "description": "Golden Sporea is a mushroom that glows softly in the moonlight. It enhances mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Golden_Sporea.svg",
+                "imagePath": "public/images/Mushrooms/Golden_Sporea.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 70
@@ -1147,7 +1099,7 @@
                 "name": "Night Chanterelle",
                 "description": "Night Chanterelle is a mushroom that only blooms under the cover of darkness. It brings serenity but may induce disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Night_Chanterelle.svg",
+                "imagePath": "public/images/Mushrooms/Night_Chanterelle.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -1163,7 +1115,7 @@
                 "name": "Opal Dawn",
                 "description": "Opal Dawn is a mushroom that emits a soft glow at dawn. It enhances empathy but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Opal_Dawn.svg",
+                "imagePath": "public/images/Mushrooms/Opal_Dawn.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 62
@@ -1179,7 +1131,7 @@
                 "name": "Ivory Truffle",
                 "description": "Ivory Truffle is a mushroom that resembles a fluffy cloud. It enhances vitality but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Ivory_Truffle.svg",
+                "imagePath": "public/images/Mushrooms/Ivory_Truffle.svg",
                 "bonus": {
                     "name": "Vitality",
                     "magnitude": 70
@@ -1195,7 +1147,7 @@
                 "name": "Silver horns",
                 "description": "Silver horns is a mushroom with a metallic sheen. It brings trust but may lead to disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Silver_horns.svg",
+                "imagePath": "public/images/Mushrooms/Silver_Horns.svg",
                 "bonus": {
                     "name": "Trust",
                     "magnitude": 58
@@ -1211,7 +1163,7 @@
                 "name": "Twilight Mount",
                 "description": "Twilight Mount is a fragment of a larger mushroom crystal. It promotes harmony but may induce isolation.",
                 "rarity": "uncommon",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Twilight_Mount.svg",
+                "imagePath": "public/images/Mushrooms/Twilight_Mount.svg",
                 "bonus": {
                     "name": "Harmony",
                     "magnitude": 65
@@ -1227,7 +1179,7 @@
                 "name": "Sylvechant",
                 "description": "Sylvechant is a mushroom with healing properties. It enhances empathy but may induce isolation.",
                 "rarity": "epic",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Sylvechant.svg",
+                "imagePath": "public/images/Mushrooms/Sylvechant.svg",
                 "bonus": {
                     "name": "Empathy",
                     "magnitude": 70
@@ -1243,7 +1195,7 @@
                 "name": "Misty Helmet",
                 "description": "Misty Helmet is a mushroom that resembles the sky at dawn. It brings serenity but may induce disappointment.",
                 "rarity": "common",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Misty_Helmet.svg",
+                "imagePath": "public/images/Mushrooms/Misty_Helmet.svg",
                 "bonus": {
                     "name": "Serenity",
                     "magnitude": 60
@@ -1259,7 +1211,7 @@
                 "name": "Pearly Dome",
                 "description": "Pearly Dome is a mushroom with a celestial pattern. It enhances mental clarity but may induce stress.",
                 "rarity": "rare",
-                "imagePath": "/chemin/vers/bdd/mushroom-images/Pearly_Dome.svg",
+                "imagePath": "public/images/Mushrooms/Pearly_Dome.svg",
                 "bonus": {
                     "name": "Mental Clarity",
                     "magnitude": 70
