@@ -1,13 +1,19 @@
 // marketBtn.tsx
-import marketIngredients from "@/data/ingredients.json"
+import React from "react";
 import styles from "./marketBtn.module.scss";
 
-const marketBtn = () => {
+
+interface MarketModaleProps {
+    openMarketModal: () => void
+}
+
+const MarketBtn: React.FC<MarketModaleProps> = ({ openMarketModal }) => {
     return (
         <>
-            <button className={styles.marketBtn}>🧺</button>
+            <button
+                className={styles.marketBtn}
+                onClick={() => openMarketModal()}>🧺</button>
         </>
     )
 }
-
-export default marketBtn;
+export default MarketBtn;
