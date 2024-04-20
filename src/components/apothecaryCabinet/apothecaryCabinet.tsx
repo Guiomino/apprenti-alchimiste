@@ -12,32 +12,52 @@ const ApothecaryCabinetComponent: React.FC<ApothecaryCabinetProps> = ({
     return (
         <div className={styles.apothecaryContainer}>
             <div className={styles.apothecaryTable}></div>
+
             <div className={styles.apothecaryCabinet}>
-                <button
-                    className={styles.mineral}
-                    onClick={() => openIngredientsModal(IngredientType.MINERAL)}
-                >
-                    Minéral
-                </button>
-                <button
-                    className={styles.vegetal}
-                    onClick={() => openIngredientsModal(IngredientType.VEGETAL)}
-                >
-                    Végétal
-                </button>
-                <button
-                    className={styles.animal}
-                    onClick={() => openIngredientsModal(IngredientType.ANIMAL)}
-                >
-                    Animal
-                </button>
-                <button
-                    className={styles.mushroom}
-                    onClick={() => openIngredientsModal(IngredientType.MUSHROOM)}
-                >
-                    Champignon
-                </button>
+                <div className={styles.legLeft}></div>
+                <div className={styles.legRight}></div>
+
+
+                <div className={styles.apothecaryStorage}>
+                    <button
+                        className={styles.mineral}
+                        onClick={() => openIngredientsModal(IngredientType.MINERAL)}
+                    ><div className={styles.drawer}>
+                            <div className={styles.label}>Mineral</div>
+                            <div className={styles.handle}></div>
+                        </div>
+
+                    </button>
+                    <button
+                        className={styles.vegetal}
+                        onClick={() => openIngredientsModal(IngredientType.VEGETAL)}
+                    >
+                        <div className={styles.drawer}>
+                            <div className={styles.label}>Vegetal</div>
+                            <div className={styles.handle}></div>
+                        </div>
+                    </button>
+                    <button
+                        className={styles.animal}
+                        onClick={() => openIngredientsModal(IngredientType.ANIMAL)}
+                    >
+                        <div className={styles.drawer}>
+                            <div className={styles.label}>Animal</div>
+                            <div className={styles.handle}></div>
+                        </div>
+                    </button>
+                    <button
+                        className={styles.mushroom}
+                        onClick={() => openIngredientsModal(IngredientType.MUSHROOM)}
+                    >
+                        <div className={styles.drawer}>
+                            <div className={styles.label}>Mushroom</div>
+                            <div className={styles.handle}></div>
+                        </div>
+                    </button>
+                </div>
             </div>
+            <div className={styles.feet}></div>
         </div>
     );
 };
