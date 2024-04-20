@@ -1,11 +1,45 @@
 // marketModal.tsx
+import ingredientsData from "@/data/ingredients.json";
 import styles from "./marketModal.module.scss";
+import IngredientComponent from "@/components/IngredientComponent";
 
+enum IngredientRarity {
+    common = "common",
+    uncommon = "uncommon",
+    rare = "rare",
+    epic = "epic"
+}
+
+interface IngredientI {
+    name: string,
+    description: string | IngredientRarity,
+    rarity: string,
+    imagePath: string,
+    bonus: {
+        name: string,
+        magnitude: number
+    },
+    malus: {
+        name: string,
+        magnitude: number
+    },
+    min_price: number,
+    max_price: number
+}
+
+interface IngredientData {
+    ingredients: {
+        [key: string]:
+        IngredientI[]
+    }
+}
 interface MarketModalProps {
     closeMarketModal: () => void;
 }
 
+
 const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
+    const data: IngredientData = ingredientsData;
     return (
         <>
             <div className={styles.marketModalOverlay}>
@@ -23,7 +57,13 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
 
                     <div className={styles.modalMiddle}>
-
+                        {
+                            Object.keys(data.ingredients).map((ingredientType: string) => (
+                                Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
+                                    <IngredientComponent img="/images/Animals/Ameris_Eggs.png" name={data.ingredients[ingredientType][parseInt(ingredient)].name} price={10} quantity={20} rarity="rare" type="un peu" key={crypto.randomUUID()} />
+                                ))
+                            ))
+                        }
                     </div>
 
                 </div>
