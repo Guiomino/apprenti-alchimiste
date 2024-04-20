@@ -1,7 +1,95 @@
-.marketModal {
-  background-color: red;
+.marketModalOverlay {
+  position: fixed;
   width: 100%;
   height: 100%;
-  position: absolute;
-  z-index: 100;
+  top: 0;
+  background-color: #222222ee;
+  z-index: 1;
+
+  .marketModalWindow {
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 100%;
+    max-height: 800px;
+    min-height: 600px;
+    border: 2px solid #00aeff;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modalTop {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #333;
+    border-radius: 10px 10px 0px 0px;
+
+    .filterAndGoldAndClose {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #00aeff;
+
+      .filter,
+      .close {
+        width: 10%;
+        max-width: 40px;
+        height: 40px;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .filter {
+        background-color: #24a124;
+        border-radius: 8px 0px 0px 0px;
+      }
+      .close {
+        background-color: #ff0062;
+        border-radius: 0px 8px 0px 0px;
+        transition: 0.3s;
+      }
+      .close:hover {
+        background-color: #c41b5c;
+      }
+      .gold,
+      .lvl {
+        width: 25%;
+        height: 40px;
+        text-align: center;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .gold {
+        color: #ffbb00;
+      }
+      .lvl {
+        color: #51a851;
+      }
+      .title {
+        width: 30%;
+        height: 40px;
+        color: rgb(215, 236, 255);
+        text-align: center;
+        font-size: 18px;
+        border-right: 1px solid #00aeff;
+        border-left: 1px solid #00aeff;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        line-height: 1;
+      }
+    }
+  }
 }

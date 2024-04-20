@@ -36,7 +36,7 @@ const GamingPage = () => {
 
     return (
         <>
-            {isMarketModalOpen && <MarketModal />}
+            {isMarketModalOpen && <MarketModal closeMarketModal={closeMarketModal} />}
 
             {isModalIngredientsOpen && (
                 <ModalIngredients
@@ -46,7 +46,6 @@ const GamingPage = () => {
                 />
             )}
             <div className={styles.gamingPage}>
-
                 <div className={styles.btnContainer}>
                     <MarketBtn openMarketModal={openMarketModal} />
                 </div>
