@@ -1,7 +1,7 @@
 // marketModal.tsx
 import ingredientsData from "@/data/ingredients.json";
 import styles from "./marketModal.module.scss";
-import IngredientComponent from "@/components/IngredientComponent";
+import IngredientMarketComponent from "@/components/ingredientMarketComponent/IngredientMarketComponent";
 
 enum IngredientRarity {
     common = "common",
@@ -60,7 +60,15 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                         {
                             Object.keys(data.ingredients).map((ingredientType: string) => (
                                 Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
-                                    <IngredientComponent img="/images/Animals/Ameris_Eggs.png" name={data.ingredients[ingredientType][parseInt(ingredient)].name} price={10} quantity={20} rarity="rare" type="un peu" key={crypto.randomUUID()} />
+                                    <IngredientMarketComponent
+                                        img={data.ingredients[ingredientType][parseInt(ingredient)].imagePath}
+                                        name={data.ingredients[ingredientType][parseInt(ingredient)].name}
+                                        quantity={20}
+                                        rarity={data.ingredients[ingredientType][parseInt(ingredient)].rarity}
+                                        type={ingredientType}
+                                        minPrice={data.ingredients[ingredientType][parseInt(ingredient)].min_price}
+                                        maxPrice={data.ingredients[ingredientType][parseInt(ingredient)].max_price}
+                                        key={crypto.randomUUID()} />
                                 ))
                             ))
                         }

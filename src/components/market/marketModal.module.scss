@@ -21,6 +21,7 @@
     transform: translate(-50%, -50%);
   }
 
+  // MODAL TOP
   .modalTop {
     width: 100%;
     height: 40px;
@@ -92,4 +93,42 @@
       }
     }
   }
+
+  // MODAL MIDDLE
+  .modalMiddle {
+    height: 50%;
+    width: 100%;
+    overflow-y: auto;
+
+    /* Pour Chrome, Safari et autres navigateurs basés sur WebKit */
+    &::-webkit-scrollbar {
+      width: 10px; /* Largeur de la barre de défilement */
+      min-width: 10px; /* Largeur minimale de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #bababa; /* Couleur de fond de la piste de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #00aeff; /* Couleur de la barre de défilement */
+      border: solid 1px #00aeff; /* Contour de la barre de défilement */
+      border-radius: 5px; /* Bord arrondi de la barre de défilement */
+      height: 300px; /* Hauteur minimale de la barre de défilement */
+      min-height: 300px; /* Hauteur minimale de la barre de défilement */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #00aeff; /* Couleur de survol de la barre de défilement */
+    }
+
+    /* Pour Firefox */
+    scrollbar-width: thin; /* Épaisseur de la barre de défilement */
+    scrollbar-color: #00aeff #bababa; /* Couleur de la barre de défilement */
+
+    &::-webkit-scrollbar-thumb {
+      min-height: 50px; /* Hauteur minimale de la barre de défilement */
+    }
+  }
 }
+
