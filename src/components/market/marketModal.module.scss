@@ -99,6 +99,9 @@
     height: 50%;
     width: 100%;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
     /* Pour Chrome, Safari et autres navigateurs basés sur WebKit */
     &::-webkit-scrollbar {

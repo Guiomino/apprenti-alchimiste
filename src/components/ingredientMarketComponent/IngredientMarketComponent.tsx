@@ -39,10 +39,11 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({ img, name, quant
     }, [img, minPrice, maxPrice]);
 
     return (
-        <div className={styles.ingredientCardMarket}>
+        // <div className={styles.ingredientCardMarket}>
+        <div className={`${styles.ingredientCardMarket} ${rarity === "Common" ? styles.commonStyle : rarity === "Uncommon" ? styles.uncommonStyle : rarity === "Rare" ? styles.rareStyle : rarity === "Epic" ? styles.epicStyle : ""}`}>
             <div className={styles.cardLeft}>{imageSrc && <Image src={imageSrc} alt={name} />}</div>
 
-            <div className={styles.cardMiddle}><button>{name}</button>
+            <div className={styles.cardMiddle}><button className={styles.buttonWithOverlay}>{name}</button>
                 <p>{rarity}</p>
                 <p>{type}</p></div>
 

@@ -3,5 +3,101 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: red;
+  background: linear-gradient(to top, #06191f, #122c32);
+  color: white;
+  border-radius: 0px 0px 0px 20px;
+
+  .cardLeft {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      max-width: 60%;
+      max-width: 60%;
+      object-fit: contain;
+    }
+  }
+
+  .cardMiddle {
+    width: 40%;
+
+    button {
+      border: none;
+      width: 100%;
+      height: 50px;
+      color: white;
+      text-shadow: 0px 0px 10px #ae00ff;
+      font-weight: 800;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.commonStyle {
+  border: 2px solid #00aeff;
+  box-shadow: 0px 0px 10px #00aeff;
+  .cardMiddle {
+    border-left: 2px solid #00aeff;
+    border-right: 2px solid #00aeff;
+  }
+  button {
+    background: linear-gradient(to top, #00aeff, transparent);
+  }
+}
+.uncommonStyle {
+  border: 2px solid #02e171;
+  box-shadow: 0px 0px 10px #02e171;
+  .cardMiddle {
+    border-left: 2px solid #02e171;
+    border-right: 2px solid #02e171;
+  }
+  button {
+    background: linear-gradient(to top, #02e171, transparent);
+  }
+}
+.rareStyle {
+  border: 2px solid #c100f1;
+  box-shadow: 0px 0px 10px #c100f1;
+  .cardMiddle {
+    border-left: 2px solid #c100f1;
+    border-right: 2px solid #c100f1;
+  }
+  button {
+    background: linear-gradient(to top, #c100f1, transparent);
+  }
+}
+.epicStyle {
+  border: 2px solid #ffb700;
+  box-shadow: 0px 0px 10px #ffb700;
+  .cardMiddle {
+    border-left: 2px solid #ffb700;
+    border-right: 2px solid #ffb700;
+  }
+  button {
+    background: linear-gradient(to top, #ffb700, transparent);
+  }
+}
+
+.buttonWithOverlay {
+  position: relative;
+}
+
+.buttonWithOverlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    #ffffffcc,
+    transparent,
+    transparent,
+    #ffffffcc
+  );
 }
