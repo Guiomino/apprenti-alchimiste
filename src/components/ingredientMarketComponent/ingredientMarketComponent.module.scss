@@ -7,6 +7,7 @@
   color: white;
   border-radius: 0px 0px 0px 20px;
 
+  // LEFT PART
   .cardLeft {
     width: 80px;
     height: 80px;
@@ -15,28 +16,88 @@
     justify-content: center;
 
     & img {
-      max-width: 60%;
-      max-width: 60%;
+      max-width: 70%;
+      max-width: 70%;
       object-fit: contain;
     }
   }
 
+  // MIDDLE PART
   .cardMiddle {
     width: 40%;
+    height: 100%;
 
     button {
       border: none;
       width: 100%;
       height: 50px;
       color: white;
-      text-shadow: 0px 0px 10px #ae00ff;
+      text-shadow: 0px 0px 10px #fff;
       font-weight: 800;
       text-transform: uppercase;
       cursor: pointer;
     }
+    div {
+      display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      gap: 5px;
+      margin-left: 2px;
+
+      .rarity {
+        width: 50%;
+        height: 30px;
+        border-right: 2px solid #00aeff;
+        // STAR
+        .star {
+          position: relative;
+          display: block;
+          margin: 36px 0;
+          width: 0px;
+          height: 0px;
+          border-right: 10px solid transparent;
+          // border-bottom: 7.5px solid #00aeff;
+          border-left: 10px solid transparent;
+          transform: rotate(37deg);
+          margin: 0px;
+        }
+
+        .star:before {
+          position: absolute;
+          display: block;
+          width: 0;
+          height: 0;
+          top: -5.5px;
+          left: -7px;
+          content: "";
+          // border-bottom: 8.5px solid #00aeff;
+          border-left: 3px solid transparent;
+          border-right: 3px solid transparent;
+          transform: rotate(323deg);
+        }
+
+        .star:after {
+          position: absolute;
+          display: block;
+          width: 0px;
+          height: 0px;
+          top: 0;
+          left: -10px;
+          content: "";
+          border-right: 10px solid transparent;
+          // border-bottom: 7.5px solid #00aeff;
+          border-left: 10px solid transparent;
+          transform: rotate(286deg);
+        }
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
 
+//////////////////// COLOR CHANGE DEPENDING ON RARITY LEVEL ////////////////////
 .commonStyle {
   border: 2px solid #00aeff;
   box-shadow: 0px 0px 10px #00aeff;
@@ -46,6 +107,14 @@
   }
   button {
     background: linear-gradient(to top, #00aeff, transparent);
+    &.buttonWithOverlay::after {
+      border-bottom: 2px solid #00aeff;
+    }
+  }
+  .star,
+  .star:before,
+  .star:after {
+    border-bottom: 7.5px solid #00aeff;
   }
 }
 .uncommonStyle {
@@ -57,6 +126,14 @@
   }
   button {
     background: linear-gradient(to top, #02e171, transparent);
+    &.buttonWithOverlay::after {
+      border-bottom: 2px solid #02e171;
+    }
+  }
+  .star,
+  .star:before,
+  .star:after {
+    border-bottom: 7.5px solid #02e171;
   }
 }
 .rareStyle {
@@ -68,6 +145,14 @@
   }
   button {
     background: linear-gradient(to top, #c100f1, transparent);
+    &.buttonWithOverlay::after {
+      border-bottom: 2px solid #c100f1;
+    }
+  }
+  .star,
+  .star:before,
+  .star:after {
+    border-bottom: 7.5px solid #c100f1;
   }
 }
 .epicStyle {
@@ -79,6 +164,14 @@
   }
   button {
     background: linear-gradient(to top, #ffb700, transparent);
+    &.buttonWithOverlay::after {
+      border-bottom: 2px solid #ffb700;
+    }
+  }
+  .star,
+  .star:before,
+  .star:after {
+    border-bottom: 7.5px solid #ffb700;
   }
 }
 
