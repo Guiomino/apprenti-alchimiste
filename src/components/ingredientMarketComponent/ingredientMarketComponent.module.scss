@@ -1,22 +1,22 @@
 // INGREDIENT CARD MARKET
 .ingredientCardMarket {
   width: 100%;
+  height: 80px;
   display: flex;
   align-items: center;
-  background: linear-gradient(to top, #06191f, #122c32);
+  background: linear-gradient(to top, #032024, #1e626b);
   color: white;
   border-radius: 0px 0px 0px 20px;
 
   // LEFT PART
   .cardLeft {
     width: 80px;
-    height: 80px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & img {
-      max-width: 70%;
       max-width: 70%;
       object-fit: contain;
     }
@@ -108,18 +108,68 @@
     .multiplier {
       display: flex;
       width: 100%;
-      height: 33%;
+      height: 25px;
       justify-content: space-between;
 
       button {
         width: 25%;
-        background: none;
+        background-color: none;
         border: none;
         color: white;
         cursor: pointer;
+        transition: 0.3s;
 
         &:last-child {
           border-right: none;
+        }
+        &:focus,
+        &:hover {
+          background-color: #fff;
+          color: black;
+        }
+      }
+    }
+
+    .price p {
+      height: 25px;
+      margin: 0px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+    }
+    .quantity {
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        margin: 0px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        span {
+          display: flex;
+          justify-content: end;
+        }
+      }
+
+      div button {
+        width: 30px;
+        height: 100%;
+        // border: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: none;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:focus,
+        &:hover {
+          background-color: #fff;
+          color: #000;
         }
       }
     }
@@ -151,6 +201,12 @@
       border-right: 2px solid #00aeff;
     }
   }
+  .quantity {
+    border-top: 2px solid #00aeff;
+    div button {
+      border-left: 2px solid #00aeff;
+    }
+  }
 }
 .uncommonStyle {
   border: 2px solid #02e171;
@@ -174,6 +230,12 @@
     border-bottom: 2px solid #02e171;
     button {
       border-right: 2px solid #02e171;
+    }
+  }
+  .quantity {
+    border-top: 2px solid #02e171;
+    div button {
+      border-left: 2px solid #02e171;
     }
   }
 }
@@ -201,6 +263,12 @@
       border-right: 2px solid #c100f1;
     }
   }
+  .quantity {
+    border-top: 2px solid #c100f1;
+    div button {
+      border-left: 2px solid #c100f1;
+    }
+  }
 }
 .epicStyle {
   border: 2px solid #ffb700;
@@ -224,6 +292,12 @@
     border-bottom: 2px solid #ffb700;
     button {
       border-right: 2px solid #ffb700;
+    }
+  }
+  .quantity {
+    border-top: 2px solid #ffb700;
+    div button {
+      border-left: 2px solid #ffb700;
     }
   }
 }

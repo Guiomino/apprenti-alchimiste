@@ -73,8 +73,16 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({ img, name, quant
                     <button className={styles.x100}>x100</button>
                     <button className={styles.max}>max</button>
                 </div>
-                <p>Quantity : 0 / <span>{quantity}</span></p>
-                <p>Price : 🪙 {price}</p>
+                <div className={styles.price}>
+                    <p>Price:<span>🪙 {price}</span></p>
+                </div>
+                <div className={styles.quantity}>
+                    <p>Quantity:<span>0 / {quantity}</span></p>
+                    <div>
+                        <button className={styles.quantityIncrement}>-</button>
+                        <button className={styles.quantityDecrement}>+</button>
+                    </div>
+                </div>
             </div>
         </div>
     );
