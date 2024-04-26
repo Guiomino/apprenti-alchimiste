@@ -7,6 +7,7 @@ import MarketBtn from "@/components/market/marketBtn";
 import MarketModal from "@/components/market/marketModal";
 import ModalIngredients from "@/components/modalIngredients/modalIngredients";
 import { IngredientType } from "@/OOP/IngredientClass";
+import CustomCursor from "@/components/CustomCursor/CustomCursor"
 
 const GamingPage = () => {
     // HANDLE MODALS
@@ -36,6 +37,7 @@ const GamingPage = () => {
 
     return (
         <>
+        <CustomCursor/>
             {isMarketModalOpen && <MarketModal closeMarketModal={closeMarketModal} />}
 
             {isModalIngredientsOpen && (

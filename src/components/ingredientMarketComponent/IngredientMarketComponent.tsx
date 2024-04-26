@@ -52,17 +52,17 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({ img, name, quant
 
             <div className={styles.cardMiddle}>
                 <button className={styles.buttonWithOverlay}>{name}</button>
-                <div>
+                <div className={styles.rarityAndType}>
                     <div className={styles.rarity}>
                         <div className={styles.star}></div>
                         <p>{rarity}</p>
                     </div>
-                    <div className={styles.type}>
+                    {/* <div className={styles.type}> */}
                         <div className={styles.categoriTypeSVG}>
                             {typeImages[type] && <Image src={typeImages[type]} alt={type} width={15} height={15} />}
                         </div>
-                        <p>{type}</p>
-                    </div>
+                        {/* <p>{type}</p> */}
+                    {/* </div> */}
                 </div>
             </div>
 
