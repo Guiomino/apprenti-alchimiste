@@ -183,6 +183,11 @@
 .commonStyle {
   border: 2px solid #00aeff;
   box-shadow: 0px 0px 10px #00aeff;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #00aeff);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #00aeff;
     border-right: 2px solid #00aeff;
@@ -211,9 +216,15 @@
     }
   }
 }
+
 .uncommonStyle {
   border: 2px solid #02e171;
   box-shadow: 0px 0px 10px #02e171;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #02e171);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #02e171;
     border-right: 2px solid #02e171;
@@ -242,9 +253,15 @@
     }
   }
 }
+
 .rareStyle {
   border: 2px solid #c100f1;
   box-shadow: 0px 0px 10px #c100f1;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #c100f1);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #c100f1;
     border-right: 2px solid #c100f1;
@@ -273,9 +290,15 @@
     }
   }
 }
+
 .epicStyle {
   border: 2px solid #ffb700;
   box-shadow: 0px 0px 10px #ffb700;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #ffb700);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #ffb700;
     border-right: 2px solid #ffb700;
