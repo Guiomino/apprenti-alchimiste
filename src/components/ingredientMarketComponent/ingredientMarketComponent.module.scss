@@ -47,7 +47,7 @@
         display: flex;
         width: 80%;
         gap: 5px;
-        border-right: 2px solid #00aeff;
+        font-size: 12px;
 
         // STAR
         .star {
@@ -91,8 +91,14 @@
           transform: rotate(286deg);
         }
       }
-      p {
-        font-size: 12px;
+      .categoriTypeSVG {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #00aeff;
       }
     }
   }
@@ -104,6 +110,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    span {
+      color: orange;
+    }
 
     .multiplier {
       display: flex;
@@ -138,38 +148,46 @@
       font-size: 12px;
     }
     .quantity {
+      width: 100%;
       height: 30px;
       display: flex;
       justify-content: space-between;
 
-      p {
+      .quantityStock {
+        width: 100%;
         margin: 0px 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         font-size: 12px;
-        span {
+
+        p {
+          width: 100%;
           display: flex;
-          justify-content: end;
+          align-items: center;
+          justify-content: space-between;
         }
       }
 
-      div button {
-        width: 30px;
+      .quantityButton {
+        display: flex;
         height: 100%;
-        // border: none;
-        border-top: none;
-        border-right: none;
-        border-bottom: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        transition: 0.3s;
 
-        &:focus,
-        &:hover {
-          background-color: #fff;
-          color: #000;
+        button {
+          width: 30px;
+          // border: none;
+          border-top: none;
+          border-right: none;
+          border-bottom: none;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          transition: 0.3s;
+
+          &:focus,
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
         }
       }
     }
