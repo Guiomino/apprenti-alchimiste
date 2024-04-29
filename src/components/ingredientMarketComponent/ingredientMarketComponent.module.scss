@@ -49,48 +49,6 @@
         width: 80%;
         gap: 5px;
         border-right: 2px solid #00aeff;
-
-        // STAR
-        .star {
-          position: relative;
-          display: block;
-          margin: 36px 0;
-          width: 0px;
-          height: 0px;
-          border-right: 10px solid transparent;
-          // border-bottom: 7.5px solid #00aeff;
-          border-left: 10px solid transparent;
-          transform: rotate(37deg);
-          margin: 0px;
-        }
-
-        .star:before {
-          position: absolute;
-          display: block;
-          width: 0;
-          height: 0;
-          top: -5.5px;
-          left: -7px;
-          content: "";
-          // border-bottom: 8.5px solid #00aeff;
-          border-left: 3px solid transparent;
-          border-right: 3px solid transparent;
-          transform: rotate(323deg);
-        }
-
-        .star:after {
-          position: absolute;
-          display: block;
-          width: 0px;
-          height: 0px;
-          top: 0;
-          left: -10px;
-          content: "";
-          border-right: 10px solid transparent;
-          // border-bottom: 7.5px solid #00aeff;
-          border-left: 10px solid transparent;
-          transform: rotate(286deg);
-        }
       }
       p {
         font-size: 12px;
@@ -193,11 +151,6 @@
       border-bottom: 2px solid #00aeff;
     }
   }
-  .star,
-  .star:before,
-  .star:after {
-    border-bottom: 7.5px solid #00aeff;
-  }
   .cardRight .multiplier {
     border-bottom: 2px solid #00aeff;
     button {
@@ -223,11 +176,6 @@
     &.buttonWithOverlay::after {
       border-bottom: 2px solid #02e171;
     }
-  }
-  .star,
-  .star:before,
-  .star:after {
-    border-bottom: 7.5px solid #02e171;
   }
   .cardRight .multiplier {
     border-bottom: 2px solid #02e171;
@@ -255,11 +203,6 @@
       border-bottom: 2px solid #c100f1;
     }
   }
-  .star,
-  .star:before,
-  .star:after {
-    border-bottom: 7.5px solid #c100f1;
-  }
   .cardRight .multiplier {
     border-bottom: 2px solid #c100f1;
     button {
@@ -285,11 +228,6 @@
     &.buttonWithOverlay::after {
       border-bottom: 2px solid #ffb700;
     }
-  }
-  .star,
-  .star:before,
-  .star:after {
-    border-bottom: 7.5px solid #ffb700;
   }
   .cardRight .multiplier {
     border-bottom: 2px solid #ffb700;

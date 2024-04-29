@@ -19,6 +19,12 @@ const typeImages: { [key: string]: string } = {
     Animal: "/images/Type_Animal.svg",
     Mushroom: "/images/Type_Mushroom.svg",
 }
+const starImages: { [key: string]: string } = {
+    Common: "/images/Star_Common.png",
+    Uncommon: "/images/Star_Uncommon.png",
+    Rare: "/images/Star_Rare.png",
+    Epic: "/images/Star_Epic.png",
+}
 
 const IngredientMarketComponent: React.FC<IngredientProps> = ({ img, name, quantity, minPrice, maxPrice, rarity, type }) => {
     const [imageSrc, setImageSrc] = useState<string | null>(null);
@@ -54,14 +60,16 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({ img, name, quant
                 <button className={styles.buttonWithOverlay}>{name}</button>
                 <div className={styles.rarityAndType}>
                     <div className={styles.rarity}>
-                        <div className={styles.star}></div>
+                        <div className={styles.star}>
+                            {starImages[rarity] && <Image src={starImages[rarity]} alt={rarity} width={15} height={15} />}
+                        </div>
                         <p>{rarity}</p>
                     </div>
                     {/* <div className={styles.type}> */}
-                        <div className={styles.categoriTypeSVG}>
-                            {typeImages[type] && <Image src={typeImages[type]} alt={type} width={15} height={15} />}
-                        </div>
-                        {/* <p>{type}</p> */}
+                    <div className={styles.categoriTypeSVG}>
+                        {typeImages[type] && <Image src={typeImages[type]} alt={type} width={15} height={15} />}
+                    </div>
+                    {/* <p>{type}</p> */}
                     {/* </div> */}
                 </div>
             </div>
