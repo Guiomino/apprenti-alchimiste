@@ -49,6 +49,8 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
         }
     }
 
+    const totalPrice = price * currentQuantity;
+
     useEffect(() => {
         const importImage = async () => {
             try {
@@ -117,6 +119,7 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
                 <div className={styles.price}>
                     <p>
                         Price:<span>🪙 {price}</span>
+                        Total:<span>🪙 {totalPrice}</span>
                     </p>
                 </div>
                 <div className={styles.quantity}>
