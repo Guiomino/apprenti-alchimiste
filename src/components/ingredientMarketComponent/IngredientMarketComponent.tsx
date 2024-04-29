@@ -38,6 +38,16 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
 }) => {
     const [imageSrc, setImageSrc] = useState<string | null>(null);
     const [price, setPrice] = useState<number>(0);
+    const [currentQuantity, setCurrentQuantity] = useState<number>(quantity);
+
+    const handleQuantity = (increment: boolean) => {
+        if (increment) {
+            setCurrentQuantity(prevQuantity => prevQuantity + 1);
+        }
+        else {
+            setCurrentQuantity(prevQuantity => Math.max(prevQuantity - 1, 0));
+        }
+    }
 
     useEffect(() => {
         const importImage = async () => {
@@ -112,12 +122,12 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
                 <div className={styles.quantity}>
 
                     <div className={styles.quantityStock}>
-                        <p>Quantity:<span>{quantity}</span></p>
+                        <p>Quantity:<span>{currentQuantity}</span></p>
                     </div>
 
                     <div className={styles.quantityButton}>
-                        <button className={styles.quantityIncrement}>-</button>
-                        <button className={styles.quantityDecrement}>+</button>
+                        <button className={styles.quantityIncrement} onClick={() => handleQuantity(false)}>-</button>
+                        <button className={styles.quantityDecrement} onClick={() => handleQuantity(true)}>+</button>
                     </div>
                 </div>
             </div>
