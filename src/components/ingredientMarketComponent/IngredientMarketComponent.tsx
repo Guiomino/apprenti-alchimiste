@@ -39,14 +39,24 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
     const [imageSrc, setImageSrc] = useState<string | null>(null);
     const [price, setPrice] = useState<number>(0);
     const [currentQuantity, setCurrentQuantity] = useState<number>(quantity);
+    const [multiplier, setMultiplier] = useState<number>(1);
 
     const handleQuantity = (increment: boolean) => {
+        const incrementValue = multiplier === 1 ? 1 : multiplier === 10 ? 10 : 100;
         if (increment) {
-            setCurrentQuantity(prevQuantity => prevQuantity + 1);
+            setCurrentQuantity(prevQuantity => prevQuantity + incrementValue);
         }
         else {
-            setCurrentQuantity(prevQuantity => Math.max(prevQuantity - 1, 0));
+            setCurrentQuantity(prevQuantity => Math.max(prevQuantity - incrementValue, 0));
         }
+    }
+
+    const handleMultiplier = (multiplierValue: number) => {
+        setMultiplier(multiplierValue);
+    }
+
+    const handleReset = () => {
+        setCurrentQuantity(0);
     }
 
     const totalPrice = price * currentQuantity;
@@ -73,8 +83,11 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
         };
     }, [img, minPrice, maxPrice]);
 
+
+    // GESTION DES BOUTONS +1, +10, +100
+
+
     return (
-        // <div className={styles.ingredientCardMarket}>
         <div
             className={`${styles.ingredientCardMarket} ${rarity === "Common"
                 ? styles.commonStyle
@@ -104,17 +117,16 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
                         {typeImages[type] && (
                             <Image src={typeImages[type]} alt={type} width={15} height={15} />
                         )}
-                        {/* <p>{type}</p> */}
                     </div>
                 </div>
             </div>
 
             <div className={styles.cardRight}>
                 <div className={styles.multiplier}>
-                    <button className={styles.x1}>+1</button>
-                    <button className={styles.x10}>+10</button>
-                    <button className={styles.x100}>+100</button>
-                    <button className={styles.max}>max</button>
+                    <button className={`${styles.multiplierButton} ${multiplier === 1 ? styles.active : ''}`} onClick={() => handleMultiplier(1)}>x1</button>
+                    <button className={`${styles.multiplierButton} ${multiplier === 10 ? styles.active : ''}`} onClick={() => handleMultiplier(10)}>x10</button>
+                    <button className={`${styles.multiplierButton} ${multiplier === 100 ? styles.active : ''}`} onClick={() => handleMultiplier(100)}>x100</button>
+                    <button className={styles.multiplierButton} onClick={handleReset}>reset</button>
                 </div>
                 <div className={styles.price}>
                     <p>
