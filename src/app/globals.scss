@@ -6,13 +6,15 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: sans-serif;
-
-    cursor: none;
-
 }
 
 html, body {
   height: 100%;
+  cursor: url("../../public/images/SR-normal.cur"), auto;
+  button:hover,
+  a:hover {
+    cursor: url("../../public/images/SR-precision.cur"), pointer;
+  }
 }
 
 #_ _ next {

@@ -34,7 +34,6 @@
       text-shadow: 0px 0px 10px #fff;
       font-weight: 800;
       text-transform: uppercase;
-      cursor: pointer;
       transition: 0.3s;
     }
     .rarityAndType {
@@ -50,8 +49,14 @@
         gap: 5px;
         border-right: 2px solid #00aeff;
       }
-      p {
-        font-size: 12px;
+      .categoriTypeSVG {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 2px solid #00aeff;
       }
     }
   }
@@ -64,6 +69,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    span {
+      color: orange;
+    }
+
     .multiplier {
       display: flex;
       width: 100%;
@@ -75,7 +84,6 @@
         background-color: none;
         border: none;
         color: white;
-        cursor: pointer;
         transition: 0.3s;
 
         &:last-child {
@@ -98,39 +106,46 @@
       font-size: 12px;
     }
     .quantity {
+      width: 100%;
       height: 30px;
       display: flex;
       justify-content: space-between;
 
-      p {
+      .quantityStock {
+        width: 100%;
         margin: 0px 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         font-size: 12px;
-        span {
+
+        p {
+          width: 100%;
           display: flex;
-          justify-content: end;
+          align-items: center;
+          justify-content: space-between;
         }
       }
 
-      div button {
-        width: 30px;
+      .quantityButton {
+        display: flex;
         height: 100%;
-        // border: none;
-        border-top: none;
-        border-right: none;
-        border-bottom: none;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: 0.3s;
 
-        &:focus,
-        &:hover {
-          background-color: #fff;
-          color: #000;
+        button {
+          width: 30px;
+          // border: none;
+          border-top: none;
+          border-right: none;
+          border-bottom: none;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          transition: 0.3s;
+
+          &:focus,
+          &:hover {
+            background-color: #fff;
+            color: #000;
+          }
         }
       }
     }
@@ -141,6 +156,11 @@
 .commonStyle {
   border: 2px solid #00aeff;
   box-shadow: 0px 0px 10px #00aeff;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #00aeff);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #00aeff;
     border-right: 2px solid #00aeff;
@@ -164,9 +184,15 @@
     }
   }
 }
+
 .uncommonStyle {
   border: 2px solid #02e171;
   box-shadow: 0px 0px 10px #02e171;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #02e171);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #02e171;
     border-right: 2px solid #02e171;
@@ -190,9 +216,15 @@
     }
   }
 }
+
 .rareStyle {
   border: 2px solid #c100f1;
   box-shadow: 0px 0px 10px #c100f1;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #c100f1);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #c100f1;
     border-right: 2px solid #c100f1;
@@ -216,9 +248,15 @@
     }
   }
 }
+
 .epicStyle {
   border: 2px solid #ffb700;
   box-shadow: 0px 0px 10px #ffb700;
+  .cardLeft {
+    img {
+      filter: drop-shadow(0 0 10px #ffb700);
+    }
+  }
   .cardMiddle {
     border-left: 2px solid #ffb700;
     border-right: 2px solid #ffb700;
