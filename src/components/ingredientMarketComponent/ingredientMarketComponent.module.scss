@@ -40,23 +40,24 @@
       width: 100%;
       height: 30px;
       display: flex;
-      align-items: center;
       padding: 0px 3px;
 
       .rarity {
         display: flex;
-        width: 80%;
-        gap: 5px;
-        border-right: 2px solid #00aeff;
+        width: 85%;
+
+        .star {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: 12px;
+        }
       }
       .categoriTypeSVG {
-        position: relative;
-        width: 30px;
-        height: 30px;
+        width: 15%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-left: 2px solid #00aeff;
       }
     }
   }
@@ -132,7 +133,6 @@
 
         button {
           width: 30px;
-          // border: none;
           border-top: none;
           border-right: none;
           border-bottom: none;
@@ -164,6 +164,9 @@
   .cardMiddle {
     border-left: 2px solid #00aeff;
     border-right: 2px solid #00aeff;
+    .rarity {
+      border-right: 2px solid #00aeff;
+    }
   }
   button {
     background: linear-gradient(to top, #00aeff, transparent);
@@ -196,6 +199,9 @@
   .cardMiddle {
     border-left: 2px solid #02e171;
     border-right: 2px solid #02e171;
+    .rarity {
+      border-right: 2px solid #02e171;
+    }
   }
   button {
     background: linear-gradient(to top, #02e171, transparent);
@@ -228,6 +234,9 @@
   .cardMiddle {
     border-left: 2px solid #c100f1;
     border-right: 2px solid #c100f1;
+    .rarity {
+      border-right: 2px solid #c100f1;
+    }
   }
   button {
     background: linear-gradient(to top, #c100f1, transparent);
@@ -260,6 +269,9 @@
   .cardMiddle {
     border-left: 2px solid #ffb700;
     border-right: 2px solid #ffb700;
+    .rarity {
+      border-right: 2px solid #ffb700;
+    }
   }
   button {
     background: linear-gradient(to top, #ffb700, transparent);
