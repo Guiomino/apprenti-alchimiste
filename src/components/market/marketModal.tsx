@@ -1,7 +1,10 @@
 // marketModal.tsx
+import React from "react";
 import ingredientsData from "@/data/ingredients.json";
 import styles from "./marketModal.module.scss";
+import Image from "next/image";
 import IngredientMarketComponent from "@/components/ingredientMarketComponent/IngredientMarketComponent";
+import DetailsIngredient from "../detailsIngredient/detailsIngredient";
 
 enum IngredientRarity {
     common = "common",
@@ -37,6 +40,12 @@ interface MarketModalProps {
     closeMarketModal: () => void;
 }
 
+const miscellaneousImages: { [key: string]: string } = {
+    Filter: "/images/Miscellaneous/Filter.png",
+    NbrOfIngr: "/images/Miscellaneous/Nbr_Of_Ingr.png",
+    Cart: "/images/Miscellaneous/Cart.png",
+    Gold: "/images/Miscellaneous/Gold.png",
+};
 
 const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
     const data: IngredientData = ingredientsData;
@@ -47,7 +56,9 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
                     <section className={styles.modalTop}>
                         <div className={styles.filterAndGoldAndClose}>
-                            <button className={styles.filter}>📖</button>
+                            <button className={styles.filter}>
+                                {miscellaneousImages && <Image src={miscellaneousImages["Filter"]} alt={"Filter"} width={28} height={28} />}
+                            </button>
                             <span className={styles.gold}>🪙 3226</span>
                             <h1 className={styles.title}>Apothecary Market</h1>
                             <span className={styles.lvl}>LV.4 ⬆</span>
@@ -57,6 +68,7 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
 
                     <section className={styles.modalMiddle}>
+                        <DetailsIngredient />
                         {
                             Object.keys(data.ingredients).map((ingredientType: string) => (
                                 Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
@@ -75,8 +87,19 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                     </section>
 
                     <section className={styles.modalBottom}>
-                        <div className={styles.test}>
-
+                        <div className={styles.cartBanner}>
+                            <div className={styles.nbrOfIngr}>
+                                {miscellaneousImages && <Image src={miscellaneousImages["NbrOfIngr"]} alt={"Nbr Of Ingr"} width={15} height={20} />}
+                                <p>Nbr of Ingr: <span>12</span></p>
+                            </div>
+                            <div className={styles.cart}>
+                                {miscellaneousImages && <Image src={miscellaneousImages["Cart"]} alt={"Cart"} width={20} height={18} />}
+                                <h3>CART ⬇</h3>
+                            </div>
+                            <div className={styles.gold}>
+                                {miscellaneousImages && <Image src={miscellaneousImages["Gold"]} alt={"Gold"} width={18} height={18} />}
+                                <p>Total: <span>1534</span></p>
+                            </div>
                         </div>
                     </section>
 

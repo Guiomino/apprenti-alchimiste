@@ -31,12 +31,12 @@
     gap: 20px;
     background-color: #333;
     border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #00aeff;
 
     .filterAndGoldAndClose {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      border-bottom: 2px solid #00aeff;
 
       .filter,
       .close {
@@ -46,6 +46,7 @@
         color: #fff;
         border: none;
         font-size: 18px;
+        border-bottom: 2px solid #00aeff;
       }
       .filter {
         background-color: #24a124;
@@ -78,11 +79,12 @@
       .title {
         width: 30%;
         height: 40px;
-        color: rgb(215, 236, 255);
+        color: #d7ecff;
         text-align: center;
         font-size: 18px;
-        border-right: 1px solid #00aeff;
-        border-left: 1px solid #00aeff;
+        border-right: 2px solid #00aeff;
+        border-left: 2px solid #00aeff;
+        border-bottom: 2px solid #00aeff;
         background-color: black;
         display: flex;
         align-items: center;
@@ -101,6 +103,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 1;
 
     /* Pour Chrome, Safari et autres navigateurs basés sur WebKit */
     &::-webkit-scrollbar {
@@ -132,5 +135,57 @@
       min-height: 50px; /* Hauteur minimale de la barre de défilement */
     }
   }
-}
+  .modalMiddle::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      #00000088 1%,
+      transparent 3%,
+      transparent 95%,
+      #000000aa 99%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
 
+  // MODAL BOTTOM
+  .modalBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    span {
+      color: #ffbb00;
+    }
+
+    .cartBanner {
+      width: 100%;
+      display: flex;
+      border-top: 2px solid #00aeff;
+      border-bottom: 2px solid #00aeff;
+
+      .nbrOfIngr,
+      .cart,
+      .gold {
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        gap: 5px;
+        text-align: center;
+      }
+      .cart {
+        color: #00aeff;
+        font-size: 15px;
+        border-right: 2px solid #00aeff;
+        border-left: 2px solid #00aeff;
+        background-color: black;
+      }
+    }
+  }
+}

@@ -21,10 +21,10 @@ const typeImages: { [key: string]: string } = {
 };
 
 const starImages: { [key: string]: string } = {
-    Common: "/images/Star_Common.png",
-    Uncommon: "/images/Star_Uncommon.png",
-    Rare: "/images/Star_Rare.png",
-    Epic: "/images/Star_Epic.png",
+    Common: "/images/Miscellaneous/Star_Common.png",
+    Uncommon: "/images/Miscellaneous/Star_Uncommon.png",
+    Rare: "/images/Miscellaneous/Star_Rare.png",
+    Epic: "/images/Miscellaneous/Star_Epic.png",
 }
 
 const IngredientMarketComponent: React.FC<IngredientProps> = ({
