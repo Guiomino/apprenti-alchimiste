@@ -101,7 +101,7 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
                 }`}
         >
             <div className={styles.cardLeft}>
-                {imageSrc && <Image src={imageSrc} alt={name} />}
+                {imageSrc && <Image src={imageSrc} alt={name} height={70} />}
             </div>
 
             <div className={styles.cardMiddle}>

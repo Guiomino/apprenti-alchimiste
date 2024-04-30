@@ -10,10 +10,10 @@
 
 html, body {
   height: 100%;
-  cursor: url("../../public/images/SR-normal.cur"), auto;
+  cursor: url("../../public/images/Cursor_Pointer.png"), auto;
   button:hover,
   a:hover {
-    cursor: url("../../public/images/SR-precision.cur"), pointer;
+    cursor: url("../../public/images/Cursor_Pointer_Hover.png"), pointer;
   }
 }
 

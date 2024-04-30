@@ -45,7 +45,7 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
             <div className={styles.marketModalOverlay}>
                 <div className={styles.marketModalWindow}>
 
-                    <div className={styles.modalTop}>
+                    <section className={styles.modalTop}>
                         <div className={styles.filterAndGoldAndClose}>
                             <button className={styles.filter}>📖</button>
                             <span className={styles.gold}>🪙 3226</span>
@@ -53,10 +53,10 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                             <span className={styles.lvl}>LV.4 ⬆</span>
                             <button className={styles.close} onClick={closeMarketModal}>X</button>
                         </div>
-                    </div>
+                    </section>
 
 
-                    <div className={styles.modalMiddle}>
+                    <section className={styles.modalMiddle}>
                         {
                             Object.keys(data.ingredients).map((ingredientType: string) => (
                                 Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
@@ -72,7 +72,13 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                                 ))
                             ))
                         }
-                    </div>
+                    </section>
+
+                    <section className={styles.modalBottom}>
+                        <div className={styles.test}>
+
+                        </div>
+                    </section>
 
                 </div>
             </div>
