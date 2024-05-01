@@ -4,7 +4,7 @@ import ingredientsData from "@/data/ingredients.json";
 import styles from "./marketModal.module.scss";
 import Image from "next/image";
 import IngredientMarketComponent from "@/components/ingredientMarketComponent/IngredientMarketComponent";
-import DetailsIngredient from "../detailsIngredient/detailsIngredient";
+import DetailsIngredientComponent from "@/components/detailsIngredientComponent/DetailsIngredientComponent";
 
 enum IngredientRarity {
     common = "common",
@@ -68,7 +68,7 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
 
                     <section className={styles.modalMiddle}>
-                        <DetailsIngredient />
+                        <DetailsIngredientComponent />
                         {
                             Object.keys(data.ingredients).map((ingredientType: string) => (
                                 Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
