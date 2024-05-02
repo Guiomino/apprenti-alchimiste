@@ -5,6 +5,7 @@ import styles from "./marketModal.module.scss";
 import Image from "next/image";
 import IngredientMarketComponent from "@/components/ingredientMarketComponent/IngredientMarketComponent";
 import DetailsIngredientComponent from "@/components/detailsIngredientComponent/DetailsIngredientComponent";
+import Ingredient from "@/OOP/IngredientClass";
 
 enum IngredientRarity {
     common = "common",
@@ -49,6 +50,13 @@ const miscellaneousImages: { [key: string]: string } = {
 
 const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
     const data: IngredientData = ingredientsData;
+
+    const [detailOpened, setDetailOpened] = React.useState<Ingredient | null>(null);
+
+    React.useEffect(() => {
+        console.log("State changed");
+    }, [detailOpened])
+        
     return (
         <>
             <div className={styles.marketModalOverlay}>
@@ -68,11 +76,15 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
 
                     <section className={styles.modalMiddle}>
-                        <DetailsIngredientComponent />
+                        <DetailsIngredientComponent detailOpened={detailOpened} setDetailOpened={setDetailOpened}/>
+                        <div>
                         {
                             Object.keys(data.ingredients).map((ingredientType: string) => (
                                 Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
                                     <IngredientMarketComponent
+
+                                        setDetailOpened={setDetailOpened}
+
                                         img={data.ingredients[ingredientType][parseInt(ingredient)].imagePath}
                                         name={data.ingredients[ingredientType][parseInt(ingredient)].name}
                                         quantity={0}
@@ -84,6 +96,7 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                                 ))
                             ))
                         }
+                        </div>
                     </section>
 
                     <section className={styles.modalBottom}>

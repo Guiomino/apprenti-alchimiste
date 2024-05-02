@@ -1,19 +1,23 @@
 // DetailsIngredient.tsx
 
+import Ingredient from "@/OOP/IngredientClass";
 import styles from "./detailsIngredientComponent.module.scss";
 
 
-const DetailsIngredientComponent = () => {
+
+const DetailsIngredientComponent = ({
+    detailOpened, setDetailOpened
+} : { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
     return (
         <>
-            <section className={styles.detailsIngredientOverlay}>
+            <section className={`${detailOpened !== null ? styles.active : styles.detailsIngredientOverlay}`}>
                 <div className={styles.detailsIngredientWindow}>
                     <div className={styles.top}>
                         <div>
                             <img src="images/Vegetals/Aromine.png" alt="Aromine" />
                         </div>
-                        <h2>Aromine</h2>
-                        <button>X</button>
+                        <h2>{ detailOpened?.getIngredientName() }</h2>
+                        <button onClick={() => setDetailOpened(null)}>X</button>
                     </div>
 
 

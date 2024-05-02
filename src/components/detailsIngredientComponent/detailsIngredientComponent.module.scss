@@ -1,5 +1,4 @@
-.detailsIngredientOverlay {
-  //.active
+.active {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,9 +9,11 @@
   background-color: #333333cc;
   color: white;
   z-index: 999999999999;
-  // .detailsIngredientOverlay {
-  //     display: none;
-  // }
+}
+  
+  .detailsIngredientOverlay {
+      display: none;
+  }
 
   .detailsIngredientWindow {
     position: relative;
@@ -217,4 +218,3 @@
       }
     }
   }
-}
