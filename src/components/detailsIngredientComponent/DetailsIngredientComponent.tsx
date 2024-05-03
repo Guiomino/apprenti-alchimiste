@@ -8,6 +8,7 @@ import styles from "./detailsIngredientComponent.module.scss";
 const DetailsIngredientComponent = ({
     detailOpened, setDetailOpened
 } : { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
+    console.log(detailOpened) // ATEJ
     return (
         <>
             <section className={`${detailOpened !== null ? styles.active : styles.detailsIngredientOverlay}`}>
@@ -26,14 +27,14 @@ const DetailsIngredientComponent = ({
                             <div className={styles.star}>
                                 <img src="images/Miscellaneous/Star_Common.png" alt="Star" />
                             </div>
-                            <p><span>Rarity : </span>Common</p>
+                            <p><span>Rarity : </span>{detailOpened?.getIngredientRarity()}</p>
                         </div>
                         <div className={styles.rarityAndType}>
                             <div className={styles.type}>
                                 <img src="images/Type_Vegetal.svg" alt="Vegetal" />
                             </div>
 
-                            <p><span>Type : </span>Vegetal</p>
+                            <p><span>Type : </span>{detailOpened?.getIngredientType()}</p>
                         </div>
                     </div>
 
@@ -50,7 +51,7 @@ const DetailsIngredientComponent = ({
                             </div>
                         </div>
                         <div className={styles.description}>
-                            <p><span>Description : </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, reiciendis. Repellat dignissimos vel hic eum cumque alias voluptatum possimus, deserunt amet.</p>
+                            <p><span>Description : </span>{detailOpened?.getIngredientDescription()}</p>
                         </div>
 
                         <div className={styles.bonusMalus}>

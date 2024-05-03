@@ -7,6 +7,7 @@ import Ingredient, { IngredientRarity, IngredientType } from "@/OOP/IngredientCl
 interface IngredientProps {
   img: string;
   name: string;
+  description: string,
   quantity: number;
   minPrice: number;
   maxPrice: number;
@@ -32,6 +33,7 @@ const starImages: { [key: string]: string } = {
 const IngredientMarketComponent: React.FC<IngredientProps> = ({
   img,
   name,
+  description,
   quantity,
   minPrice,
   maxPrice,
@@ -115,6 +117,7 @@ const IngredientMarketComponent: React.FC<IngredientProps> = ({
               new Ingredient(
                 name,
                 price,
+                description,
                 quantity,
                 type === "Animal"
                   ? IngredientType.ANIMAL

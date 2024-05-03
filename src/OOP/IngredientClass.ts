@@ -23,23 +23,29 @@ export const parseIngredientRarity = (rarity: string): IngredientRarity => {
 class Ingredient {
     name: string;
     price: number;
+    description: string;
     quantity: number;
     rarity: IngredientRarity;
     type: IngredientType;
-    constructor(name: string, price: number, quantity: number, type: IngredientType, rarity: IngredientRarity = IngredientRarity.COMMON) {
+    constructor(name: string, price: number, description: string, quantity: number, type: IngredientType, rarity: IngredientRarity = IngredientRarity.COMMON) {
         this.name = name;
         this.price = price;
+        this.description = description;
         this.quantity = quantity;
         this.rarity = rarity;
         this.type = type;
+    }
+
+    getIngredientName() {
+        return this.name;
     }
 
     getIngredientPrice() {
         return this.price * this.quantity;
     }
 
-    getIngredientName() {
-        return this.name;
+    getIngredientDescription() {
+        return this.description;
     }
 
     getIngredientQuantity() {
@@ -54,12 +60,16 @@ class Ingredient {
         return this.rarity;
     }
 
+    setIngredientName(name: string) {
+        this.name = name;
+    }
+
     setIngredientQuantity(quantity: number) {
         this.quantity = quantity;
     }
 
-    setIngredientName(name: string) {
-        this.name = name;
+    setIngredientDescription(description: string) {
+        this.description = description;
     }
 
     setIngredientPrice(price: number) {
