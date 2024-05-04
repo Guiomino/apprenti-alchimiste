@@ -87,6 +87,7 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
 
                                         img={data.ingredients[ingredientType][parseInt(ingredient)].imagePath}
                                         name={data.ingredients[ingredientType][parseInt(ingredient)].name}
+                                        description={data.ingredients[ingredientType][parseInt(ingredient)].description}
                                         quantity={0}
                                         rarity={data.ingredients[ingredientType][parseInt(ingredient)].rarity}
                                         type={ingredientType}

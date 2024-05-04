@@ -7,8 +7,7 @@ import styles from "./detailsIngredientComponent.module.scss";
 
 const DetailsIngredientComponent = ({
     detailOpened, setDetailOpened
-} : { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
-    console.log(detailOpened) // ATEJ
+}: { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
     return (
         <>
             <section className={`${detailOpened !== null ? styles.active : styles.detailsIngredientOverlay}`}>
@@ -17,7 +16,7 @@ const DetailsIngredientComponent = ({
                         <div>
                             <img src="images/Vegetals/Aromine.png" alt="Aromine" />
                         </div>
-                        <h2>{ detailOpened?.getIngredientName() }</h2>
+                        <h2>{detailOpened?.getIngredientName()}</h2>
                         <button onClick={() => setDetailOpened(null)}>X</button>
                     </div>
 
