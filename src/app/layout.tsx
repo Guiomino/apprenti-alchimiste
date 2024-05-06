@@ -5,6 +5,7 @@ import "./globals.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
 import UserProvider from "@/Provider/UserContext";
+import IngredientProvider from "@/Provider/IngredientContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,9 @@ export default function RootLayout({
         <html lang="fr">
             <body className={`${inter.className}`}>
                 <UserProvider>
-                    <main>{children}</main>
+                    <IngredientProvider>
+                        <main>{children}</main>
+                    </IngredientProvider>
                 </UserProvider>
                 <ToastContainer />
             </body>

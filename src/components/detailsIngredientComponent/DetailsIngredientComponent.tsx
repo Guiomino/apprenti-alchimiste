@@ -1,19 +1,24 @@
 // DetailsIngredient.tsx
+"use client"
 
 import Ingredient from "@/OOP/IngredientClass";
 import styles from "./detailsIngredientComponent.module.scss";
+import { useIngredient } from "@/Provider/IngredientContext";
+import Image from "next/image";
 
 const DetailsIngredientComponent = ({
     detailOpened, setDetailOpened
 }: { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
+
+    const { name, rarity, type, description, image } = useIngredient();
+
     return (
         <>
             <section className={`${detailOpened !== null ? styles.active : styles.detailsIngredientOverlay}`}>
                 <div className={styles.detailsIngredientWindow}>
                     <div className={styles.top}>
                         <div>
-                            <img src="images/Vegetals/Aromine.png" alt="Aromine" />
-                            {/* {imageSrc && <Image src={imageSrc} alt="test" height={70} />} */}
+                            {image && <Image src={image} alt="test" />}
                         </div>
                         <h2>{detailOpened?.getIngredientName()}</h2>
                         <button onClick={() => setDetailOpened(null)}>X</button>

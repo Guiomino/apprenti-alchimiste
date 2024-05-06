@@ -1,40 +1,44 @@
 // IngredientContext.tsx
 
-import React, { useReducer } from 'react'
+"use client"
 
-const IngredientContext = ({ children }) => {
+import React, { useContext, useReducer } from 'react'
 
-    interface IngredientI {
-        id: number;
-        name: string;
-        rarity: string;
-        type: string;
-        min_price: number;
-        max_price: number;
-        description: string;
-        image: string;
-        bonus: string;
-        malus: string;
-    }
+interface IngredientI {
+    id: number;
+    name: string;
+    rarity: string;
+    type: string;
+    min_price: number;
+    max_price: number;
+    description: string;
+    image: string;
+    bonus: string;
+    malus: string;
+}
 
-    interface IngredientContextI {
-        id: number;
-        name: string;
-        rarity: string;
-        type: string;
-        min_price: number;
-        max_price: number;
-        description: string;
-        image: string;
-        bonus: string;
-        malus: string;
-        setName: (name: string) => void;
-        setRarity: (rarity: string) => void;
-    }
+interface IngredientContextI {
+    id: number;
+    name: string;
+    rarity: string;
+    type: string;
+    min_price: number;
+    max_price: number;
+    description: string;
+    image: string;
+    bonus: string;
+    malus: string;
+    setName: (name: string) => void;
+    setRarity: (rarity: string) => void;
+}
 
-    type IngredientType =
-        | { type: "SET_NAME", name: string }
-        | { type: "SET_RARITY", rarity: string }
+type IngredientType =
+    | { type: "SET_NAME", name: string }
+    | { type: "SET_RARITY", rarity: string }
+
+const ingredientContext = React.createContext<IngredientContextI>({} as IngredientContextI)
+
+const IngredientProvider = ({ children }) => {
 
     const reducer = (state: IngredientI, action: IngredientType): IngredientI => {
         return {
@@ -66,7 +70,7 @@ const IngredientContext = ({ children }) => {
         dispatch({ type: 'SET_RARITY', rarity })
     }
 
-    const ingredientContext = React.createContext<IngredientContextI>({} as IngredientContextI)
+    
 
     return (
         <ingredientContext.Provider value={{ ...state, setName, setRarity }}>
@@ -75,4 +79,5 @@ const IngredientContext = ({ children }) => {
     )
 }
 
-export default IngredientContext
+export default IngredientProvider
+export const useIngredient = () => useContext(ingredientContext);
