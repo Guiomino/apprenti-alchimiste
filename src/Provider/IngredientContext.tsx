@@ -2,9 +2,9 @@
 
 "use client"
 
-import React, { useContext, useReducer } from 'react'
+import React from 'react'
 
-interface IngredientI {
+interface IngredientReducerI {
     id: number;
     name: string;
     rarity: string;
@@ -30,17 +30,19 @@ interface IngredientContextI {
     malus: string;
     setName: (name: string) => void;
     setRarity: (rarity: string) => void;
+    setImage: (image: string) => void;
 }
 
 type IngredientType =
     | { type: "SET_NAME", name: string }
     | { type: "SET_RARITY", rarity: string }
+    | { type: "SET_IMAGE", image: string }
 
 const ingredientContext = React.createContext<IngredientContextI>({} as IngredientContextI)
 
 const IngredientProvider = ({ children }) => {
 
-    const reducer = (state: IngredientI, action: IngredientType): IngredientI => {
+    const reducer = (state: IngredientReducerI, action: IngredientType): IngredientReducerI => {
         return {
             ...state
         }
@@ -66,18 +68,22 @@ const IngredientProvider = ({ children }) => {
     const setName = (name: string) => {
         dispatch({ type: "SET_NAME", name })
     }
+
     const setRarity = (rarity: string) => {
         dispatch({ type: 'SET_RARITY', rarity })
     }
 
-    
+    const setImage = (image: string) => {
+        dispatch({ type: 'SET_IMAGE', image })
+    }
+
 
     return (
-        <ingredientContext.Provider value={{ ...state, setName, setRarity }}>
+        <ingredientContext.Provider value={{ ...state, setName, setRarity, setImage }}>
             {children}
         </ingredientContext.Provider>
     )
 }
 
 export default IngredientProvider
-export const useIngredient = () => useContext(ingredientContext);
+export const useIngredient = () => React.useContext(ingredientContext);
