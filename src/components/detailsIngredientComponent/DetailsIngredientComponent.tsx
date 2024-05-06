@@ -3,8 +3,6 @@
 import Ingredient from "@/OOP/IngredientClass";
 import styles from "./detailsIngredientComponent.module.scss";
 
-
-
 const DetailsIngredientComponent = ({
     detailOpened, setDetailOpened
 }: { detailOpened: Ingredient | null, setDetailOpened: (type: Ingredient | null) => void }) => {
@@ -15,6 +13,7 @@ const DetailsIngredientComponent = ({
                     <div className={styles.top}>
                         <div>
                             <img src="images/Vegetals/Aromine.png" alt="Aromine" />
+                            {/* {imageSrc && <Image src={imageSrc} alt="test" height={70} />} */}
                         </div>
                         <h2>{detailOpened?.getIngredientName()}</h2>
                         <button onClick={() => setDetailOpened(null)}>X</button>

@@ -6,6 +6,8 @@ import Image from "next/image";
 import IngredientMarketComponent from "@/components/ingredientMarketComponent/IngredientMarketComponent";
 import DetailsIngredientComponent from "@/components/detailsIngredientComponent/DetailsIngredientComponent";
 import Ingredient from "@/OOP/IngredientClass";
+import GoldComponent from "./components/GoldComponent";
+import CharacterLevelComponent from "./components/CharacterLevelComponent";
 
 enum IngredientRarity {
     common = "common",
@@ -67,9 +69,9 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                             <button className={styles.filter}>
                                 {miscellaneousImages && <Image src={miscellaneousImages["Filter"]} alt={"Filter"} width={28} height={28} />}
                             </button>
-                            <span className={styles.gold}>🪙 3226</span>
+                            <GoldComponent />
                             <h1 className={styles.title}>Apothecary Market</h1>
-                            <span className={styles.lvl}>LV.4 ⬆</span>
+                            <CharacterLevelComponent />
                             <button className={styles.close} onClick={closeMarketModal}>X</button>
                         </div>
                     </section>

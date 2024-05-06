@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
-import { IngredientProvider } from "@/Provider/IngredientContext";
+// import { IngredientProvider } from "@/Provider/IngredientContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
-import toto from "@/app/page.module.scss"
+import UserProvider from "@/Provider/UserContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +22,9 @@ export default function RootLayout({
     return (
         <html lang="fr">
             <body className={`${inter.className}`}>
-                <IngredientProvider>
+                <UserProvider>
                     <main>{children}</main>
-                </IngredientProvider>
+                </UserProvider>
                 <ToastContainer />
             </body>
         </html>

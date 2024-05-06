@@ -59,7 +59,7 @@ const ModalIngredients: React.FC<ModalIngredientsProps> = ({ closeIngredientsMod
                     {Object.keys(ingredientsData[ingredientType]).map((ingredientName, index) => (
                         <div key={index} className={styles.ingredientCard} onClick={() => {
                             if (ingredients.length < 3) {
-                                addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1, ingredientType, parseIngredientRarity(ingredientsData[ingredientType][ingredientName].rarity)));
+                                // addIngredient(new Ingredient(ingredientName, ingredientsData[ingredientType][ingredientName].price, 1, ingredientType, parseIngredientRarity(ingredientsData[ingredientType][ingredientName].rarity)));
                             }else {
                                 toast.error("Vous ne pouvez pas ajouter plus de 3 ingrédients");
                             }

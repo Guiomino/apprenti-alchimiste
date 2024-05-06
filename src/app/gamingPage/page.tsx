@@ -7,6 +7,7 @@ import MarketBtn from "@/components/market/marketBtn";
 import MarketModal from "@/components/market/marketModal";
 import ModalIngredients from "@/components/modalIngredients/modalIngredients";
 import { IngredientType } from "@/OOP/IngredientClass";
+import { useUser } from "@/Provider/UserContext";
 
 const GamingPage = () => {
     // HANDLE MODALS
@@ -34,8 +35,12 @@ const GamingPage = () => {
 
     // setIngredient(new Ingredient("Champignon", 10, 1));
 
+    const { username, setUsername } = useUser();
+
     return (
         <>
+            <p>{ username }</p>
+            <button onClick={() => setUsername("Mario")}>Click me !</button>
             {isMarketModalOpen && <MarketModal closeMarketModal={closeMarketModal} />}
 
             {isModalIngredientsOpen && (
@@ -45,6 +50,9 @@ const GamingPage = () => {
                     setIngredientType={setIngredientType}
                 />
             )}
+
+            
+
             <div className={styles.gamingPage}>
                 <div className={styles.btnContainer}>
                     <MarketBtn openMarketModal={openMarketModal} />
