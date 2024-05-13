@@ -13,7 +13,7 @@ enum IngredientRarity {
     common = "common",
     uncommon = "uncommon",
     rare = "rare",
-    epic = "epic"
+    epic = "epic",
 }
 
 interface IngredientI {
@@ -51,14 +51,18 @@ const miscellaneousImages: { [key: string]: string } = {
 };
 
 const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
-    const data: IngredientData = ingredientsData;
+    const ingredientJson: IngredientData = ingredientsData;
 
     const [detailOpened, setDetailOpened] = React.useState<Ingredient | null>(null);
 
     React.useEffect(() => {
         console.log("State changed");
     }, [detailOpened])
-        
+
+const ingredientList = () => {
+    setIngredientList(ingredientJson.ingredients.Mineral.filter((ingredient) => ingredient.name === name))
+}
+
     return (
         <>
             <div className={styles.marketModalOverlay}>
@@ -81,20 +85,20 @@ const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
                         <DetailsIngredientComponent detailOpened={detailOpened} setDetailOpened={setDetailOpened}/>
                         <div>
                         {
-                            Object.keys(data.ingredients).map((ingredientType: string) => (
-                                Object.keys(data.ingredients[ingredientType]).map((ingredient: string) => (
+                            Object.keys(ingredientJson.ingredients).map((ingredientType: string) => (
+                                Object.keys(ingredientJson.ingredients[ingredientType]).map((ingredient: string) => (
                                     <IngredientMarketComponent
 
                                         setDetailOpened={setDetailOpened}
 
-                                        img={data.ingredients[ingredientType][parseInt(ingredient)].imagePath}
-                                        name={data.ingredients[ingredientType][parseInt(ingredient)].name}
-                                        description={data.ingredients[ingredientType][parseInt(ingredient)].description}
+                                        img={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].imagePath}
+                                        name={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].name}
+                                        description={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].description}
                                         quantity={0}
-                                        rarity={data.ingredients[ingredientType][parseInt(ingredient)].rarity}
+                                        rarity={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].rarity}
                                         type={ingredientType}
-                                        minPrice={data.ingredients[ingredientType][parseInt(ingredient)].min_price}
-                                        maxPrice={data.ingredients[ingredientType][parseInt(ingredient)].max_price}
+                                        minPrice={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].min_price}
+                                        maxPrice={ingredientJson.ingredients[ingredientType][parseInt(ingredient)].max_price}
                                         key={crypto.randomUUID()} />
                                 ))
                             ))
