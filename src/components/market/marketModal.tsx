@@ -50,18 +50,21 @@ const miscellaneousImages: { [key: string]: string } = {
     Gold: "/images/Miscellaneous/Gold.png",
 };
 
+
+
+
 const MarketModal: React.FC<MarketModalProps> = ({ closeMarketModal }) => {
     const ingredientJson: IngredientData = ingredientsData;
+
+    const ingredientList = (ingredient: Ingredient) => {
+        const filteredIngredients = ingredientJson.ingredients.Mineral.filter((ingr) => ingr.name === ingredient.name)
+    }
 
     const [detailOpened, setDetailOpened] = React.useState<Ingredient | null>(null);
 
     React.useEffect(() => {
         console.log("State changed");
     }, [detailOpened])
-
-const ingredientList = () => {
-    setIngredientList(ingredientJson.ingredients.Mineral.filter((ingredient) => ingredient.name === name))
-}
 
     return (
         <>

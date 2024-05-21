@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
 import UserProvider from "@/Provider/UserContext";
 import IngredientProvider from "@/Provider/IngredientContext";
+import IngrImageProvider from "@/Provider/IngrImageProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
                     <IngredientProvider>
                         <main>{children}</main>
                     </IngredientProvider>
+                    <IngrImageProvider></IngrImageProvider>
                 </UserProvider>
                 <ToastContainer />
             </body>
